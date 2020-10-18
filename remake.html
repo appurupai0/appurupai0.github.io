@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 	<title>myisland-Miyako</title>
 	<meta charset="UTF-8">
+	<meta name="viewprot" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="remake-css/reset.css">
 	<link rel="stylesheet" href="remake-css/remake.css">
+	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<!-- header -->
 	<header class="fixed">
 		<!-- header左 -->
 		<div class="header-left">
-			<img src="remake-img/miya.jpg">
-			<span><strong>Miyako</strong>Island</span>
+			<i class="fas fa-umbrella-beach"></i>
+			<span class="name"><strong>Miyako</strong>Island</span>
 		</div>
 		<!-- header右 -->
 		<ul class="header-right">
-			<li>新規登録</li>
-			<li>ログイン</li>
+			<li><i class="fas fa-share-alt icon"></i></li>
+			<li><i class="fab fa-twitter icon"></i></li>
+			<li><i class="fab fa-instagram icon"></i></li>
 		</ul>
 	</header>
 	<!-- header-end -->
@@ -36,52 +39,104 @@
 		</div>
 	</main>
 	<!-- main-end -->
+
+	<!-- main2 -->
+	<div class="main2">
+		<h2>~About 宮古島~</h2>
+		<span class="circle"></span>
+		<span>　宮古島は沖縄県の数多くある島の1つです。沖縄県の南西のほうに位置し、人口は約５万５千人とほかの離島に比べて多く、沖縄県の離島の中では４番目に面積が大きい島なんです。最近では伊良部大橋が架かり、４つの島が宮古島本島と橋でつながっているのが特徴です。宮古島は主に観光業が盛んです。近年ではホテルの建設をはじめとして、マンションやアパートなどの建設も盛んになってきており、注目を集めています。実は宮古島には<strong>「東洋一の美しさ」</strong>と呼ばれている海があり、白い砂浜とエメラルドグリーンの透き通る海が広がっていて、とっても綺麗です！！</span>
+		<button class="read-more">詳しく⇒</button>
+	</div>
+	<!-- main2　ここまで -->
 	<!-- menu -->
-	<div>
+	<div class="menu">
 		<h2 class="recommend">~Recommended~</h2>
+		<span class="circle2"></span>
 		<ul class="img-box">
 			<li>
-				<a href="https://www.google.com/search?q=miyakojima&oq=miyakojima&aqs=chrome..69i57j0l6j69i60.2795j0j1&sourceid=chrome&ie=UTF-8"><img src="remake-img/charm.jpg"></a>
-				<span>charm</span>
+				<img class="img1" src="remake-img/charm.jpg">
+				<span class="span">
+					<h3>-charm-</h3>
+					<p>　宮古島の魅力の１番は、何といっても白い砂浜と美しい海！ですが……宮古島で体感してほしいのが、時間が止まっているかのようにゆったりと過ごせる場所であること！？</p>
+					<p>　そして夜になると、、、夜空に満点い広がる星を見れるというところも宮古島の魅力です。魅力の詰まったスポットをご紹介していきます。</p>
+					<button class="read-more recommend-button">詳しく⇒</button>
+				</span>
 			</li>
 			<li>
-				<img src="remake-img/food.jpg">
-				<span>food</span>
+				<span class="span right-span">
+					<h3>-food-</h3>
+					<p>　宮古島のおいしい食べ物は？？？気になりますよね。南国のおいしいデザートや、とってもおしゃれなお店、地元の人たちが愛する食堂など様々な視点からご紹介していきます！</p>
+					<button class="read-more recommend-button">詳しく⇒</button>
+				</span>
+				<img class="img2" src="remake-img/food.jpg">
 			</li>
 			<li>
-				<img src="remake-img/access-hotel.jpg">
-				<span>access&hotel</span>
+				<img class="img3" src="remake-img/access-hotel.jpg">
+				<span class="span">
+					<h3>-access & hote-</h3>
+					<p>宮古島へ行くには……</p>
+					<p>　沖縄から船で行くの？？そんなことありません、もちろん飛行機で！沖縄本島からのフライト時間や、ゆったり過ごせるおすすめホテルなどなど、、ご紹介していきます！</p>
+					<button class="read-more recommend-button">詳しく⇒</button>
+				</span>
 			</li>
 		</ul>
 	</div>
 	<!-- menu-end -->
+	<!-- section -->
+	<section>
+		<h3>～みんなのGallery～</h3>
+		<span class="circle3"></span>
+		<ul class="gallery">
+			<button class="ga"><</button>
+			<img src="remake-img/irabridge1.jpg">
+			<img src="remake-img/higasi.jpg">
+			<img src="remake-img/mamorukun.jpg" alt="">
+			<img src="remake-img/images (1).jpg" alt="">
+			<button class="ga">></button>
+		</ul>
+	</section>
+	<!-- section　ここまで -->
+	<div class="text">
+		<p>みんなが撮った宮古島の写真を紹介してみよう！！</p>
+		<p>そして、ここでは紹介されていないみんなのおすすめのスポットや食べ物、巡り方など、どんどんシェアしていこう！！もしかしたら、サイト内で紹介されるかも！！？？</p>
+		<ul class="share-icon">
+			<li><i class="fas fa-share-alt icon"></i></li>
+			<li><i class="fab fa-twitter icon"></i></li>
+			<li><i class="fab fa-instagram icon"></i></li>
+		</ul>
+	</div>
 	<!-- contact -->
 	<div class="contact">
-		<h2 class="contact-us">~Contact us~</h2>
-		<form class="form">
-			<ul class="form-contact">
-				<li>
-					<input type="text" class="input-field" placeholder="お名前">
-					<input type="text" class="input-field" placeholder="メールアドレス">
-				</li>
-				<li>
-					<textarea class="input-field2" placeholder="お問い合わせ内容"></textarea>
-				</li>
-			</ul>
-			<div class="form-btn">
-				<button class="submit">送信</button>
-			</div>
-		</form>
+		<div class="form-field">
+			<h2 class="contact-us">~CONTACT~</h2>
+			<form class="form">
+				<p>~あなたのご意見聞かせてください~</p>
+				<p>ここで紹介されていない皆様のおすすめスポットなどなどご意見を受け付けております</p>
+				<p>お気軽にお問い合わせください</p>
+				<div class="phone">
+					<i class="fas fa-phone-alt phone-icon"></i>
+					<span class="phone-number">098-000-00××</span>
+				</div>
+					<input type="text" name="name" class="input" placeholder="お名前（ニックネーム）">
+					<textarea name="opinion" class="input opinion" placeholder="ご意見内容"></textarea>
+				<div class="form-btn">
+					<button class="submit">送信</button>
+				</div>
+			</form>
+		</div>
 	</div>
 	<!-- contact-end -->
 	<!-- footer -->
 	<footer class="footer">
-		<div class="header-left">
-			<img src="remake-img/miya.jpg">
-			<span><strong>Miyako</strong>Island</span>
-		</div>
+		<ul class="footer-left">
+			<li>▷トップページへ</li>
+			<li>▷About 宮古島</li>
+			<li>▶Recommended</li>
+			<li>▷みんなのGallary</li>
+			<li>▶Contact</li>
+		</ul>
 		<div class="footer-right">
-			2020 @ Katsumi Ota
+			20/10@Katsumi Ota
 		</div>
 	</footer>
 	<!-- footer-end -->

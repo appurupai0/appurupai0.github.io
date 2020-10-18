@@ -10,145 +10,163 @@
 	<div class="resister">
 		<h1 class="form-title">新規登録フォーム</h1>
 		<form>
-			<div class="form-group">
-				<label for="name" class="label">お名前</label>
-				<input type="text" class="input-field" placeholder="（例）宮古太郎" required="required">
-			</div>
-			<div class="form-group">
-				<label for="name2" class="label">フリガナ</label>
-				<input type="text" class="input-field" placeholder="（例）ミヤコタロウ">
-			</div>
-			<div class="form-group">
-				<label for="birthday" class="label">生年月日</label>
-				<input type="text" class="input-field" placeholder="（例）2020/01/01">
-			</div>
-			<div class="form-group">
-				<label for="gender" class="label">性別</label>
-				<input type="radio" name="gender" id="male">男性
-				<input type="radio" name="gender" id="female">女性
-				<input type="radio" name="gender" id="other">その他
-			</div>
-			<div class="form-group">
-				<label for="from" class="label">出身地</label>
-				<select name="prefecture" id="prefecture">
-					<option value="" selected>都道府県</option>
-					<option value="1">北海道</option>
-					<option value="2">青森県</option>
-					<option value="3">岩手県</option>
-					<option value="4">宮城県</option>
-					<option value="5">秋田県</option>
-					<option value="6">山形県</option>
-					<option value="7">福島県</option>
-					<option value="8">茨城県</option>
-					<option value="9">栃木県</option>
-					<option value="10">群馬県</option>
-					<option value="11">埼玉県</option>
-					<option value="12">千葉県</option>
-					<option value="13">東京都</option>
-					<option value="14">神奈川県</option>
-					<option value="15">新潟県</option>
-					<option value="16">富山県</option>
-					<option value="17">石川県</option>
-					<option value="18">福井県</option>
-					<option value="19">山梨県</option>
-					<option value="20">長野県</option>
-					<option value="21">岐阜県</option>
-					<option value="22">静岡県</option>
-					<option value="23">愛知県</option>
-					<option value="24">三重県</option>
-					<option value="25">滋賀県</option>
-					<option value="26">京都府</option>
-					<option value="27">大阪府</option>
-					<option value="28">兵庫県</option>
-					<option value="29">奈良県</option>
-					<option value="30">和歌山県</option>
-					<option value="31">鳥取県</option>
-					<option value="32">島根県</option>
-					<option value="33">岡山県</option>
-					<option value="34">広島県</option>
-					<option value="35">山口県</option>
-					<option value="36">徳島県</option>
-					<option value="37">香川県</option>
-					<option value="38">愛媛県</option>
-					<option value="39">高知県</option>
-					<option value="40">福岡県</option>
-					<option value="41">佐賀県</option>
-					<option value="42">長崎県</option>
-					<option value="43">熊本県</option>
-					<option value="44">大分県</option>
-					<option value="45">宮崎県</option>
-					<option value="46">鹿児島県</option>
-					<option value="47">沖縄県</option>
-					<option value="48">その他</option>
-				</select>
-			</div>
-						<div class="form-group">
-				<label for="from" class="label">現在地</label>
-				<select name="prefecture-other" id="prefecture">
-					<option value="" selected>都道府県</option>
-					<option value="111">北海道</option>
-					<option value="222">青森県</option>
-					<option value="333">岩手県</option>
-					<option value="444">宮城県</option>
-					<option value="555">秋田県</option>
-					<option value="666">山形県</option>
-					<option value="777">福島県</option>
-					<option value="888">茨城県</option>
-					<option value="999">栃木県</option>
-					<option value="100">群馬県</option>
-					<option value="110">埼玉県</option>
-					<option value="120">千葉県</option>
-					<option value="130">東京都</option>
-					<option value="140">神奈川県</option>
-					<option value="150">新潟県</option>
-					<option value="160">富山県</option>
-					<option value="170">石川県</option>
-					<option value="180">福井県</option>
-					<option value="190">山梨県</option>
-					<option value="200">長野県</option>
-					<option value="210">岐阜県</option>
-					<option value="220">静岡県</option>
-					<option value="230">愛知県</option>
-					<option value="240">三重県</option>
-					<option value="250">滋賀県</option>
-					<option value="260">京都府</option>
-					<option value="270">大阪府</option>
-					<option value="280">兵庫県</option>
-					<option value="290">奈良県</option>
-					<option value="300">和歌山県</option>
-					<option value="310">鳥取県</option>
-					<option value="320">島根県</option>
-					<option value="330">岡山県</option>
-					<option value="340">広島県</option>
-					<option value="350">山口県</option>
-					<option value="360">徳島県</option>
-					<option value="370">香川県</option>
-					<option value="380">愛媛県</option>
-					<option value="390">高知県</option>
-					<option value="400">福岡県</option>
-					<option value="410">佐賀県</option>
-					<option value="420">長崎県</option>
-					<option value="430">熊本県</option>
-					<option value="440">大分県</option>
-					<option value="450">宮崎県</option>
-					<option value="460">鹿児島県</option>
-					<option value="470">沖縄県</option>
-					<option value="480">その他</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="phone" class="label">電話番号</label>
-				<input type="text" class="input-field" placeholder="（例）080-0000-0000">
-			</div>
-			<div class="form-group">
-				<label for="email" class="label">メールアドレス</label>
-				<input type="text" class="input-field" placeholder="（例）miyako@email.com">
-			</div>
-			<div class="form-group">
-				<button class="button" type="submit">送信</button>
-				<button class="button" type="home">ホーム</button>
-			</div>
+			<dl>
+				<dt>お名前</dt>
+				<dd>
+					<input type="text" name="name" class="input-field" placeholder="（例）宮古太郎">
+				</dd>
+				<dt>フリガナ</dt>
+				<dd>
+					<input type="text" name="name2" class="input-field" placeholder="（例）ミヤコタロウ">
+				</dd>
+				<dt>生年月日</dt>
+				<dd>
+					<input type="text" name="birthday" class="input-field" placeholder="（例）2020/01/01">
+				</dd>
+				<dt>性別</dt>
+				<dd>
+					<input type="radio" name="gender" for="male" class="gender">男性
+					<input type="radio" name="gender" for="female" class="gender">女性
+					<input type="radio" name="gender" for="other" class="gender">その他
+				</dd>
+				<dt>出身地</dt>
+				<dd>
+					<select name="prefecture" id="prefecture">
+						<option value="" selected>都道府県</option>
+						<option value="1">北海道</option>
+						<option value="2">青森県</option>
+						<option value="3">岩手県</option>
+						<option value="4">宮城県</option>
+						<option value="5">秋田県</option>
+						<option value="6">山形県</option>
+						<option value="7">福島県</option>
+						<option value="8">茨城県</option>
+						<option value="9">栃木県</option>
+						<option value="10">群馬県</option>
+						<option value="11">埼玉県</option>
+						<option value="12">千葉県</option>
+						<option value="13">東京都</option>
+						<option value="14">神奈川県</option>
+						<option value="15">新潟県</option>
+						<option value="16">富山県</option>
+						<option value="17">石川県</option>
+						<option value="18">福井県</option>
+						<option value="19">山梨県</option>
+						<option value="20">長野県</option>
+						<option value="21">岐阜県</option>
+						<option value="22">静岡県</option>
+						<option value="23">愛知県</option>
+						<option value="24">三重県</option>
+						<option value="25">滋賀県</option>
+						<option value="26">京都府</option>
+						<option value="27">大阪府</option>
+						<option value="28">兵庫県</option>
+						<option value="29">奈良県</option>
+						<option value="30">和歌山県</option>
+						<option value="31">鳥取県</option>
+						<option value="32">島根県</option>
+						<option value="33">岡山県</option>
+						<option value="34">広島県</option>
+						<option value="35">山口県</option>
+						<option value="36">徳島県</option>
+						<option value="37">香川県</option>
+						<option value="38">愛媛県</option>
+						<option value="39">高知県</option>
+						<option value="40">福岡県</option>
+						<option value="41">佐賀県</option>
+						<option value="42">長崎県</option>
+						<option value="43">熊本県</option>
+						<option value="44">大分県</option>
+						<option value="45">宮崎県</option>
+						<option value="46">鹿児島県</option>
+						<option value="47">沖縄県</option>
+						<option value="48">その他</option>
+					</select>
+				</dd>
+				<dt>現在地</dt>
+				<dd>
+					<select name="prefecture" id="prefecture">
+						<option value="" selected>都道府県</option>
+						<option value="111">北海道</option>
+						<option value="222">青森県</option>
+						<option value="333">岩手県</option>
+						<option value="444">宮城県</option>
+						<option value="555">秋田県</option>
+						<option value="666">山形県</option>
+						<option value="777">福島県</option>
+						<option value="888">茨城県</option>
+						<option value="999">栃木県</option>
+						<option value="100">群馬県</option>
+						<option value="110">埼玉県</option>
+						<option value="120">千葉県</option>
+						<option value="130">東京都</option>
+						<option value="140">神奈川県</option>
+						<option value="150">新潟県</option>
+						<option value="160">富山県</option>
+						<option value="170">石川県</option>
+						<option value="180">福井県</option>
+						<option value="190">山梨県</option>
+						<option value="200">長野県</option>
+						<option value="210">岐阜県</option>
+						<option value="220">静岡県</option>
+						<option value="230">愛知県</option>
+						<option value="240">三重県</option>
+						<option value="250">滋賀県</option>
+						<option value="260">京都府</option>
+						<option value="270">大阪府</option>
+						<option value="280">兵庫県</option>
+						<option value="290">奈良県</option>
+						<option value="300">和歌山県</option>
+						<option value="310">鳥取県</option>
+						<option value="320">島根県</option>
+						<option value="330">岡山県</option>
+						<option value="3400">広島県</option>
+						<option value="350">山口県</option>
+						<option value="360">徳島県</option>
+						<option value="370">香川県</option>
+						<option value="380">愛媛県</option>
+						<option value="390">高知県</option>
+						<option value="400">福岡県</option>
+						<option value="410">佐賀県</option>
+						<option value="420">長崎県</option>
+						<option value="430">熊本県</option>
+						<option value="440">大分県</option>
+						<option value="450">宮崎県</option>
+						<option value="460">鹿児島県</option>
+						<option value="470">沖縄県</option>
+						<option value="480">その他</option>
+					</select>
+				</dd>
+				<dt>電話番号</dt>
+				<dd>
+					<input type="text" name="number" class="input-field" placeholder="（例）080-0000-1111">
+				</dd>
+				<dt>メールアドレス</dt>
+				<dd>
+					<input type="text" name="email" class="input-field" placeholder="（例）miyako@gmail.com">
+				</dd>
+				<dt>興味ある項目</dt>
+				<dd>
+					<input type="checkbox" name="interest" class="interest">海
+					<input type="checkbox" name="interest" class="interest">食べもの
+					<input type="checkbox" name="interest" class="interest">沖縄県
+					<input type="checkbox" name="interest" class="interest">離島
+					<input type="checkbox" name="interest" class="interest">のんびり
+					<input type="checkbox" name="interest" class="interest">夜空
+					<input type="checkbox" naem="interest" class="interest">星空
+					<input type="checkbox" mame="interest" class="interest">方言
+				</dd>
+				<dt>メルマガ配信</dt>
+				<dd>
+					<input type="checkbox" name="mail-magazine" checked="checked">メールマガジンを受け取る
+				</dd>
+			</dl>
+			<p>～メールマガジンを受け取ると興味のある項目の最新情報が素早く手に入るよ！～</p>	
+			<button class="button" for="submit">送信</button>
 		</form>
 	</div>
+	<footer>
+		<button  onclick="location.href='remake.html'">HOME</button>
+	</footer>
 </body>
 </html>

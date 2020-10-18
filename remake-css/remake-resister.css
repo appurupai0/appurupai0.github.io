@@ -1,38 +1,55 @@
 .resister{
-	background-color: #e6e6fa;
-	height: 800px;
+	height: 870px;
 	width: 800px;
+	background-color: #e6e6fa;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	justify-content: center;
-	border: 3px solid #ccc;
 }
 
-.form-title{
-	font-size: 30px;
-	font-weight: bold;
-	text-align: center;
-	margin-bottom: 40px;
+.resister .form-title{
+	font-size: 35px;
 }
 
-.form-group{
+form{
+	margin-top: 40px;
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+dl{
+	width: 500px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+dt{
+	width: 200px;
+	margin-top: 30px;
+	font-size: 22px;
+}
+
+dd{
+	width: 300px;
 	margin-top: 30px;
 }
 
-.label{
-	font-size: 25px;
-	margin-right: 40px;
-	float: left;
-	width: 180px;
+dd .input-field{
+	height: 22px;
+	width: 270px;
 }
 
-.input-field{
-	height: 27px;
-	width: 200px;
-	box-sizing: border-box;
+.interest{
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+form p{
+	margin-top: 10px;
+	font-size: 13px;
 }
 
 .button{
@@ -44,8 +61,30 @@
 	font-size: 18px;
 	border: 3px solid #6495dd;
 	cursor: pointer;
+	margin-top: 40px;
 }
 
-.button:first-child{
-	margin-right: 20px;
+.resister button{
+	margin-top: 70px;
+}
+
+footer{
+	height: 80px;
+	width: 800px;
+	background-color: #bc8f8f;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer button{
+	height: 40px;
+	width: 105px;
+	font-size: 30px;
+	cursor: pointer;
+	font-family: 'Sansita Swashed', cursive;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
