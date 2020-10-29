@@ -4,56 +4,91 @@
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="assets/css/reset.css">
 	<link rel="stylesheet" href="assets/css/my-list-style.css">
-	<script src='assets/js/my-list-script.js'></script>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Lemonada:wght@500&display=swap" rel="stylesheet">
 	<title>My-List</title>
 </head>
 <body>
 	<header class="fixed">
-		<input type="text" class="input-msg" placeholder="やるべき課題 / やりたいこと">
-		<button></button>
-		<button></button>
-		<button></button>
+		<input type="text" class="input-msg" placeholder=" 区別番号 / 期日 / やるべき課題 / やりたいこと">
+		<i class="far fa-edit icon-btn"></i>
+		<i class="fas fa-clipboard-list icon-btn"></i>
+		<i class="fas fa-running icon-btn"></i>
 	</header>
 	<main>
 		<h1 class="title">~My Task & Want to do List~</h1>
 		<div class="task">
-			<h2>～課題～</h2>
+			<h2 class="subtitle">～課題～</h2>
 			<div class="detail">
 				<ul class="task-day box">
-					<h3><span>期日と科目名</span></h3>
-					<li>css</li>
-					<li>html</li>
-					<li>copy</li>
-					<li>easy</li>
+					<h3><span><i class="far fa-edit icon"></i>期日と科目名</span></h3>
+					<li class="list">css
+						<i class="far fa-trash-alt" class="delete"></i>
+					</li>
+					<li class="list">html
+						<i class="far fa-trash-alt" class="delete"></i>
+					</li>
+					<li class="list">ddd
+						<i class="far fa-trash-alt" class="delete"></i>
+					</li class="list">
+					<li class="list">easy
+						<i class="far fa-trash-alt" class="delete"></i>
+					</li>
 				</ul>
 				<ul class="contents box">
-					<h3><span>課題内容</span></h3>
-					<li>aaa</li>
-					<li>ddd</li>
-					<li>ccc</li>
-					<li>ddd</li>
+					<h3><span><i class="fas fa-clipboard-list icon"></i>課題内容</span></h3>
+					<li class="list">aaa
+						<i class="far fa-trash-alt" class="delete"></i>
+					</li>
+					<li class="list">ddd
+						<i class="far fa-trash-alt" class="delete"></i>
+					</li>
+					<li class="list">ccc
+						<i class="far fa-trash-alt" class="delete"></i>
+					</li>
+					<li class="list">ddd
+						<i class="far fa-trash-alt" class="delete"></i>
+					</li>
 				</ul>
 			</div>
 		</div>
 		<div class="want">
-			<h2>~Want~</h2>
+			<h2 class="subtitle">~Want~</h2>
 			<div class="detail">
 				<ul class="task-day box">
-						<h3><span>Want to do</span></h3>
-						<li>css</li>
-						<li>html</li>
-						<li>copy</li>
-						<li>easy</li>
+						<h3><span><i class="fas fa-running icon"></i>Want to do</span></h3>
+						<li class="list">css
+							<i class="far fa-check-circle"></i>
+						</li>
+						<li class="list">html
+							<i class="far fa-check-circle"></i>
+						</li>
+						<li class="list">copy
+							<i class="far fa-check-circle"></i>
+						</li>
+						<li class="list">easy
+							<i class="far fa-check-circle"></i>
+						</li>
 					</ul>
 					<ul class="contents box">
-						<h3><span>Complete</span></h3>
-						<li>aaa</li>
-						<li>ddd</li>
-						<li>ccc</li>
-						<li>ddd</li>
+						<h3><span><i class="far fa-check-circle icon"></i>Complete</span></h3>
+						<li class="list">aaa
+							<i class="far fa-trash-alt" class="delete"></i>
+						</li>
+						<li class="list">ddd
+							<i class="far fa-trash-alt" class="delete"></i>
+						</li>
+						<li class="list">ccc
+							<i class="far fa-trash-alt" class="delete"></i>
+						</li>
+						<li class="list">ddd
+							<i class="far fa-trash-alt" class="delete"></i>
+						</li>
 					</ul>
 				</div>
 		</div>
 	</main>
+	<script src='assets/js/my-list-script.js'></script>
 </body>
 </html>
