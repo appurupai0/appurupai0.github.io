@@ -2,9 +2,58 @@
 <html lang="jp">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/my-list-style.css">
+	<script src='assets/js/my-list-script.js'></script>
 	<title>My-List</title>
 </head>
 <body>
-<p>My To Do List</p>
+	<header class="fixed">
+		<input type="text" class="input-msg" placeholder="やるべき課題 / やりたいこと">
+		<button></button>
+		<button></button>
+		<button></button>
+	</header>
+	<main>
+		<h1 class="title">~My Task & Want to do List~</h1>
+		<div class="task">
+			<h2>～課題～</h2>
+			<div class="detail">
+				<ul class="task-day box">
+					<h3><span>期日と科目名</span></h3>
+					<li>css</li>
+					<li>html</li>
+					<li>copy</li>
+					<li>easy</li>
+				</ul>
+				<ul class="contents box">
+					<h3><span>課題内容</span></h3>
+					<li>aaa</li>
+					<li>ddd</li>
+					<li>ccc</li>
+					<li>ddd</li>
+				</ul>
+			</div>
+		</div>
+		<div class="want">
+			<h2>~Want~</h2>
+			<div class="detail">
+				<ul class="task-day box">
+						<h3><span>Want to do</span></h3>
+						<li>css</li>
+						<li>html</li>
+						<li>copy</li>
+						<li>easy</li>
+					</ul>
+					<ul class="contents box">
+						<h3><span>Complete</span></h3>
+						<li>aaa</li>
+						<li>ddd</li>
+						<li>ccc</li>
+						<li>ddd</li>
+					</ul>
+				</div>
+		</div>
+	</main>
 </body>
 </html>

@@ -1,0 +1,53 @@
+body{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.fixed{
+	width: 50%;
+	margin: 0 auto;
+	margin-top: 25px;
+}
+.input-msg{
+	width: 60%;
+}
+
+.fixed button{
+	width: 10%;
+}
+
+main{
+	margin-top: 30px;
+}
+
+.title{
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.box{
+	border: 2px solid #00796B;
+	padding: 10px 0 5px 5px;
+	width:50%;
+}
+
+/*.task-day h3{
+	position: absolute;
+	top:115px;
+	left: 115px;
+	background-color: #fff;
+}*/
+
+.box h3 span{
+	background: linear-gradient(transparent 40% , aqua 80% );
+}
+
+.box li{
+	margin-top: 10px;
+}
+
+.detail{
+
+	display: flex;
+}
