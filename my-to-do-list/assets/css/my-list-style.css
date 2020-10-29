@@ -12,7 +12,7 @@ header{
 	background-color: rgba(255, 255, 255,.7);
 	display: flex;
 	justify-content: center;
-	align-content: center;
+	align-items: center;
 }
 .input-msg{
 	width: 400px;
@@ -23,7 +23,6 @@ header{
 
 .icon-btn{
 	font-size: 28px;
-	padding-top: 3px;
 	margin-left: 15px;
 	cursor: pointer;
 }
@@ -106,3 +105,33 @@ main{
 .want{
 	margin-top: 60px;
 }
+
+/*-------------footer------------*/
+footer{
+	background-color: #ffe4e1;
+	margin: 0 auto;
+	margin-top: 60px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer p{
+	font-size: 17px;
+	margin-left: 35px;
+	font-weight: bold;
+}
+
+footer p:first-child{
+	margin-left: 0;
+}
+
+
+/*-------------------- レスポンシブル対応 --------------------*/
+
+/*--- 小型PC用 ---*/
+
+/*--- タブレット ---*/
+
+/*--- スマートフォン ---*/
