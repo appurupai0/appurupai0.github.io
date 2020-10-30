@@ -56,7 +56,7 @@ main{
 	width:42%;
 }
 
-.contents{
+.contents, .complete{
 	margin-left: 20px;
 }
 
