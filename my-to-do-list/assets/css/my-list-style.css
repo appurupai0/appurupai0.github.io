@@ -134,5 +134,82 @@ footer p:first-child{
 /*--- 小型PC用 ---*/
 
 /*--- タブレット ---*/
+@media screen and (max-width: 960px){
+	.subtitle{
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.detail{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.box{
+		width: 80%;
+	}
+
+	.contents,.complete{
+		margin-left: 0;
+		margin-top: 25px;
+	}
+}
 
 /*--- スマートフォン ---*/
+@media screen and (max-width:480px){
+	body{
+		min-width :375px;
+	}
+
+	/* header */
+	.input-msg{
+		width: 200px;
+		font-size: 15px;
+	}
+
+	.icon-btn{
+		font-size: 24px;
+		margin-left: 12px;
+	}
+	/* header　ここまで*/
+	/* main */
+	.title{
+		font-size: 30px;
+	}
+
+	.subtitle{
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.detail{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.box{
+		width: 85%;
+	}
+
+	.contents,.complete{
+		margin-left: 0;
+		margin-top: 30px;
+	}
+
+	.list{
+		font-size: 16px;
+	}
+	/* main ここまで */
+	/* footer */
+	footer{
+		margin-top: 50px;
+	}
+	footer p{
+		font-size: 14px;
+	}
+	/* footerここまで*/
+	
+
+
+}
