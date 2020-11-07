@@ -1,0 +1,41 @@
+/* header */
+header{
+	position: fixed;
+	width: 100%;
+}
+
+.header-menu{
+	display: flex;
+	align-items: center;
+	height: 62px;
+	background-color: rgba(255,248,220,.6);
+}
+
+.header-menu > img{
+	height: 60px;
+	width: 80px;
+	margin-left: 80px;
+	margin-right: 40%;
+}
+
+.header-menu li{
+	margin-right: 35px;
+	font-size: 18px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.header-menu li:last-child{
+	margin-right: 0;
+}
+
+.toggle-gallery-menu{
+	font-size: 18px;
+	font-weight: bold;
+	margin-right: 35px;
+	cursor: pointer;
+}
+
+.toggle-gallery-menu > dd{
+	display: none;
+}
