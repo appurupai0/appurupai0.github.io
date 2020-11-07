@@ -52,6 +52,91 @@ header{
 	margin-left: 0;
 }
 
+	/* funberger menu */
+	.hamburger {
+  width: 28px;
+  height: 30px;
+  margin: 30px auto 10px;
+}
+
+.hamburger span:after,
+.hamburger span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+
+.hamburger span:after {
+  top: 9px;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+}
+
+.hamburger span,
+.hamburger span:after,
+.hamburger span:before {
+  width: 100%;
+  height: 5px;
+  background-color: #fff;
+  transition: all 0.5s; /*←アニメーション*/
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+.hamburger.on span {
+  background-color: transparent;
+}
+
+.hamburger.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+#q7-btn{
+	display: none;
+}
+
+.drower{
+	position: absolute;
+	top: 70px;
+	height: 100vh;
+	width: 170px;
+	background-color: rgba(8,8,8,.5);
+	transition-duration: 600ms;
+	right: -200px;
+}
+
+.drower li{
+	margin-top: 18px;
+	font-size: 18px;
+}
+
+#drower-bg {
+    display: none;
+    /* position: fixed でそのドロワーの背景を固定（スクロールしてもずっと表示されている形にしている）*/
+    position: fixed;
+    /*　右、左、下をそれぞれ０にすることによって画面全体にドロワーｂｇのdivタグが表示されるようになっている*/
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.drower.on{
+	right: 0;
+	transition-duration: 600ms;
+}
+
+/* herder */
+
 .main{
 	background-image: url(../remake-img/background.webp);
 	height: 800px;
@@ -560,22 +645,49 @@ a{
 	}
 
 	.footer li{
-		font-size: 13px;
+		font-size: 15px;
+		margin-left: 20px;
+	}
+
+	.footer li:first-child{
+		margin-left: 0;
 	}
 
 	.footer-right{
-		font-size: 13px;
+		font-size: 15px;
+	}
+
+	#q7-btn{
+		display: none;
 	}
 }
+
 /*　タブレット　*/
-@media screen and(max-width: 960px){
+@media screen and (max-width: 960px){
 	.menu{
 		width: 100%;
 	}
 
 	.gallery img{
 		height: 140px;
-		width: 180px;
+		width: 140px;
+	}
+
+	.this-none{
+		display: none;
+	}
+
+	.form-field{
+		width: 80%;
+	}
+
+	.input{
+		font-size: 15px;
+		width: 220px;
+	}
+
+	.footer-left{
+		margin-left: 40px;
 	}
 
 	.footer li{
@@ -583,12 +695,123 @@ a{
 	}
 
 	.footer-right{
-		font-size: 13px;
+		font-size: 11px;
+		margin-right: 40px;
+	}
+
+	#q7-btn{
+		display: none;
 	}
 }
+
 /*　スマホ　*/
 @media screen and (max-width: 480px){
 	body{
 		min-width: 375px;
+		width: 100%;
+	}
+
+	.header-left{
+		font-size: 20px;
+	}
+
+	.header-left i{
+		font-size: 21px;
+		margin-left: 30px;
+		margin-right: 15px;
+	}
+
+	.header-right{
+		display: none;
+	}
+
+	.main{
+		width: 100%;
+	}
+
+	.miyako{
+		font-size: 60px;
+	}
+
+	.one-word{
+		font-size: 25px;
+	}
+
+	.btn{
+		width: 120px;
+		font-size: 20px;
+	}
+
+	.main2{
+		width: 85%;
+	}
+
+	.main2 span{
+		font-size: 16px;
+		line-height: 28px;
+	}
+
+	.heading{
+		font-size: 27px;
+	}
+
+	.img-box li img {
+	    height: 280px;
+	    width: 280px;
+	}
+
+	.img-box li{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 50px;
+	}
+
+	.img-box li .span{
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.img-box li .right-span{
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+
+	.gallery img{
+		width: 120px;
+	}
+
+	.this-none, .phone-none{
+		display: none;
+	}
+
+	.text{
+		font-size: 18px;
+		width: 85%;
+	}
+
+	.form-field{
+		width: 80%;
+	}
+
+	.footer{
+		height: 40px;
+	}
+
+	.footer-right{
+		margin: 0 auto;
+		font-size: 15px;
+	}
+
+	.footer-left{
+		display: none;
+	}
+
+	#q7-btn{
+		display: block;
+	}
+
+	.hamburger{
+		margin: 30px 40px 0 10px;
 	}
 }

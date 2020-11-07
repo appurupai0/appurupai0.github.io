@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-	<title>myisland-Miyako</title>
 	<meta charset="UTF-8">
-	<meta name="viewprot" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>myisland-Miyako</title>
 	<link rel="stylesheet" href="remake-css/reset.css">
 	<link rel="stylesheet" href="remake-css/remake.css">
 	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
@@ -22,6 +22,19 @@
 			<li><i class="fab fa-twitter icon"></i></li>
 			<li><i class="fab fa-instagram icon"></i></li>
 		</ul>
+		<!-- humberger menu -->
+		<p id="q7-btn" class="js-hamburger hamburger">
+         	<span></span>
+       	</p>
+       	<!-- ドロワー -->
+       	<div id="drower-bg"></div>
+		<ul class="drower js-drower">
+		    <li class="js-register">新規登録</li>
+		    <li class="js-login">ログイン</li>
+		    <li>Twitter</li>
+		    <li>Contact</li>
+		</ul>
+
 	</header>
 	<!-- header-end -->
 	<!-- main -->
@@ -35,14 +48,14 @@
 		</ul>
 		<div class="btn-group">
 			<button class="btn register" type="button"onclick="location.href='remake-resister.html'">新規登録</button>
-			<button class="btn login" type="button" onclick="location.href='remake-link-pagese/remake-login.html'"">ログイン</button>
+			<button class="btn login" type="button" onclick="location.href='remake-link-pagese/remake-login.html'">ログイン</button>
 		</div>
 	</main>
 	<!-- main-end -->
 
 	<!-- main2 -->
 	<div class="main2">
-		<h2>~About 宮古島~</h2>
+		<h2 class="heading">~About 宮古島~</h2>
 		<span class="circle"></span>
 		<span>　宮古島は沖縄県の数多くある島の1つです。沖縄県の南西のほうに位置し、人口は約５万５千人とほかの離島に比べて多く、沖縄県の離島の中では４番目に面積が大きい島なんです。最近では伊良部大橋が架かり、４つの島が宮古島本島と橋でつながっているのが特徴です。宮古島は主に観光業が盛んです。近年ではホテルの建設をはじめとして、マンションやアパートなどの建設も盛んになってきており、注目を集めています。実は宮古島には<strong>「東洋一の美しさ」</strong>と呼ばれている海があり、白い砂浜とエメラルドグリーンの透き通る海が広がっていて、とっても綺麗です！！</span>
 		<button class="read-more">詳しく⇒</button>
@@ -50,7 +63,7 @@
 	<!-- main2　ここまで -->
 	<!-- menu -->
 	<div class="menu">
-		<h2 class="recommend">~Recommended~</h2>
+		<h2 class="recommend heading">~Recommended~</h2>
 		<span class="circle2"></span>
 		<ul class="img-box">
 			<li>
@@ -84,12 +97,12 @@
 	<!-- menu-end -->
 	<!-- section -->
 	<section>
-		<h3>～みんなのGallery～</h3>
+		<h3 class="heading">～みんなのGallery～</h3>
 		<span class="circle3"></span>
 		<ul class="gallery">
 			<button class="ga"><</button>
-			<img src="remake-img/irabridge1.jpg">
-			<img src="remake-img/higasi.jpg">
+			<img class="this-none" src="remake-img/irabridge1.jpg">
+			<img class="phone-none" src="remake-img/higasi.jpg">
 			<img src="remake-img/mamorukun.jpg" alt="">
 			<img src="remake-img/images (1).jpg" alt="">
 			<button class="ga">></button>
@@ -140,5 +153,8 @@
 		</div>
 	</footer>
 	<!-- footer-end -->
+
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script defer src="remake-js/remake-script.js"></script>
 </body>
 </html>
