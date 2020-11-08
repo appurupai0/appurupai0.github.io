@@ -2,6 +2,7 @@
 header{
 	position: fixed;
 	width: 100%;
+	z-index: 1;
 }
 
 .header-menu{
@@ -41,3 +42,158 @@ header{
 }
 
 /* header ここまで */
+/* ----------home page0 ------------------------------------------------*/
+#page0{
+	background-color: rgba(0,0,0,.3);
+}
+.main-top{
+	position: relative;
+}
+
+.main-top .img-bg{
+	width: 100%;
+	height: 100vh;
+}
+
+.main-top h1{
+	font-size: 130px;
+	font-weight: bold;
+	font-family: 'Henny Penny', cursive;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	margin:0;
+	padding:0;
+}
+
+/*welcome*/
+.subtitle{
+	height: 75px;
+	width: 60%;
+	background-color: #add8e6;
+	display: flex;
+	align-items: center;
+	margin-top: 100px;
+	border-radius: 25px 0 25px 0;
+}
+
+.amis{
+	font-size: 35px;
+	font-weight: bold;
+	margin-left: 16%;
+}
+
+.subtext{
+	width: 60%;
+	margin: 0 auto;
+	margin-top: 80px;
+	text-align: center;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.big-font{
+	font-size: 25px;
+}
+
+.text-font{
+	font-size: 20px;
+	margin-top: 25px;
+	line-height: 35px;
+}
+
+.neko-img{
+	height: 17%;
+	width: 17%;
+	border-radius: 50%;
+	opacity: 0.9;
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+/* explane */
+.amis02{
+	font-size: 32px;
+	font-weight: bold;
+	margin-left: 40%;
+}
+
+/* art-gallery */
+.art-gallery{
+	margin-top: 110px;
+	display: flex;
+	justify-content: center;
+}
+
+.art-gallery img{
+	height: 240px;
+	width: 320px;
+	margin-left: 35px;
+}
+
+.art-gallery button{
+	cursor: pointer;
+}
+
+.art-gallery .last-btn{
+	margin-left: 35px;
+}
+
+/* footer */
+footer{
+	margin-top: 80px;
+	background-color: rgba(0,0,0,.5);
+	color: #fff;
+}
+
+.footer01{
+	display: flex;
+	justify-content: center;
+}
+
+.footer01 ul{
+	width: 27%;
+	margin-top: 40px;
+	margin-left: 50px;
+}
+
+.footer01 ul:first-child{
+	margin-left: 0;
+}
+
+.heading{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.heading-text{
+	margin-top: 25px;
+}
+
+.share-icon{
+	display: flex;
+	justify-content: center;
+	margin-top: 25px;
+}
+
+.share-icon li{
+	font-size: 45px;
+	margin-left: 30px;
+}
+
+.share-icon li:first-child{
+	margin-left: 0;
+}
+
+.footer02{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 40px;
+	padding-bottom: 30px;
+}
+
+
