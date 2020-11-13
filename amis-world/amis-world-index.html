@@ -6,6 +6,7 @@
 	<title>amis-world.com</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/amis-world-style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
@@ -36,13 +37,15 @@
 			<div id="page0">
 				<div class="main-top">
 					<img src="logo-img/castle-art.jpg" alt="" class="img-bg">
-					<h1 class="mein-title">Amis World</h1>
+					<h1 class="main-title">Amis World</h1>
 				</div>
 				<section class="welcome">
-					<div class="subtitle">
-						<h2 class="amis">AmisWorldへようこそ</h2>
+					<div class="animate-margin">
+						<div class="subtitle right-animate">
+							<h2 class="amis js-amis">AmisWorldへようこそ</h2>
+						</div>
 					</div>
-					<div class="subtext">
+					<div class="subtext js-first-text">
 						<h3 class="big-font">～井上亜美の世界～</h3>
 						<p class="text-font">AmisWorldへようこそ
 						   <br>とある県の大学生、井上亜美さんの描く
@@ -54,10 +57,12 @@
 					</div>
 				</section>
 				<section class="explane">
-					<div class="subtitle">
-						<h2 class="amis02">ストーリーを楽しもう</h2>
+					<div>
+						<div class="subtitle left-animate">
+							<h2 class="amis02 js-amis02">ストーリーを楽しもう</h2>
+						</div>
 					</div>
-					<div class="subtext">
+					<div class="subtext js-second-text">
 						<h3 class="big-font">～よく見ると見えてくる～</h3>
 						<p class="text-font">作品の中にはシリーズとして関連性のある作品が存在する
 							<br>その作品は実際に井上亜美さんが現地へ遊びに行き
@@ -70,11 +75,25 @@
 				</section>
 				<!-- スライドギャラリー -->
 				<aside class="art-gallery">
-					<button class="first-btn">＜</button>
-					<img src="logo-img/fruits-art.jpg" alt="フルーツ">
-					<img src="logo-img/mitate-art.jpg" alt="見立て絵">
-					<img src="logo-img/onna.jpg" alt="恩納村">
-					<button class="last-btn">＞</button>
+					<!-- Slider main container -->
+					<div class="swiper-container">
+					    <!-- Additional required wrapper -->
+					    <div class="swiper-wrapper">
+					        <!-- Slides -->
+					        <div class="swiper-slide"><img src="logo-img/castle-art.jpg" alt=""></div>
+					        <div class="swiper-slide"><img src="logo-img/fruits-art.jpg" alt=""></div>
+					        <div class="swiper-slide"><img src="logo-img/onna.jpg" alt=""></div>
+					        <div class="swiper-slide"><img src="logo-img/uruma.jpg" alt=""></div>
+					        <div class="swiper-slide"><img src="logo-img/nanjo.jpg" alt=""></div>
+					        
+					    </div>
+					    <!-- If we need pagination -->
+					    <div class="swiper-pagination"></div>
+					    
+					    <!-- If we need navigation buttons -->
+					    <div class="swiper-button-prev swiper-button-white"></div>
+					    <div class="swiper-button-next swiper-button-white"></div>
+					</div>
 				</aside>
 				<footer>
 					<div class="footer01">
@@ -116,5 +135,8 @@
 		</div>
 	</main>
 	<!-- main　ここまで -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/amis-world-script.js"></script>
 </body>
 </html>

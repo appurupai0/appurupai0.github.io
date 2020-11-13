@@ -55,7 +55,7 @@ header{
 	height: 100vh;
 }
 
-.main-top h1{
+.main-title{
 	font-size: 130px;
 	font-weight: bold;
 	font-family: 'Henny Penny', cursive;
@@ -67,12 +67,13 @@ header{
 	transform: translate(-50%,-50%);
 	margin:0;
 	padding:0;
+	display: none;
 }
 
 /*welcome*/
 .subtitle{
 	height: 75px;
-	width: 60%;
+	width: 0;
 	background-color: #add8e6;
 	display: flex;
 	align-items: center;
@@ -80,11 +81,36 @@ header{
 	border-radius: 25px 0 25px 0;
 }
 
+.animate-margin{
+	height: 175px;
+}
+
+.right-animate{
+	position: absolute;
+	right: 0;
+}
+
+/* 見出し１を表示させるためのアニメーションcss */
+.right-animate.on{
+	position: absolute;
+	right: 0;
+	width: 60%;
+	transition-duration: 1200ms;
+}
+/* 見出し１アニメーションここまで */
+
+/* js-first-text のfadeInアニメーション */
+.js-first-text, .js-second-text{
+	opacity: 0;
+}
+
+/* js-first-text のfadeInアニメーションここまで */
 .amis{
 	font-size: 35px;
 	font-weight: bold;
 	font-family: 'Kosugi Maru', sans-serif;
 	margin-left: 16%;
+	display: none;
 }
 
 .subtext{
@@ -122,27 +148,30 @@ header{
 	font-weight: bold;
 	font-family: 'Kosugi Maru', sans-serif;
 	margin-left: 40%;
+	display: none;
+}
+
+/* 見出し２のアニメーション */
+.left-animate.on{
+	width: 60%;
+	transition-duration: 1200ms;
 }
 
 /* art-gallery */
 .art-gallery{
+	width: 70%;
+	margin: 0 auto;
 	margin-top: 110px;
-	display: flex;
-	justify-content: center;
 }
 
 .art-gallery img{
-	height: 240px;
-	width: 320px;
-	margin-left: 35px;
+	height: 320px;
+	width: 410px;
+	margin-left: 10px;
 }
-
-.art-gallery button{
-	cursor: pointer;
-}
-
-.art-gallery .last-btn{
-	margin-left: 35px;
+/* swiper-pagination の位置の調整 */
+.swiper-container {
+    padding-bottom: 59px;
 }
 
 /* footer */
