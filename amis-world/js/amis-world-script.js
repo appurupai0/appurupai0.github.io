@@ -1,10 +1,41 @@
 $(function(){
+	// ページの切り替えをタブメニューの応用で作る
+	$('.header-menu li a').on('click',function(){
+		console.log($(this).text());
+
+		// この処理でページ内リンクの余計な処理をなくす
+		if($(this).hasClass('active')){
+			return false;
+		}
+
+		// class="active"と指定されていないときにおなう処理
+		$('.header-menu li a').removeClass('active');
+		$(this).addClass('active');
+
+		console.log(this.hash);
+		$('.content-page > div').removeClass('active');
+		$('.content-page > div').filter(this.hash).addClass('active');
+
+		return false;
+
+	});
+	// ページの切り替え処理終わり
+
+	// ページ０の動き処理
 	setTimeout(function(){
 		$('.img-bg').animate({opacity:.6},3000);
 	});
 
 	setTimeout(function(){
 		$('.main-title').fadeIn(2000);
+	});
+
+	$(window).on('scroll',function(){
+		// let position = $('.main-title').offset().top
+		// let scrollNow = $(window).scrollTop
+		// console.log(scrollNow);
+		// if(){
+			$('.fixed').addClass('on');
 	});
 
 	$(window).on('scroll',function(){

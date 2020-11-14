@@ -1,15 +1,22 @@
 /* header */
-header{
+.fixed{
 	position: fixed;
 	width: 100%;
-	z-index: 1;
+	z-index: 2;
+	top: -70px;
+}
+
+.fixed.on{
+	position: fixed;
+	top: 0;
+	transition-duration: 800ms;
 }
 
 .header-menu{
 	display: flex;
 	align-items: center;
 	height: 62px;
-	background-color: rgba(255,248,220,.6);
+	background-color: rgba(255,255,255,.9);
 }
 
 .header-menu > img{
@@ -26,8 +33,25 @@ header{
 	cursor: pointer;
 }
 
+.header-menu li a{
+	text-decoration: none;
+	color: black;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+}
+
+.header-menu li a:hover{
+	text-shadow: #00ff00 0px 0px 20px;
+	color: #6b8e23;
+}
+
 .header-menu li:last-child{
 	margin-right: 0;
+}
+
+.header-menu li a.active{
+	text-shadow: #FFCC00 0px 0px 20px;
+	color: #EA4515;
 }
 
 .toggle-gallery-menu{
@@ -35,6 +59,24 @@ header{
 	font-weight: bold;
 	margin-right: 35px;
 	cursor: pointer;
+}
+
+.content-page > div{
+	display: none;
+}
+
+.content-page > .active{
+	display: block;
+}
+
+.toggle-gallery-menu dt{
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+}
+
+.toggle-gallery-menu dt:hover{
+	text-shadow: #00ff00 0px 0px 20px;
+	color: #6b8e23;
 }
 
 .toggle-gallery-menu > dd{
