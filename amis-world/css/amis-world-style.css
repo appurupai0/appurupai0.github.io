@@ -269,4 +269,90 @@ footer{
 	padding-bottom: 30px;
 }
 
+/*---------------------- page1 profile -----------------*/
+.profile-title{
+	margin-top: 100px;
+	font-size: 45px;
+	font-weight: bold;
+	font-family: 'Henny Penny', cursive;
+	text-align: center;
+}
 
+.profile-title span{
+	background: linear-gradient(transparent 30%, #a8eaff 80%);
+}
+
+.container01{
+	width: 80%;
+	margin: 0 auto;
+}
+
+.container01 .profile-all{
+	margin-top: 120px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.profile-img{
+	border-radius: 50%;
+	height: 40%;
+	width: 40%;
+}
+
+.profile-list li{
+	font-size: 24px;
+	margin-top: 30px;
+}
+
+.profile-name{
+	font-size: 33px;
+	font-weight: bold;
+	font-family: 'Kosugi Maru', sans-serif;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+
+.profile-article{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.profile-text{
+	margin-top: 140px;
+}
+
+.profile-text h2{
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Kosugi Maru', sans-serif;
+	text-shadow: #ffa500 20px 3px 20px;
+}
+
+.profile-text p{
+	font-size: 20px;
+	line-height: 30px;
+	margin-top: 30px;
+}
+
+.instagram{
+	margin-top: 100px;
+	font-size: 30px;
+	text-align: center;
+	border: 2px dotted #808000;
+	border-radius: 10px;
+	padding: 18px 0 18px;
+}
+
+.instagram p{
+	margin-top: 16px;
+}
+
+.icon-big{
+	font-size: 50px;
+}
+
+.small-font{
+	font-size: 17px;
+	margin-left: 15px;
+}
