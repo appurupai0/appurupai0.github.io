@@ -81,6 +81,17 @@
 
 .toggle-gallery-menu > dd{
 	display: none;
+	border-bottom: 1px solid #696969;
+	padding: 10px 6px;
+	background-color: rgba(255,255,255,.9);
+	font-size: 15px;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+}
+
+.toggle-gallery-menu > dd:hover{
+	text-shadow: #4169e1 0px 0px 20px;
+	color: #0000cd;
 }
 
 /* header ここまで */
@@ -363,4 +374,58 @@ footer{
 .small-font{
 	font-size: 17px;
 	margin-left: 15px;
+}
+
+/*----------------------- page2 contact ---------------------*/
+.container02{
+	width: 70%;
+	margin: 0 auto;
+}
+
+.contact-explane{
+	width: 77%;
+	margin: 80px auto 0;
+	font-size: 19px;
+	line-height: 30px;
+}
+
+aside{
+	margin-top: 60px;
+	display: flex;
+	justify-content: center;
+}
+
+form h2{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+}
+
+form label{
+	margin-top: 26px;
+	font-size: 17px;
+}
+
+form label input,form label textarea{
+	width: 90%;
+	font-size: 15px;
+	padding: 5px 3px;
+	margin-top: 10px;
+}
+
+form button{
+	width: 80px;
+	height: 30px;
+	font-size: 18px;
+	margin: 25px 10%;
+	cursor: pointer;
+}
+
+.small-sub{
+	margin-top: 40%;
 }

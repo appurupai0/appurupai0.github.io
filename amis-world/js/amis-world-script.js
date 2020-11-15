@@ -16,10 +16,16 @@ $(function(){
 		$('.content-page > div').removeClass('active');
 		$('.content-page > div').filter(this.hash).addClass('active');
 
-		return false;
+		
 
 	});
 	// ページの切り替え処理終わり
+
+	$('#toggle-js-gallery').on('click',function(){
+		$(this)
+		.siblings()
+        .slideToggle();
+	});
 
 	// ページ０の動き処理
 	setTimeout(function(){
