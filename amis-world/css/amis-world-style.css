@@ -258,6 +258,10 @@ footer{
 	margin-left: 30px;
 }
 
+.share-icon li a{
+	color: white;
+}
+
 .share-icon li:first-child{
 	margin-left: 0;
 }
@@ -350,6 +354,10 @@ footer{
 
 .icon-big{
 	font-size: 50px;
+}
+
+.instagram p a{
+	color: black;
 }
 
 .small-font{
