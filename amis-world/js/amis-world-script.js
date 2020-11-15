@@ -24,7 +24,8 @@ $(function(){
 	$('#toggle-js-gallery').on('click',function(){
 		$(this)
 		.siblings()
-        .slideToggle();
+  		.slideToggle();
+  		$('.rotate').toggleClass('on');
 	});
 
 	// ページ０の動き処理
