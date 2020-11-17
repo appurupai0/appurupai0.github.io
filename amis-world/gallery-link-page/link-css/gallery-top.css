@@ -111,7 +111,7 @@ main{
 
 .sideber{
 	height: 100vh;
-	width: 24%;
+	width: 20%;
 	position: fixed;
 	top: 50px;
 	left: 0;
@@ -166,7 +166,7 @@ main{
 
 article{
 	margin: 90px;
-	margin-left: 240px;
+	margin-left: 260px;
 }
 
 .width{
@@ -185,8 +185,12 @@ article{
 
 .text-box{
 	width: 80%;
-	margin-top: 80px;
+	margin-top: 50px;
 	font-size: 22px;
+}
+
+.favolite{
+	margin-top: 70px;
 }
 
 /* footer */
