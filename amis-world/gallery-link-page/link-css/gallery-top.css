@@ -1,5 +1,4 @@
 .fixed{
-	position: fixed;
 	width: 100%;
 	z-index: 2;
 }
@@ -50,9 +49,10 @@
 .header-menu .active{
 	text-shadow: #FFCC00 0px 0px 20px;
 	color: #EA4515;
+	font-weight: bold;
 }
 
-.toggle-gallery-menu{
+/*.toggle-gallery-menu{
 	font-size: 18px;
 	font-weight: bold;
 	margin-right: 35px;
@@ -100,7 +100,7 @@
 .toggle-gallery-menu > dd:hover{
 	text-shadow: #4169e1 0px 0px 20px;
 	color: #0000cd;
-}
+}*/
 
 main{
 	display: flex;
@@ -113,7 +113,7 @@ main{
 	height: 100vh;
 	width: 20%;
 	position: fixed;
-	top: 50px;
+	top: 60px;
 	left: 0;
 	background-color: rgba(255 ,228 ,181,.7);
 	float: left;
@@ -153,7 +153,7 @@ main{
 }
 
 .profile-title{
-	padding-top: 100px;
+	padding-top: 10px;
 	font-size: 45px;
 	font-weight: bold;
 	font-family: 'Henny Penny', cursive;

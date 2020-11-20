@@ -21,10 +21,8 @@ $(function(){
 	});
 	// ページの切り替え処理終わり
 
-	$('#toggle-js-gallery').on('click',function(){
-		$(this)
-		.siblings()
-  		.slideToggle();
+	$('.toggle-gallery-menu').on('click',function(){
+		$('#toggle-js-gallery').toggleClass('on');
   		$('.rotate').toggleClass('on');
 	});
 

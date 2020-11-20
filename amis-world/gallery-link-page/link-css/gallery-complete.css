@@ -31,6 +31,16 @@
 	line-height: 27px;
 }
 
+.js-shadow{
+	font-weight: bold;
+	font-family: 'Kosugi Maru', sans-serif;
+}
+
+.js-shadow.on{
+	text-shadow: #808000 10px 10px 10px;
+	transition-duration: 2500ms;
+}
+
 .text-box p{
 	margin-top: 20px;
 }
