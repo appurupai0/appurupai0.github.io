@@ -39,7 +39,7 @@
 }
 
 .text-box p{
-	margin-top: 14%;
+	margin-top: 12%;
 	font-size: 20px;
 	line-height: 30px;
 }
@@ -47,7 +47,7 @@
 .button-position{
 	display: flex;
 	justify-content: center;
-	margin-top: 20%;
+	margin-top: 15%;
 }
 
 button{
