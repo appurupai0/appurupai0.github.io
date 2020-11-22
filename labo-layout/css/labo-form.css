@@ -46,13 +46,14 @@ span{
 
 .btn{
 	margin-top: 10%;
-	margin-bottom: 5%;
+	margin-bottom: 8%;
 	display: flex;
 	justify-content: center;
 }
 
 button{
 	width: 50%;
+	font-size: 18px;
 	background-color: #00bfff;
 	border: 1px solid #00bfff;
 	border-radius: 6px;
