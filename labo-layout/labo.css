@@ -34,7 +34,7 @@
 .text-box h1{
 	font-size: 25px;
 	font-weight: bold;
-	margin-top: 20%;
+	margin-top: 15%;
 	text-align: center;
 }
 
@@ -53,9 +53,13 @@
 button{
 	font-size: 18px;
 	background-color: #ff8c00;
-	color: #fff;
 	border: 1px solid #ff8c00;
 	border-radius: 8px;
+}
+
+button a{
+	text-decoration: none;
+	color: #fff;;
 }
 
 

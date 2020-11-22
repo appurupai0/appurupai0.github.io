@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>resister</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="css/labo-form.css">
+
+	
+</head>
+<body>
+	<div class="container">
+		<form action="" class="form">
+			<h1>お客様登録情報</h1>
+			<label for="name"><span>お名前</span><br>
+				<div class="margin-3"></div>
+				<input class="wid" type="text" placeholder="（例）買取太郎">
+			</label>
+			<label for="gender"><span>性別</span><br>
+				<div class="margin-3"></div>
+				<input type="radio" name="gender" value="male">男性
+				<input type="radio" name="gender" value="female">女性
+				<input type="radio" name="gender" value="other">その他
+			</label>
+            <label for="birth"><span>生年月日</span><br> 
+            	<div class="margin-3"></div>
+	            <select id="year">
+	                <option value="0">----</option>
+	            </select> 年
+	            <select id="month">
+	                <option value="0">--</option>
+	            </select> 月
+	            <select id="date">
+	                <option value="0">--</option>
+	            </select> 日
+            </label>
+
+			<label for="age"><span>メールアドレス</span><br>
+				<div class="margin-3"></div>
+				<input class="wid" type="email" placeholder="（例）tarou@kaitori.com">
+			</label>
+			<label for="age"><span>パスワード</span>（英数字を用いて書いてください）<br>
+				<div class="margin-3"></div>
+				<input class="wid" type="" placeholder="">
+			</label>
+			<label for="name"><span>クレジットカードの登録</span>（任意）<br>
+				<div class="margin-3"></div>
+				<input class="wid" type="text" placeholder="（例）00××-12××-0××a">
+			</label>
+			<input type="checkbox" checked="checked">上記の内容に同意する
+			<div class="btn">
+				<button type="submit">この内容で登録する</button>
+			</div>
+		</form>
+	</div>
+
+	<script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/labo-form.js"></script>
+</body>
+</html>
