@@ -4,55 +4,79 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>layout</title>
+	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="labo.css">
 
 	<!-- swiper -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
 </head>
 <body>
-	<!-- swiper -->
-	<div class="swiper-container">
-		<!-- Additional required wrapper -->
-		<div class="swiper-wrapper">
-			<!-- Slides -->
-			<div class="swiper-slide">
-				<img src="sample-img/diet_running_man.png" alt="">
-				<p class="slider-caption">ダイエット方法に革命を</p>
-				<p class="slider-caption">従来のダイエットの常識を変える。ダイエットを頑張るあなたを応援！</p>
+	<main>
+		<!-- swiper -->
+		<div class="swiper-container">
+			<!-- Additional required wrapper -->
+			<div class="swiper-wrapper">
+				<!-- Slides -->
+				<div class="swiper-slide">
+					<img src="sample-img/diet_running_man.png" alt="">
+					<!-- <p class="slider-caption">ダイエット方法に革命を</p>
+					<p class="slider-caption">従来のダイエットの常識を変える。ダイエットを頑張るあなたを応援！</p> -->
+					<div class="text-box">
+						<h1>ダイエット方法に革命を</h1>
+						<p>従来のダイエットの常識を変える。ダイエットを頑張るあなたを応援！</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="sample-img/diet_02.png" alt="">
+					<div class="text-box">
+						<h1>成功率は９０％以上！！</h1>
+						<p>「損したくない！」という気持ちから生まれる痩せるメゾットを確立しました。</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="sample-img/https___freeillust-classic.com_wp-content_uploads_0201000451.png" alt="">
+					<div class="text-box">
+						<h1>頑張った分だけ報酬がもらえる！</h1>
+						<p>見事条件を期間内にクリアすると報酬がもらえる！頑張った分だけ報われる！この言葉このためにある✨</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="sample-img/koe.jpg" alt="">
+					<div class="text-box">
+						<h1>おすすめのダイエット法がわかる！</h1>
+						<p>このアプリでの成功者の声がデータとしてみれます。自社データベースであなたに合ったダイエット方法を提案します</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="sample-img/plan-select.jpg" alt="">
+					<div class="text-box">
+						<h1>コース選択でもっと減量＆GET報酬</h1>
+						<p>はじめのコース選択達成からさまざまなコースが解放！たくさん減量して得しちゃおう！</p>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<img src="sample-img/fire.jpg" alt="">
+					<div class="text-box">
+						<h1>カンタン登録で</h1>
+						<h1>今すぐすたーーと🔥</h1>
+						<div class="button-position">
+							<button>はじめる！</button>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="swiper-slide">
-				<img src="sample-img/diet_02.png" alt="">
-				<p class="slider-caption">成功率は90％以上！</p>
-				<p class="slider-caption"></p>
-			</div>
-			<div class="swiper-slide">
-				<img src="sample-img/https___freeillust-classic.com_wp-content_uploads_0201000451.png" alt="">
-				<p class="slider-caption">頑張った分だけお金がもらえる！</p>
-				<p class="slider-caption"></p>
-			</div>
-			<div class="swiper-slide">
-				<img src="sample-img/koe.jpg" alt="">
-				<p class="slider-caption">おすすめのダイエット法がわかる</p>
-				<p class="slider-caption">このアプリでの成功者の声がわかる！自社データベースであなたに合ったダイエット方法を提案！</p>
-			</div>
-			<div class="swiper-slide">
-				<img src="sample-img/plan-select.jpg" alt="">
-				<p class="slider-caption">コース選択でもっと減量＆GETお金！</p>
-				<p class="slider-caption">はじめのコース達成からさまざまなコースが解放！たくさん減量して得しちゃおう！</p>
-			</div>
-			...
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+			
+			<!-- If we need navigation buttons -->
+			<!-- <div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div> -->
 		</div>
-		<!-- If we need pagination -->
-		<div class="swiper-pagination"></div>
-		
-		<!-- If we need navigation buttons -->
-		<div class="swiper-button-prev"></div>
-		<div class="swiper-button-next"></div>
-	</div>
+	</main>
 
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="labo.js"></script>
 </body>
 </html>
