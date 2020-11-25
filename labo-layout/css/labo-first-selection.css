@@ -1,0 +1,156 @@
+header p{
+	font-size: 18px;
+	text-align: center;
+	margin-top: 5%;
+}
+
+/*---- main ----*/
+main{
+	margin-bottom: 60px;
+}
+
+.onetitle{
+	margin: 10% auto 0;
+	width: 80%;
+	border: 3px dotted #b0c4de;
+	padding: 4% 3%;
+}
+
+.attention{
+	margin-top: 2%;
+}
+
+.attention:first-child{
+	margin-top: 0;
+}
+
+.number{
+	margin-top: 1.5%;
+	text-align: center;
+}
+
+.number span{
+	font-size: 22px;
+	font-weight: bold;
+	background: linear-gradient(transparent 70%, orange 70%);
+	margin-right: 2%;
+}
+
+article{
+	margin-top: 7%;
+}
+
+article > h1{
+	margin-left: 5%;
+	padding: 2% 1%;
+}
+
+article > h1 > span{
+	background-color: #9932cc;
+	border-radius: 5px;
+	padding: 1% 1%;
+	color: #fff;
+}
+
+.balloon1 {
+  position: relative;
+  display: inline-block;
+  margin: 1em 5% 0;
+  padding: 7px 10px;
+  min-width: 120px;
+  max-width: 100%;
+  color: #555;
+  font-size: 16px;
+  background: #e0edff;
+  border-radius: 15px;
+}
+
+.balloon1:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -25px;
+  border: 15px solid transparent;
+  border-top: 15px solid #e0edff;
+}
+
+.balloon1 p {
+  margin: 0;
+  padding: 0;
+}
+
+
+.course{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 7%;
+	border-bottom: 1px solid lightgray;
+}
+
+.plan1 > h2{
+	font-size: 17px;
+	margin-bottom: 5%;
+}
+
+.plan1 > p{
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 1%;
+}
+
+.plan1 > p:last-child{
+	margin-bottom: 3%;
+}
+
+.select-btn{
+	font-size: 11px;
+	border: 1px solid #e9967a;
+	margin: 3% 0 3%;
+	padding-top: 3%;
+}
+
+.sselect-btn > p{
+
+}
+
+
+
+
+
+
+/*------- footer ---------*/
+footer{
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #1a1a1a;
+	height: 55px;
+}
+
+footer ul{
+	margin-right: 8%;
+}
+
+footer ul:last-child{
+	margin-right: 0;
+}
+
+.icon{
+	color: rgba(255,255,255,.6);
+	font-size: 27px;
+	padding: 5px 0 3px;
+	text-align: center;
+}
+
+.mozi{
+	font-size: 10px;
+	color: rgba(255,255,255,.6);
+}
+
+.active{
+	color: #fff;
+	/* ここに少し大きくなるアニメーションを付けたい */
+}
