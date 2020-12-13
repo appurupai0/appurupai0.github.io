@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +11,19 @@
 	<link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css"
+		type="text/css" media="all" />
 </head>
+
 <body>
 	<!-- header タブメニューの応用で作っていく -->
 	<header class="fixed">
+		<img src="logo-img/amis-logo.png" alt="AmisWorld">
 		<ul class="header-menu">
-			<img src="logo-img/amis-logo.png" alt="AmisWorld">
 			<li><a href="#page0" class="active">HOME</a></li>
-			<li><div class="toggle-gallery-menu">GALLERY <span class="rotate">▾</span></div>
+			<li>
+				<div class="toggle-gallery-menu">GALLERY <span class="rotate">▾</span></div>
 				<div id="toggle-js-gallery">
 					<div><a href="gallery-link-page/gallery-top.html">GALLERY TOP</a></div>
 					<div><a href="gallery-link-page/gallery-highway.html">高速道路チャレンジ</a></div>
@@ -50,11 +55,12 @@
 					<div class="subtext js-first-text">
 						<h3 class="big-font">～井上亜美の世界～</h3>
 						<p class="text-font">AmisWorldへようこそ
-						   <br>とある県の大学生、井上亜美さんの描く
-						   <br>独特な世界観と、絵を見ていて考えさせられるメッセージ性のある構成。
-						   <br>そのどれもが美しく、多くの人々を魅了しています。
-						   <br>そんな井上亜美さんの絵画の世界を一緒にのぞいてみましょう！
-						   <br>Let's Go!!!!</p>
+							<br>とある県の大学生、井上亜美さんの描く
+							<br>独特な世界観と、絵を見ていて考えさせられるメッセージ性のある構成。
+							<br>そのどれもが美しく、多くの人々を魅了しています。
+							<br>そんな井上亜美さんの絵画の世界を一緒にのぞいてみましょう！
+							<br>Let's Go!!!!
+						</p>
 						<img class="neko-img" src="logo-img/nago-edit-photo.jpg" alt="">
 					</div>
 				</section>
@@ -69,41 +75,93 @@
 						<p class="text-font">作品の中にはシリーズとして関連性のある作品が存在する
 							<br>その作品は実際に井上亜美さんが現地へ遊びに行き
 							<br>そこでの体験・風景・感じたことなどから描かれている。彼女も冒険をしているのだが彼女の描く絵の中にも彼女のように冒険をしてる存在が……！？
-							<br>さて、どんなストーリーがあるのでしょうか</p>
+							<br>さて、どんなストーリーがあるのでしょうか
+						</p>
 						<img class="neko-img" src="logo-img/nanjo-edit-photo.jpg" alt="">
 					</div>
 				</section>
+				<!-- blog & news -->
+				<div class="blog-news">
+					<h3>Amis blog & news</h3>
+					<ul class="blog-news-container">
+						<li class="blog-news-block">
+							<img src="https://placehold.jp/80x80.png" alt="ブログ、ニュースのサムネイル画像">
+							<section>
+								<h4 class="blog-news-title">
+									<a href="">今日の出来事</a>
+								</h4>
+								<p class="blog-news-time">2000年12月05日</p>
+								<p class="blog-news-text">
+									<a href="">今日は空全体が雲に覆われて…</a>
+								</p>
+								<a class="read-more" href="">続きを見る</a>
+							</section>
+						</li>
+						<li class="blog-news-block">
+							<img src="https://placehold.jp/80x80.png" alt="ブログ、ニュースのサムネイル画像">
+							<section>
+								<h4 class="blog-news-title">
+									<a href="">今日の出来事</a>
+								</h4>
+								<p class="blog-news-time">2000年12月05日</p>
+								<p class="blog-news-text">
+									<a href="">今日は空全体が雲に覆われて…</a>
+								</p>
+								<a class="read-more" href="">続きを見る</a>
+							</section>
+						</li>
+						<li class="blog-news-block">
+							<img src="https://placehold.jp/80x80.png" alt="ブログ、ニュースのサムネイル画像">
+							<section>
+								<h4 class="blog-news-title">
+									<a href="">今日の出来事</a>
+								</h4>
+								<p class="blog-news-time">2000年12月05日</p>
+								<p class="blog-news-text">
+									<a href="">今日は空全体が雲に覆われて…</a>
+								</p>
+								<a class="read-more" href="">続きを見る</a>
+							</section>
+						</li>
+					</ul>
+					<div class="all-blog">
+						<a href="">もっと見る</a>
+					</div>
+				</div>
 				<!-- スライドギャラリー -->
 				<aside class="art-gallery">
 					<!-- Slider main container -->
 					<div class="swiper-container">
-					    <!-- Additional required wrapper -->
-					    <div class="swiper-wrapper">
-					        <!-- Slides -->
-					        <div class="swiper-slide"><img src="logo-img/castle-art.jpg" alt=""></div>
-					        <div class="swiper-slide"><img src="logo-img/fruits-art.jpg" alt=""></div>
-					        <div class="swiper-slide"><img src="logo-img/onna.jpg" alt=""></div>
-					        <div class="swiper-slide"><img src="logo-img/mitate-art.jpg" alt=""></div>
-					        <div class="swiper-slide"><img src="logo-img/nanjo.jpg" alt=""></div>
-					        
-					    </div>
-					    <!-- If we need pagination -->
-					    <div class="swiper-pagination"></div>
-					    
-					    <!-- If we need navigation buttons -->
-					    <div class="swiper-button-prev swiper-button-white"></div>
-					    <div class="swiper-button-next swiper-button-white"></div>
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide"><img src="logo-img/castle-art.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="logo-img/fruits-art.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="logo-img/onna.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="logo-img/mitate-art.jpg" alt=""></div>
+							<div class="swiper-slide"><img src="logo-img/nanjo.jpg" alt=""></div>
+
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev swiper-button-white"></div>
+						<div class="swiper-button-next swiper-button-white"></div>
 					</div>
 				</aside>
 				<footer>
 					<div class="footer01">
 						<ul>
 							<li class="heading">pictures</li>
-							<p class="heading-text">　当サイトで掲載されている画像は、作品紹介として掲載しているため、作品の無断使用は禁止ます。本人の許可を得てから使用してください。井上亜美さんのInstagram、Twitter、Facebookはこちらの下のアイコンをタップしていただけるとリンクが飛びますのでフォローよろしくお願いします。</p>
+							<p class="heading-text">
+								　当サイトで掲載されている画像は、作品紹介として掲載しているため、作品の無断使用は禁止ます。本人の許可を得てから使用してください。井上亜美さんのInstagram、Twitter、Facebookはこちらの下のアイコンをタップしていただけるとリンクが飛びますのでフォローよろしくお願いします。
+							</p>
 						</ul>
 						<ul>
 							<li class="heading">layout-advice</li>
-							<p class="heading-text">レイアウト、配色等のデザインのアドバイスなどがあればお気軽にご意見をお願いします。まだまだ勉強中なので私自身のスキルの向上のためご協力お願いします。</p>
+							<p class="heading-text">
+								レイアウト、配色等のデザインのアドバイスなどがあればお気軽にご意見をお願いします。まだまだ勉強中なので私自身のスキルの向上のためご協力お願いします。</p>
 						</ul>
 						<ul>
 							<li class="heading">meker</li>
@@ -112,7 +170,7 @@
 					</div>
 					<ul class="share-icon">
 						<li><a href="https://www.instagram.com/ami_915fuku/">
-							<i class="fab fa-instagram"></i></a></li>
+								<i class="fab fa-instagram"></i></a></li>
 						<li><i class="fab fa-twitter"></i></li>
 						<li><i class="fab fa-facebook"></i></li>
 					</ul>
@@ -141,20 +199,24 @@
 					<article class="profile-article">
 						<section class="profile-text">
 							<h2>絵を描き始めるきっかけ</h2>
-							<p>　教育学部の図工の授業課題制作で、身の回りの物を別のものに見立てて、作品を完成させよう。という課題が出され、絵を描いているうちに絵の世界にのめりこんでいってしまったのが彼女のきっかけ。その彼女の絵を描き始めるきっかけとなった作品はプラスチックを海の生き物に見立てて、海の汚染を訴えるものだ。Galleryで見てみよう！</p>
+							<p>　教育学部の図工の授業課題制作で、身の回りの物を別のものに見立てて、作品を完成させよう。という課題が出され、絵を描いているうちに絵の世界にのめりこんでいってしまったのが彼女のきっかけ。その彼女の絵を描き始めるきっかけとなった作品はプラスチックを海の生き物に見立てて、海の汚染を訴えるものだ。Galleryで見てみよう！
+							</p>
 						</section>
 						<section class="profile-text">
 							<h2>シリーズ作品の誕生</h2>
 							<p>　彼女の作品にはいくつかのシリーズ作品がある。そのシリーズ作品の原点は、今住んでいる沖縄の高速道路の標識だ。最初、この高速道路の標識を見てこれなんだろう、面白そうだなと思い調べてみると、その標識はカントリーサインといってその市町村章や各々の名物やシンボルを掲げているというものであった。これを自分なりにアレンジして、作ってみよう！！こうして誕生したのが、初めのシリーズ「高速道路チャレンジ」である。
-							<br>　これを起点として派生したのが「市町村コンプリート編」シリーズだ。ほかにも現在製作途中のシリーズがあり、今後も新たなシリーズに期待しましょう！</p>
+								<br>　これを起点として派生したのが「市町村コンプリート編」シリーズだ。ほかにも現在製作途中のシリーズがあり、今後も新たなシリーズに期待しましょう！
+							</p>
 						</section>
 						<div class="instagram">
 							<p>Instagramはこちらからフォロー！</p>
 							<p><i class="far fa-arrow-alt-circle-down faa-float animated"></i></p>
 							<p><a href="https://www.instagram.com/ami_915fuku/">
-								<i class="fab fa-instagram-square faa-tada animated icon-big">
+									<i class="fab fa-instagram-square faa-tada animated icon-big">
 								</a></i>
-								<span class="small-font"><a href="https://www.instagram.com/ami_915fuku/">井上亜美のInstagrum</a></span></p>
+								<span class="small-font"><a
+										href="https://www.instagram.com/ami_915fuku/">井上亜美のInstagrum</a></span>
+							</p>
 						</div>
 					</article>
 				</div>
@@ -162,11 +224,14 @@
 					<div class="footer01">
 						<ul>
 							<li class="heading">pictures</li>
-							<p class="heading-text">　当サイトで掲載されている画像は、作品紹介として掲載しているため、作品の無断使用は禁止ます。本人の許可を得てから使用してください。井上亜美さんのInstagram、Twitter、Facebookはこちらの下のアイコンをタップしていただけるとリンクが飛びますのでフォローよろしくお願いします。</p>
+							<p class="heading-text">
+								　当サイトで掲載されている画像は、作品紹介として掲載しているため、作品の無断使用は禁止ます。本人の許可を得てから使用してください。井上亜美さんのInstagram、Twitter、Facebookはこちらの下のアイコンをタップしていただけるとリンクが飛びますのでフォローよろしくお願いします。
+							</p>
 						</ul>
 						<ul>
 							<li class="heading">layout-advice</li>
-							<p class="heading-text">レイアウト、配色等のデザインのアドバイスなどがあればお気軽にご意見をお願いします。まだまだ勉強中なので私自身のスキルの向上のためご協力お願いします。</p>
+							<p class="heading-text">
+								レイアウト、配色等のデザインのアドバイスなどがあればお気軽にご意見をお願いします。まだまだ勉強中なので私自身のスキルの向上のためご協力お願いします。</p>
 						</ul>
 						<ul>
 							<li class="heading">meker</li>
@@ -175,7 +240,7 @@
 					</div>
 					<ul class="share-icon">
 						<li><a href="https://www.instagram.com/ami_915fuku/">
-							<i class="fab fa-instagram"></i></a></li>
+								<i class="fab fa-instagram"></i></a></li>
 						<li><i class="fab fa-twitter"></i></li>
 						<li><i class="fab fa-facebook"></i></li>
 					</ul>
@@ -189,7 +254,8 @@
 				<div class="profile-title"><span>CONTACT</span></div>
 				<div class="container02">
 					<p class="contact-explane">　井上亜美に
-						<br>こんなことを題材に描いてほしい。こんなシリーズを見てみたい！ほかにも作品の感想、作品の使用許可など、皆さんの様々な意見をお待ちしています。</p>
+						<br>こんなことを題材に描いてほしい。こんなシリーズを見てみたい！ほかにも作品の感想、作品の使用許可など、皆さんの様々な意見をお待ちしています。
+					</p>
 					<aside>
 						<form action="">
 							<h2>　問い合わせ内容</h2>
@@ -200,7 +266,8 @@
 							<label for="title">件名<br>
 								<input type="text" for="title" placeholder="件名"></label>
 							<label for="message">メッセージ（感想・意見・依頼など）<br>
-								<textarea name="message" id="" cols="30" rows="10" placeholder="お問い合わせ内容（感想・意見・ご依頼など）"></textarea></label>
+								<textarea name="message" id="" cols="30" rows="10"
+									placeholder="お問い合わせ内容（感想・意見・ご依頼など）"></textarea></label>
 							<button for="submit">送信</button>
 						</form>
 						<div class="small-sub">
@@ -213,11 +280,14 @@
 					<div class="footer01">
 						<ul>
 							<li class="heading">pictures</li>
-							<p class="heading-text">　当サイトで掲載されている画像は、作品紹介として掲載しているため、作品の無断使用は禁止ます。本人の許可を得てから使用してください。井上亜美さんのInstagram、Twitter、Facebookはこちらの下のアイコンをタップしていただけるとリンクが飛びますのでフォローよろしくお願いします。</p>
+							<p class="heading-text">
+								　当サイトで掲載されている画像は、作品紹介として掲載しているため、作品の無断使用は禁止ます。本人の許可を得てから使用してください。井上亜美さんのInstagram、Twitter、Facebookはこちらの下のアイコンをタップしていただけるとリンクが飛びますのでフォローよろしくお願いします。
+							</p>
 						</ul>
 						<ul>
 							<li class="heading">layout-advice</li>
-							<p class="heading-text">レイアウト、配色等のデザインのアドバイスなどがあればお気軽にご意見をお願いします。まだまだ勉強中なので私自身のスキルの向上のためご協力お願いします。</p>
+							<p class="heading-text">
+								レイアウト、配色等のデザインのアドバイスなどがあればお気軽にご意見をお願いします。まだまだ勉強中なので私自身のスキルの向上のためご協力お願いします。</p>
 						</ul>
 						<ul>
 							<li class="heading">meker</li>
@@ -226,7 +296,7 @@
 					</div>
 					<ul class="share-icon">
 						<li><a href="https://www.instagram.com/ami_915fuku/">
-							<i class="fab fa-instagram"></i></a></li>
+								<i class="fab fa-instagram"></i></a></li>
 						<li><i class="fab fa-twitter"></i></li>
 						<li><i class="fab fa-facebook"></i></li>
 					</ul>
@@ -242,4 +312,5 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/amis-world-script.js"></script>
 </body>
+
 </html>
