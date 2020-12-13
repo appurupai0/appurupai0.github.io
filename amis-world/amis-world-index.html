@@ -35,6 +35,21 @@
 			<li><a href="#page1">PROFILE</a></li>
 			<li><a href="#page2">CONTACT</a></li>
 		</ul>
+		<!-- ハンバーガーメニュー -->
+		<button class="menu-trigger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</button>
+		<!-- ドロワー -->
+		<div id="drower-bg">
+			<ul class="jscontent">
+				<li class="js-1"><a href="#page0" class="active">HOME</a></li>
+				<li class="js-1"><a href="gallery-link-page/gallery-highway.html">GALLERY</a></li>
+				<li class="js-1"><a href="#page1">PROFILE</a></li>
+				<li class="js-1"><a href="#page2">CONTACT</a></li>
+			</ul>
+		</div>
 	</header>
 	<!-- header ここまで -->
 	<!-- main -->
@@ -43,7 +58,8 @@
 			<!-- home のページ -->
 			<div id="page0" class="active">
 				<div class="main-top">
-					<img src="logo-img/castle-art.jpg" alt="" class="img-bg">
+					<img src="logo-img/castle-art.jpg" alt="お城の絵" class="img-bg">
+					<img src="logo-img/kunigami.jpg" alt="お城の絵" class="img-bg2">
 					<h1 class="main-title">Amis World</h1>
 				</div>
 				<section class="welcome">
@@ -183,7 +199,7 @@
 			<div id="page1">
 				<div class="profile-title"><span>PROFILE</span></div>
 				<div class="container01">
-					<section class="profile-all">
+					<div class="profile-all">
 						<img class="profile-img" src="logo-img/chatan-cut.jpg" alt="">
 						<ul class="profile-list">
 							<h1 class="profile-name">井上 亜美</h1>
@@ -195,19 +211,19 @@
 							<li class="profile-element">活動： ネコのわくわく自然教室</li>
 							<li class="profile-element">　　　 大学生スタッフ</li>
 						</ul>
-					</section>
-					<article class="profile-article">
-						<section class="profile-text">
+					</div>
+					<div class="profile-article">
+						<div class="profile-text">
 							<h2>絵を描き始めるきっかけ</h2>
 							<p>　教育学部の図工の授業課題制作で、身の回りの物を別のものに見立てて、作品を完成させよう。という課題が出され、絵を描いているうちに絵の世界にのめりこんでいってしまったのが彼女のきっかけ。その彼女の絵を描き始めるきっかけとなった作品はプラスチックを海の生き物に見立てて、海の汚染を訴えるものだ。Galleryで見てみよう！
 							</p>
-						</section>
-						<section class="profile-text">
+						</div>
+						<div class="profile-text">
 							<h2>シリーズ作品の誕生</h2>
 							<p>　彼女の作品にはいくつかのシリーズ作品がある。そのシリーズ作品の原点は、今住んでいる沖縄の高速道路の標識だ。最初、この高速道路の標識を見てこれなんだろう、面白そうだなと思い調べてみると、その標識はカントリーサインといってその市町村章や各々の名物やシンボルを掲げているというものであった。これを自分なりにアレンジして、作ってみよう！！こうして誕生したのが、初めのシリーズ「高速道路チャレンジ」である。
 								<br>　これを起点として派生したのが「市町村コンプリート編」シリーズだ。ほかにも現在製作途中のシリーズがあり、今後も新たなシリーズに期待しましょう！
 							</p>
-						</section>
+						</div>
 						<div class="instagram">
 							<p>Instagramはこちらからフォロー！</p>
 							<p><i class="far fa-arrow-alt-circle-down faa-float animated"></i></p>
@@ -218,7 +234,7 @@
 										href="https://www.instagram.com/ami_915fuku/">井上亜美のInstagrum</a></span>
 							</p>
 						</div>
-					</article>
+					</div>
 				</div>
 				<footer>
 					<div class="footer01">
@@ -256,7 +272,7 @@
 					<p class="contact-explane">　井上亜美に
 						<br>こんなことを題材に描いてほしい。こんなシリーズを見てみたい！ほかにも作品の感想、作品の使用許可など、皆さんの様々な意見をお待ちしています。
 					</p>
-					<aside>
+					<aside class="aside">
 						<form action="">
 							<h2>　問い合わせ内容</h2>
 							<label for="name">お名前<br>
