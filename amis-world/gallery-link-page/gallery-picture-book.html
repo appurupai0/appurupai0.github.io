@@ -1,79 +1,105 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
 	<title>gallery-picture-book</title>
 	<link rel="stylesheet" href="../css/reset.css">
 	<link rel="stylesheet" href="link-css/gallery-picture-book.css">
 	<link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+
 	<!-- font awsome アニメーション -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css"
+		type="text/css" media="all" />
 
 	<!-- bootstrap -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 
 	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<div class="container">
-		<div class="row">
-			<div class="col-2">
-				<ul class="position-fixed sideber" id="z-index">
-				<li><a href="gallery-top.html" class="big-font font-weight-bold">GalleryTOP</a></li>
-					<ul class="series">
-		                <li class="big-font font-weight-bold">シリーズで見る</li>
-		                <li><a href="gallery-highway.html" class="big-font"></i> 高速道路チャレンジ</a></li>
-		                <li><a href="gallery-complete.html" class="big-font">市町村コンプリート編</a></li>
-		                <li><a href="#" class="big-font"><i class="far fa-hand-point-right faa-horizontal animated"></i>絵本シリーズ</a></li>
-	                	<li><a href="gallery-island.html" class="big-font"><span>NEW</span>　離島チャレンジ</a></li>
-	                </ul>
-	                <li><a href="../amis-world-index.html" class="small-font big-font">HOMEへ</a></li>
-				</ul>
+		<main>
+			<div class="nav-icon">
+				<i class="fas fa-list-ul faa-horizontal animated"></i>
 			</div>
+			<div class="nav-icon2">
+				<i class="fas fa-arrow-circle-left none"></i>
+			</div>
+			<ul class="position-fixed sideber" id="z-index">
+				<li><a href="gallery-top.html" class="big-font font-weight-bold">GalleryTOP</a></li>
+				<ul class="series">
+					<li class="big-font font-weight-bold">シリーズで見る</li>
+					<li><a href="gallery-highway.html" class="big-font"></i> 高速道路チャレンジ</a></li>
+					<li><a href="gallery-complete.html" class="big-font">市町村コンプリート編</a></li>
+					<li><a href="#" class="big-font"><i
+								class="far fa-hand-point-right faa-horizontal animated"></i>絵本シリーズ</a></li>
+					<li><a href="gallery-island.html" class="big-font"><span>NEW</span>　離島チャレンジ</a></li>
+				</ul>
+				<li><a href="../amis-world-index.html" class="small-font big-font">HOMEへ</a></li>
+			</ul>
+
 			<div class="col-10">
 				<div class="text-box">
 					<h1><span class="js-shadow">絵本シリーズ</span></h1>
 					<p>絵本シリーズは、彼女が描いた作品を動画にまとめて、紹介するシリーズです。このシリーズは彼女のインスタグラムでの投稿はなく、<span>ここでしか見られないシリーズ</span>です。沖縄をテーマに心温まる作品から、孤独をテーマにした少し悲しく考えさせられる物語など様々な作品が描かれています。<br>
-					　彼女の絵本を見て、あなたは何を感じ、何を考えるのでしょうか？じっくりと考えてもいいかもしれません😌</p>
+						　彼女の絵本を見て、あなたは何を感じ、何を考えるのでしょうか？じっくりと考えてもいいかもしれません😌</p>
 				</div>
-				<div class="video">
-					<p class="font-weight-bold">　タイトル： 福の木</p>
-					<video src="../logo-img/hukugi-picture-book-video.mp4" controls></video>
+				<div class="margin-top mainimgs">
+					<div class="video">
+						<p class="font-weight-bold">　タイトル： 福の木</p>
+						<video src="../logo-img/hukugi-picture-book-video.mp4" controls></video>
+					</div>
+					<div class="video">
+						<p class="font-weight-bold">　タイトル： 無題（英語の絵本）</p>
+						<video src="../logo-img/english-picter-book-video.mp4" controls></video>
+					</div>
+					<div class="video">
+						<p class="font-weight-bold">　タイトル： 無題（僕の行く場所）</p>
+						<video src="../logo-img/picture-book-video.mp4" controls></video>
+					</div>
 				</div>
-				<div class="video">
-					<p class="font-weight-bold">　タイトル： 無題（英語の絵本）</p>
-					<video src="../logo-img/english-picter-book-video.mp4" controls></video>
-				</div>
-				<div class="video">
-					<p class="font-weight-bold">　タイトル： 無題（僕の行く場所）</p>
-					<video src="../logo-img/picture-book-video.mp4" controls></video>
+				<div class="text-box">
+					<p class="font-weight-bold font"><span>いかがだったでしょうか？？</span></p>
+					<p>
+						実際の那覇市から名護市まで・北へのルートを追いながら、順番に作品を紹介していきました。みなさんもこれを機に沖縄の高速道路を通るときに実際の標識には何が描かれてあるのか、亜美の作品と見比べながら旅するのもいいかもしれません♪♪
+					</p>
 				</div>
 			</div>
-		</div>
+		</main>
 	</div>
 	<footer>
 		<div class="footer01">
+			<div class="scroll-top">
+				<i class="fas fa-arrow-up top-button faa-bounce animated"></i>
+				<p class="top-he">topへ</p>
+			</div>
 			<ul>
 				<li class="heading">pictures</li>
-				<p class="heading-text">　当サイトで掲載されている画像は、作品紹介として掲載しているため、作品の無断使用は禁止ます。本人の許可を得てから使用してください。井上亜美さんのInstagram、Twitter、Facebookはこちらの下のアイコンをタップしていただけるとリンクが飛びますのでフォローよろしくお願いします。</p>
+				<p class="heading-text">
+					　当サイトで掲載されている画像は、作品紹介として掲載しているため、作品の無断使用は禁止ます。本人の許可を得てから使用してください。井上亜美さんのInstagram、Twitter、Facebookはこちらの下のアイコンをタップしていただけるとリンクが飛びますのでフォローよろしくお願いします。
+				</p>
 			</ul>
-				<ul>
-					<li class="heading">layout-advice</li>
-					<p class="heading-text">レイアウト、配色等のデザインのアドバイスなどがあればお気軽にご意見をお願いします。まだまだ勉強中なので私自身のスキルの向上のためご協力お願いします。</p>
+			<ul>
+				<li class="heading">layout-advice</li>
+				<p class="heading-text">レイアウト、配色等のデザインのアドバイスなどがあればお気軽にご意見をお願いします。まだまだ勉強中なので私自身のスキルの向上のためご協力お願いします。</p>
 			</ul>
 			<ul>
 				<li class="heading">meker</li>
 				<p class="heading-text">このサイトはプログラミング勉強中のとある大学生が作成しました。</p>
 			</ul>
 		</div>
-			<ul class="share-icon">
-				<li><a href="https://www.instagram.com/ami_915fuku/">
+		<ul class="share-icon">
+			<li><a href="https://www.instagram.com/ami_915fuku/">
 					<i class="fab fa-instagram"></i></a></li>
-				<li><i class="fab fa-twitter"></i></li>
-				<li><i class="fab fa-facebook"></i></li>
-			</ul>
+			<li><i class="fab fa-twitter"></i></li>
+			<li><i class="fab fa-facebook"></i></li>
+		</ul>
 		<div class="footer02">
 			<p>Copyright &copy; Ami Inoue</p>
 		</div>
@@ -82,4 +108,5 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="link-js/gallery-highway.js"></script>
 </body>
+
 </html>

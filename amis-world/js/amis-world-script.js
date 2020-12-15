@@ -89,6 +89,11 @@ $(function(){
 		}
 	});
 
+	// スクロールトップの動き
+	$('.top-button').on('click',function(){
+		$('body , html').animate({scrollTop:0},500);
+	});
+
 	// ハンバーガーメニュー
 	$('.menu-trigger').on('click',function(){
 		$(this).toggleClass('active');

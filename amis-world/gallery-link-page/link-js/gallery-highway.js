@@ -4,17 +4,20 @@ $(function(){
 	});
 
 	$('.nav-icon').on('click',function(){
-		$(this).addClass('none');
-		$('.nav-icon2').addClass('block');
+		$(this).fadeOut(800);
+		$('.nav-icon2').fadeIn(800);
 		$('.sideber').addClass('on');
 	});
 
 	$('.nav-icon2').on('click',function(){
-		$(this).removeClass('block');
-		$('.nav-icon').removeClass('none')
+		$(this).fadeOut(800);
+		$('.nav-icon').fadeIn(800);
 		$('.sideber').removeClass('on');
 	});
-
+	// スクロールトップの動き
+	$('.top-button').on('click',function(){
+		$('body , html').animate({scrollTop:0},500);
+	});
 
 
 

@@ -408,8 +408,25 @@ footer{
 }
 
 .footer01{
+	position: relative;
 	display: flex;
 	justify-content: center;
+}
+
+.scroll-top{
+	position: absolute;
+	right: 10%;
+	top: -50%;
+	color: black;
+}
+.top-button{
+	font-size: 2.2rem;
+	cursor: pointer;
+}
+.top-he{
+	font-size: 0.75rem;
+	text-align: center;
+	margin-top: 1%;
 }
 
 .footer01 ul{
@@ -913,6 +930,10 @@ form button{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+	}
+
+	.top-button{
+		font-size: 1.75rem;
 	}
 
 	.footer01 ul{

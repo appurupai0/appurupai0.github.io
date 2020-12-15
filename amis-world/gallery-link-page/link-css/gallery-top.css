@@ -109,48 +109,72 @@ main{
 
 /*------sideber ------------------*/
 
-.sideber{
-	height: 100vh;
-	width: 20%;
-	position: fixed;
-	top: 60px;
-	left: 0;
-	background-color: rgba(255 ,228 ,181,.7);
-	float: left;
+body{
+	position: relative;
 }
+.container{
+	width: 85%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.nav-icon{
+	position: absolute;
+	top: -0.85%;
+	left: 8%;
+	font-size: 50px;
+}
+
+.nav-icon.none{
+	display: none;
+}
+
+.nav-icon2{
+	position: absolute;
+	top: -0.85%;
+	left: 8%;
+	font-size: 50px;
+	display: none;
+}
+
+.sideber{
+	display: block;
+	position: absolute;
+	top: 2%;
+	left: -60%;
+	height: 50vh;
+	background-color: rgba(236, 203, 145, 0.9);
+	width: 20%;
+	margin: 0 auto;
+	font-weight: bold;
+	border-radius: 10px;
+	transition-duration: 800ms;
+}
+
+.sideber.on{
+	position: absolute;
+	top: 2%;
+	left: 0;
+	transition-duration: 800ms;
+}
+
 
 .sideber > li{
-	margin-top: 70px;
-	margin-left: 30px;
-	font-size: 18px;
+	margin: 30px 0 30px;
+	color: black;
+	text-align: center;
 }
 
-.sideber li a{
-	text-decoration: none;
+.big-font{
 	color: black;
 }
 
 .series li{
-	margin-top: 25px;
-	margin-left: 30px;
-	font-size: 18px;
-}
-
-.series li:first-child{
-	margin-top: 70px;
-}
-
-.big-font{
-	font-size: 23px;
-	font-weight: bold;
-	padding-top: 50px;
+	margin-top: 10%;
+	text-align: center;
 }
 
 /*---------- galleryTop --------------*/
-.container{
-	width: 76%;
-	float: right;
-}
 
 .profile-title{
 	padding-top: 10px;
@@ -164,13 +188,12 @@ main{
 	background: linear-gradient(transparent 30%, #a8eaff 80%);
 }
 
-article{
-	margin: 90px;
-	margin-left: 260px;
+.section{
+	margin-top: 5%;
 }
 
 .width{
-	width: 600px;
+	width: 50%;
 }
 
 .sub-tilte{
@@ -194,6 +217,7 @@ article{
 }
 
 /* footer */
+/* footer */
 footer{
 	margin-top: 80px;
 	background-color: rgba(0,0,0,.5);
@@ -201,9 +225,27 @@ footer{
 }
 
 .footer01{
+	position: relative;
 	display: flex;
 	justify-content: center;
 }
+
+.scroll-top{
+	position: absolute;
+	right: 10%;
+	top: -50%;
+	color: black;
+}
+.top-button{
+	font-size: 2.2rem;
+	cursor: pointer;
+}
+.top-he{
+	font-size: 0.75rem;
+	text-align: center;
+	margin-top: 1%;
+}
+
 
 .footer01 ul{
 	width: 25%;
@@ -220,8 +262,8 @@ footer{
 	font-weight: bold;
 }
 
-.heading-text{
-	margin-top: 25px;
+footer ul{
+	margin-bottom: 0;
 }
 
 .share-icon{
@@ -231,7 +273,7 @@ footer{
 }
 
 .share-icon li{
-	font-size: 30px;
+	font-size: 45px;
 	margin-left: 30px;
 }
 
@@ -248,4 +290,103 @@ footer{
 	font-size: 18px;
 	margin-top: 40px;
 	padding-bottom: 30px;
+}
+
+
+/*-------------- レスポンシブルデザイン -------------------------*/
+/*---　小型PC -----*/
+@media screen and (max-width: 1280px){
+
+
+
+
+}
+
+
+/*---  タブレット　------*/
+@media screen and (max-width: 960px){
+	/* header */
+	.header-menu > img{
+		margin-left: 40px;
+		margin-right: 30%;
+	}
+
+	.header-menu > li{
+		font-size: 16px;
+		margin-right: 20px;
+	}
+
+	.nav-icon{
+		top: -0.5%;
+		left: 6%;
+	}
+	
+	.nav-icon2{
+		top: -0.5%;
+		left: 6%;
+		display: none;
+	}
+	.sideber{
+		height: 50vh;
+		width: 40%;
+		font-size: 16px;
+	}
+
+
+
+
+
+}
+
+
+
+@media screen and (max-width: 600px){
+	body{
+		min-width: 375px;
+	}
+
+	/* header */
+	header{
+		display: none;
+	}
+	/* footer */
+	.footer01{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.top-button{
+		font-size: 1.75rem;
+	}
+
+	.footer01 ul{
+		width: 90%;
+		margin-left: 0;
+		margin-top: 3%;
+	}
+
+	.share-icon li{
+		font-size: 20px;
+	}
+
+	.footer02{
+		margin-top: 0;
+		padding-bottom: 3%;
+	}
+
+	.footer02 p{
+		font-size: 12px;
+		margin-top: 3%;
+	}
+
+	.heading{
+		font-size: 12px;
+	}
+
+	.heading-text{
+		margin-top: 10px;
+		font-size: 10px;
+	}
+
 }
