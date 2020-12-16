@@ -19,6 +19,8 @@ $(function(){
 		$('body , html').animate({scrollTop:0},500);
 	});
 
+	// できればモーダルの表示の関数化をしたい
+
 
 
 

@@ -216,11 +216,13 @@ footer ul{
 	.nav-icon{
 		top: -0.5%;
 		left: 6%;
+		font-size: 35px;
 	}
 	
 	.nav-icon2{
 		top: -0.5%;
 		left: 6%;
+		font-size: 35px;
 		display: none;
 	}
 	.sideber{
