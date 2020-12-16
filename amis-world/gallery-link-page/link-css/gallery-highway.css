@@ -120,6 +120,56 @@ body{
 	font-size: 20px;
 }
 
+
+/*  モーダル表示　 */
+
+.mordal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.8);
+	display: none; /* 確認のため表示させている、確認が終わればnoneにする*/
+}
+
+.display-mordal{
+	width: 30%;
+	margin: 6% auto 0;
+	background-color: #fff;
+}
+
+.mordal-img img{
+	width: 100%;
+	height: 55%;
+}
+
+.mordal-title{
+	font-weight: bold;
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.mordal-title, .mordal-text{
+	margin-left: 1%;
+}
+
+.mordal-text{
+	padding-bottom: 8%;
+	font-size: 14px;
+}
+
+.mordal-close{
+	position: absolute;
+	right: 5%;
+	top: 5%;
+	font-size: 60px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/* モーダル表示ここまで */
+
 .font{
 	margin-bottom: 22px;
 	font-size: 25px;
@@ -210,8 +260,21 @@ footer ul{
 /*---　小型PC -----*/
 @media screen and (max-width: 1280px){
 
-
-
+	/* モーダル表示 */
+	.display-mordal{
+		width: 45%;
+		margin: 10% auto 0;
+		background-color: #fff;
+	}
+	
+	.mordal-img img{
+		width: 100%;
+		height: 65%;
+	}
+	
+	.mordal-text{
+		padding-bottom: 8%;
+	}
 
 }
 
@@ -237,8 +300,21 @@ footer ul{
 	}
 
 
-
-
+	/* モーダル表示 */
+	.display-mordal{
+		width: 60%;
+		margin: 15% auto 0;
+		background-color: #fff;
+	}
+	
+	.mordal-img img{
+		width: 100%;
+		height: 85%;
+	}
+	
+	.mordal-text{
+		padding-bottom: 8%;
+	}
 
 }
 
@@ -339,7 +415,26 @@ footer ul{
 		font-size: 10px;
 	}
 
+	/* モーダル表示 */
+	.display-mordal{
+		width: 80%;
+		margin: 25% auto 0;
+		background-color: #fff;
+	}
+	
+	.mordal-img img{
+		width: 100%;
+		height: 90%;
+	}
 
+	.mordal-title{
+		font-size: 15px;
+	}
+	
+	.mordal-text{
+		padding-bottom: 8%;
+		font-size: 10px;
+	}
 
 
 

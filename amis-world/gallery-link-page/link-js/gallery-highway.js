@@ -19,7 +19,24 @@ $(function(){
 		$('body , html').animate({scrollTop:0},500);
 	});
 
-	// できればモーダルの表示の関数化をしたい
+	// モーダルの表示の関数化
+	$('.col-4 img').on('click',function(){
+
+		// imgのsrcとtitle　の取得
+		var imgSrc = $(this).attr('src');
+		var title = $(this).siblings().text();
+
+		$('.mordal-img').children().attr('src', imgSrc);
+		$('.mordal-title').text(title);
+		$('.mordal').fadeIn();
+		$('body, html').css('overflow-y', 'hidden');
+	});
+
+	// モーダルを閉じる
+	$('.mordal-close').on('click',function(){
+		$('.mordal').fadeOut();
+		$('body,html').css('overflow-y', 'visible');
+	});
 
 
 
