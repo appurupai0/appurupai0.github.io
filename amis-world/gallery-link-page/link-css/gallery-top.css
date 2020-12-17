@@ -1,3 +1,41 @@
+/* ローディング */
+#load_animation {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+}
+
+.icon {
+    padding: 50px 0;
+}
+
+.ion img{
+	width: 30vh;
+	height: auto;
+	display: none;
+}
+
+.loading_gif {
+    padding: 50px 0;
+}  
+
+.loading_gif img{
+	width: 12vh;
+	height: auto;
+	display: none;
+}
+
+
+
+
 .fixed{
 	width: 100%;
 	z-index: 2;
@@ -52,56 +90,6 @@
 	font-weight: bold;
 }
 
-/*.toggle-gallery-menu{
-	font-size: 18px;
-	font-weight: bold;
-	margin-right: 35px;
-	cursor: pointer;
-}
-
-.content-page > div{
-	display: none;
-}
-
-.content-page > .active{
-	display: block;
-}
-
-.toggle-gallery-menu dt{
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-}
-
-.rotate{
-	transform: rotate(-360deg);
-	transition: 1s;
-}
-
-.rotate.on{
-	transform: rotate(360deg);
-	transition: 1s;
-}
-
-.toggle-gallery-menu dt:hover{
-	text-shadow: #00ff00 0px 0px 20px;
-	color: #6b8e23;
-}
-
-.toggle-gallery-menu > dd{
-	display: none;
-	border-bottom: 1px solid #696969;
-	padding: 10px 6px;
-	background-color: rgba(255,255,255,.9);
-	font-size: 15px;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-}
-
-.toggle-gallery-menu > dd:hover{
-	text-shadow: #4169e1 0px 0px 20px;
-	color: #0000cd;
-}*/
-
 main{
 	display: flex;
 	justify-content: space-around;
@@ -123,6 +111,7 @@ body{
 	top: -0.85%;
 	left: 8%;
 	font-size: 50px;
+	cursor: pointer;
 }
 
 .nav-icon.none{
@@ -134,6 +123,7 @@ body{
 	top: -0.85%;
 	left: 8%;
 	font-size: 50px;
+	cursor: pointer;
 	display: none;
 }
 

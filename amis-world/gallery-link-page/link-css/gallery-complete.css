@@ -1,3 +1,38 @@
+/* ローディング */
+#load_animation {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: center;
+}
+
+.icon {
+    padding: 50px 0;
+}
+
+.ion img{
+	width: 30vh;
+	height: auto;
+	display: none;
+}
+
+.loading_gif {
+    padding: 50px 0;
+}  
+
+.loading_gif img{
+	width: 12vh;
+	height: auto;
+	display: none;
+}
+
 body{
 	position: relative;
 }
@@ -12,6 +47,7 @@ body{
 	top: -0.85%;
 	left: 8%;
 	font-size: 50px;
+	cursor: pointer;
 }
 
 .nav-icon.none{
@@ -23,6 +59,7 @@ body{
 	top: -0.85%;
 	left: 8%;
 	font-size: 50px;
+	cursor: pointer;
 	display: none;
 }
 
@@ -106,6 +143,10 @@ body{
 .col-4{
 	margin-bottom: 10%;
 	width: 320px;
+}
+
+.col-4.shadow-on{
+	box-shadow: 0 0 12px gray;
 }
 
 .col-4 img{

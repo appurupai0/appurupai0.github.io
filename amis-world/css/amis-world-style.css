@@ -1,3 +1,37 @@
+/* ローディング */
+#load_animation {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+        padding: 50px 0;
+        img{
+            width: 30vh;
+            height: auto;
+            display: none;
+        }
+    }
+
+    .loading_gif {
+        padding: 50px 0;
+        img{
+            width: 12vh;
+            height: auto;
+            display: none;
+        }
+    }  
+}
+
+
 /* header */
 .fixed{
 	position: fixed;
@@ -137,6 +171,7 @@
   width: 31px;
   height: 26px;
   border: 0px solid ;
+  background-color: rgba(255,255,255,.9);
 }
 .menu-trigger span {
   position: absolute;
@@ -344,10 +379,16 @@
 	margin-top: 5%;
 	font-family: 'Henny Penny', cursive;
 }
+.blog-news-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+}
 .blog-news-block{
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+	/* justify-content: center; */
 	margin-top: 2%;
 	padding: 0.2rem;
 }
@@ -373,25 +414,35 @@
 }
 .read-more{
 	position: absolute;
-	bottom: 0;
+	bottom: -20;
 	right: 0;
 	text-decoration: none;
 }
 
 .all-blog{
 	text-align: center;
-	margin-top: 2%;
+	margin-top: 6%;
 	
 }
 
-.all-blog a{
-	text-decoration: none;
+.all-blog span{
+	cursor: pointer;
 	padding: 3px;
 	color:black;
+	border: 1px dotted green;
+	border-radius: 8px;
 }
 
-.all-blog a:hover{
-	border: 1px dotted green;
+.all-blog span:hover{
+	background-color: rgba(231, 226, 226, 0.267);
+}
+
+.blog-news-block.is-hidden{
+	display: none;
+}
+
+.blog-news-block.is-flex{
+	display: flex;
 }
 
 
@@ -731,10 +782,6 @@ form button{
 		margin-left: 33%;
 	}
 
-	.blog-news-block section{
-		width: 60%;
-	}
-
 	/* art-gallery */
 	.art-gallery img{
 		height: 300px;
@@ -898,10 +945,16 @@ form button{
 	.blog-news h3{
 		font-size: 22px;
 	}
-
-	.blog-news-block section{
-		width: 80%;
+	.blog-news-block{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
+
+	.blog-news-block.is-hidden {
+		visibility: hidden;
+		opacity: 0;
+	  }
 
 	.blog-news-time{
 		font-size: 0.7rem;
@@ -915,8 +968,12 @@ form button{
 		font-size: 0.5rem;
 	}
 
-	.all-blog a{
-		font-size: 0.8rem;
+	.all-blog{
+		margin-top: 5%;
+	}
+
+	.all-blog span{
+		font-size: 0.5rem;
 	}
 
 	/* art-gallery */
