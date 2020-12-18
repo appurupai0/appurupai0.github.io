@@ -21,7 +21,8 @@ $(function(){
 
     //ロード画面を非表示にする関数
     function HideLoadingScreen(){
-        $load.delay(1500).fadeOut("slow");
+		$load.delay(1500).fadeOut("slow");
+		$('body, html').css('overflow-y', 'auto');
     }
 
 	setTimeout(function(){
