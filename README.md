@@ -1,3 +1,8 @@
+## ページリンク
+
+https://appurupai0.github.io/amis-world/amis-world-index.html
+
+
 ## 制作理由
 
 #### 最大の理由
