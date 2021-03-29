@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>次の日リスト</title>
+
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+	integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<!-- fontawsome -->
+	<script src="https://kit.fontawesome.com/c94db687b2.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="next-css-js/next-day-list.css">
+</head>
+<body class="container">
+	<header class="mt-5">
+		<p class="text-center">一日の終わりに明日のやることを整理しませんか？</p>
+		<h1 class="text-center mt-4">～次の日やることリスト～</h1>
+		<p id="nowDay" class="mt-3 text-center"></p>   
+		<h2 id="nowTime" class="text-center"></h2>
+	</header>
+	<main class="mt-5">
+		<section>
+			<form action="" class="d-flex align-items-center">
+				<input type="text" placeholder="一言目標" id="input_one">
+				<input type="submit" name="submit" value="add" class="btn btn-outline-info btn-sm ml-3" id="oneword">
+			</form>
+			<form action="" class="d-flex align-items-center mt-4">
+				<input  class="addlist" type="text" name="addlist" placeholder="明日のやることを箇条書きで">
+				<button type="submit" name="submit" value="" class="btn btn-outline-info btn-sm ml-3" id="addbotton"></button>
+			</form>
+		</section>
+	</main>
+	<footer class="mt-5">
+		<div class="d-flex">
+			<h3 id="nextDay"></h3>
+			<h3 class="ml-3" id="target"></h3>
+			<button type="button" class="btn btn-outline-primary ml-4">すべて完了</button>
+		</div>
+		<div>
+			<p>やること残り"<span>5</span>"個</p>
+		</div>
+		<ul class="border border-primary pt-3 pl-3 pr-3 mt-3">
+			<li class="d-flex justify-content-between">
+				<div class="d-flex align-items-center"  id="js-content">
+					<!-- <input class="checkbox" type="checkbox" value="on">
+					<p id="js-text" class="ml-3 mb-0">入力された</p> -->
+				</div>
+				<div class="d-flex align-items-center" id="js-delete">
+					<!-- <p class="border border-success rounded pl-2 pr-2 text-success mb-0">yet</p>
+					<i class="far fa-trash-alt ml-2"></i> -->
+				</div>
+			</li>
+			<hr>
+			<!-- <li class="d-flex justify-content-between">
+				<div class="d-flex align-items-center">
+					<input class="checkbox" type="checkbox" value="on">
+					<p id="js-text" class="ml-3 mb-0">入力されたやることか</p>
+				</div>
+				<div class="d-flex align-items-center">
+					<p class="border border-success rounded pl-2 pr-2 text-success mb-0">yet</p>
+					<i class="far fa-trash-alt ml-2"></i>
+				</div>
+			</li>
+			<hr>
+			<li class="d-flex justify-content-between">
+				<div class="d-flex align-items-center">
+					<input class="checkbox" type="checkbox" value="on">
+					<p id="js-text" class="ml-3 mb-0">入力されたやることか</p>
+				</div>
+				<div class="d-flex align-items-center">
+					<p class="border border-success rounded pl-2 pr-2 text-success mb-0">yet</p>
+					<i class="far fa-trash-alt ml-2"></i>
+				</div>
+			</li>
+			<hr> -->
+		</ul>
+	</footer>
+
+	<!-- javascript -->
+	<script src="next-css-js/next-day-list.js"></script>
+</body>
+</html>
