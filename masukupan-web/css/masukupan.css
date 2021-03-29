@@ -1,0 +1,706 @@
+@charset "utf-8";
+/*=======================================================
+基本設定
+=======================================================*/
+*{
+	margin: 0;
+	padding: 0;
+}
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-style: normal;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+	line-break: strict;
+	word-wrap: break-word;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+*,*:focus,a:focus{
+	outline:none;
+}
+html{
+	font-family: "メイリオ", Meiryo, "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, 
+	"ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 18px;
+	line-height: 1;
+	letter-spacing: 0.04em;
+	-webkit-text-size-adjust: 100%;
+	color: #333; 
+}
+body,header,main,footer{
+	min-width:1020px;
+}
+body{
+    background: #fff;
+}
+article,aside,figcaption,figure,picture,
+footer,main,header,nav,section {
+	display: block;
+}
+table{
+	border-collapse: separate;
+	border-spacing: 0;
+}
+ul,ol{
+	list-style: none;
+}
+p,li,dt,dd,th,td{
+	-ms-line-break:strict;
+	line-break:strict;
+	-ms-word-break:break-strict;
+	word-break:break-strict;
+}
+a {
+	color: #107ce1;
+}
+a:hover,.hp_hover:hover{
+	opacity: 0.7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+picture{
+    line-height: 0;
+}
+picture img{
+    vertical-align: top;
+}
+input, button, select, textarea{
+    -webkit-appearance: none;
+	border-radius: 0;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+    outline: none;
+}
+/*PC/SP*/
+.pc{
+	display: initial!important;
+}
+.sp{
+	display: none!important;
+}
+@media only screen and (min-device-width:1025px) {
+a:hover,.hp_hover:hover{
+	opacity: 0.7;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+}
+label:hover{
+    cursor: pointer;
+}
+}
+@media screen and (max-width : 750px){
+    html{
+        font-size: 28px;
+    }
+    body,header,main,footer{
+        min-width:750px;
+        max-width:750px;
+        width:100%;
+    }
+    .sp{
+        display: initial!important;
+    }
+    .pc{
+        display: none!important;
+    }
+}
+/*=============================
+　共通デザイン
+==============================*/
+/*レイアウト*/
+.ly_head_inner,
+.ly_foot_inner,
+.ly_cont,
+.ly_cont_inner{
+    width: 1020px;
+    height: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.sp{
+	display: none!important;
+}
+
+.sec_mainTtl{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3px;
+}
+.hp_mincho{
+	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+    font-weight: bold;
+}
+
+/*=============================
+　header
+==============================*/
+.ly_head{
+	background: none;
+	height: auto;
+	position: relative;
+	border: none;
+	box-shadow: none;
+	background: url(../img/top-siro2.png);
+}
+.ly_head_inner{
+	width: 1020;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+/* .madia_head img{
+	border-radius: 20px;
+} */
+.head_figure{
+	text-align: center;
+	padding-top: 120px;
+}
+.head_figure img{
+	border-radius: 50px;
+	height: 334px;
+    width: 500px;
+}
+.head_title, .head_subtex{
+	text-align: right;
+}
+.head_title{
+	font-size: 40px;
+	margin: 40px 120px 0 0;
+}
+.head_subtex{
+	margin: 20px 125px 0 0;
+}
+
+/*=========================================
+ 子どもだらけの研究集団「THE LABO」の新作
+ =========================================*/
+#intro{
+	/* background: url(../img/top-siro.png); */
+	padding-top: 67px;
+}
+
+#intro .sec_mainTtl{
+    letter-spacing: .06em;
+    margin-bottom: 75px;
+    text-align: center;
+    width: 560px;
+    height: 100px;
+    background: linear-gradient(to right,#fffcf0,#ceef90,#fffcf0);
+    box-shadow: 0 1px 10px -3px #000000 inset;
+    border: 2px solid #b99e65;
+    border-radius: 30px;
+    /* color: #fff; */
+    text-shadow: 1px 2px 2px #fff;
+    font-size: 29px;
+}
+#intro .el_txt{
+	text-align: center;
+	font-size: 22px;
+	/* color: #fff; */
+	letter-spacing: .08rem;
+	line-height: 1.54;
+	margin-bottom: 37px;
+}
+#intro .el_txet{
+	text-align: center;
+	font-size: 22px;
+	/* color: #fff; */
+	letter-spacing: .08rem;
+	line-height: 1.54;
+	margin-bottom: 12px;
+}
+#intro .figure_Wrapper{
+	text-align: center;
+	/* padding-bottom: 60px; */
+}
+#intro .figure_Wrapper img{
+	height: 224px;
+    width: 417px;
+}
+
+/*=============================
+　マスクパンは高性能
+=============================*/
+#pride{
+	/* background: url(../img/kon3.png); */
+	background-color: rgba(37, 30, 61, 0.925);
+	padding-top: 65px;
+    padding-bottom: 63px;
+}
+#pride .ly_cont_inner{
+	background: #fff;
+    width: 920px;
+    padding-top: 54px;
+    padding-left: 56px;
+    padding-right: 56px;
+    padding-bottom: 44px;
+}
+#pride .sec_mainTtl{
+	color: #fff;
+	letter-spacing: .06em;
+    margin-bottom: 45px;
+	height: 65px;
+    text-align: center;
+	background: url(../img/intro_h2_bg.png) center no-repeat;
+}
+#pride .hp_mincho_only{
+	font-family: "MS Mincho、ＭＳ 明朝"
+}
+#pride .el_txt{
+	text-align: center;
+	font-size: 22px;
+	/* color: #fff; */
+	letter-spacing: .08rem;
+	line-height: 1.54;
+	margin-bottom: 37px;
+}
+.expt{
+	margin-top: 74px;
+}
+.expt_Ttl{
+	letter-spacing: .06em;
+    padding-bottom: 5px;
+    border-bottom: 2px solid;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 35px;
+}
+
+/* 検証結果 */
+.expt_contener{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 55px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+	display: flex;
+	justify-content: center;
+}
+.expt_left{
+	margin-right: 25px;
+}
+.experiment_imgWrapper{
+	margin-bottom: 20px;
+    position: relative;
+}
+.experiment_imgWrapper img{
+	height: 224px;
+	width: 350px;
+	object-fit: cover;
+}
+.ex_txt{
+	text-align: center;
+	font-size: 22px;
+	/* color: #fff; */
+	letter-spacing: .08rem;
+	line-height: 1.54;
+}
+.ex_subTxt{
+	text-align: right;
+	/* margin-right: 60px; */
+	font-size: 15px;
+}
+/*=============================
+　3次元パン立体フィット
+=============================*/
+.margin-top{
+	margin-top: 67px;
+}
+.min_font{
+	text-align: center;
+	font-size: 16px;
+	/* color: #fff; */
+	letter-spacing: .08rem;
+	line-height: 1.54;
+}
+.figure_Wrapper{
+	text-align: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+.figure_Wrapper img{
+	height: 267px;
+	width: 421px;
+}
+/*=============================
+　世界一幸せなマスクです
+=============================*/
+#about{
+	background: url(../img/test1.jpeg) no-repeat;
+	background-size: cover;
+	padding-top: 67px;
+}
+#about .sec_mainTtl{
+	letter-spacing: .06em;
+    margin-bottom: 55px;
+	height: 83px;
+    text-align: center;
+}
+#about .bg_deco1{
+	background: url(../img/detail_h2_bg.png) top center no-repeat,
+				url(../img/detail_h2_bg.png) bottom center no-repeat;
+}
+#about .bg_deco2{
+	background: url(../img/about_h2_bg.png) top center no-repeat,
+				url(../img/about_h2_bg.png) bottom center no-repeat;
+}
+#about .figure_Wrapper img{
+	height: 250px;
+	width: 417px;
+}
+#about .el_txt{
+	text-align: center;
+    font-size: 22px;
+    /* color: #fff; */
+    letter-spacing: .08rem;
+    line-height: 1.54;
+    margin-bottom: 37px;
+}
+/*=============================
+　メロンパンが、マスクより優れてた
+=============================*/
+#about .mediam_font{
+	font-size: 23px;
+}
+
+/*=============================
+　購入欄
+=============================*/
+#cart {
+    padding-top: 62px;
+    padding-bottom: 30px;
+}
+#cart .bl_cartUnit {
+    border: 2px solid #c2ad7b;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 76px;
+    padding-right: 76px;
+    margin-bottom: 50px;
+    background: #fff;
+}
+#cart .bl_cart_imgWrapper {
+    width: 165px;
+    margin-top: -20px;
+}
+#cart .bl_cart_body {
+    width: 716px;
+}
+#cart .bl_cart_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-left: -5px;
+}
+#cart .el_sec_mainTtl {
+    font-size: 39px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: 50px;
+    margin-right: 0;
+}
+#cart .el_sec_mainTtl::after {
+    content: "【10個セット】";
+    font-size: 20px;
+    position: absolute;
+    top: -40px;
+    left: 60px;
+    width: 148px;
+}
+#cart .el_cart_price {
+    color: #df5b2d;
+    font-size: 46px;
+    position: relative;
+    letter-spacing: 0.06em;
+    display: flex;
+    align-items: center;
+}
+#cart .el_cart_price::before {
+    content: "（税抜）";
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: 110px;
+    font-size: 13px;
+    letter-spacing: 0;
+}
+#cart .el_cart_price span {
+    font-size: 30px;
+    display: inline-block;
+    padding-top: 10px;
+    padding-top: 0;
+}
+#cart .el_cart_price::after {
+    content: "送料 800円（全国一律）";
+    font-size: 17px;
+    margin-top: 5px;
+    letter-spacing: 0.08em;
+    color: #333;
+    margin-left: 18px;
+}
+#cart .bl_cart_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-left: -5px;
+}
+#cart .bl_cart_btnUnit {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    flex-wrap: wrap;
+}
+#cart .bl_cart_btnUnit .el_text {
+    width: 287px;
+    padding-top: 8px;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+}
+.el_btn {
+    padding: 3px 0 0 0;
+    background: #a47e3b;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    width: 301px;
+    height: 62px;
+    font-size: 24px;
+    border-bottom: 4px solid #cfcfcd;
+}
+.el_btn::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    margin: auto 0;
+    border-style: solid;
+    border-width: 5.5px 0 5.5px 9px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 0;
+    right: 19px;
+    bottom: 0;
+}
+#cart .bl_cart_btnUnit .el_att {
+    font-size: 15px;
+    letter-spacing: .06em;
+    margin-left: 50px;
+    margin-right: -80px;
+    margin-top: 20px;
+    padding-left: 0;
+}
+.el_att {
+    padding: 0 0 0 1rem;
+    position: relative;
+}
+/*=============================
+　開発中のおはなし
+=============================*/
+#omake{
+	background: url(../img/kaihatu.jpg);
+	background-size: cover;
+	padding-top: 67px;
+}
+#omake .sec_mainTtl{
+	letter-spacing: .06em;
+    margin-bottom: 55px;
+	width: 360px;
+    text-align: center;
+	padding-bottom: 5px;
+	border-bottom: 2px solid rgb(233, 156, 169);
+}
+#omake .el_txt{
+	text-align: center;
+	font-size: 22px;
+	/* color: #fff; */
+	letter-spacing: .08rem;
+	line-height: 1.54;
+	margin-bottom: 40px;
+}
+#omake .none-margin{
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 40px;
+}
+.padding{
+	margin-bottom: 20px;
+}
+#omake .big-font{
+	font-size: 30px;
+	font-weight: bold;
+	color: #582c6b;
+	border-bottom: 2px solid red;
+	width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*=============================
+　footer
+=============================*/
+main{
+    min-height: calc(100vh - 285px/*header + footerの高さ*/);
+}
+.ly_foot {
+	background: #1c243a;
+	padding-top: 50px;
+}
+.ly_foot_inner {
+	padding-bottom: 40px;
+}
+/*ナビ*/
+.bl_foot_gloNav{
+    width: 910px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.bl_foot_gloNav_inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.bl_foot_gloNav_inner li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	text-decoration: underline;
+}
+.bl_foot_gloNav_inner li::before {
+	content: "";
+	display: block;
+	justify-content: center;
+	margin-right: 7px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5.5px 0 5.5px 9px;
+	border-color: transparent transparent transparent #c5b283;
+}
+.bl_foot_gloNav_inner a {
+	color: #fff;
+}
+/*コピーライト*/
+.bl_foot_copyright{
+	width: 100%;
+	height: 35px;
+	background: #000;
+	text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bl_foot_copyright small{
+	color: #fff;
+	font-size: 12px;
+	font-family: Verdana;/* Android */
+}
+@media screen and (max-width : 750px){
+	.ly_foot_inner {
+    	padding-bottom: 20px;
+	}
+	.bl_foot_gloNav {
+		width: initial;
+	}
+	.bl_foot_gloNav_inner {
+		display: block;
+	}
+	.bl_foot_gloNav_inner li {
+    	margin-bottom: 30px;
+		justify-content: center;
+	}
+	.bl_foot_gloNav_inner li::before {
+    	margin-right: 10px;
+    	border-width: 8.5px 0 8.5px 12px;
+	}
+	.bl_foot_copyright {
+		height: 48px;
+	}
+	.bl_foot_copyright small {
+    	font-size: 16px;
+	}
+}
+/* Edge */
+_:-ms-lang(x)::backdrop,{
+
+}
+
+/* firefox */
+_:lang(x)::-moz-placeholder,{
+
+}
+
+/* Mac,iPad Safari */
+@media only screen and (min-device-width:768px){
+_::-webkit-full-page-media, _:future, :root .el_label,
+_::-webkit-full-page-media, _:future, :root .bl_vertPosts_date,
+_::-webkit-full-page-media, _:future, :root .hp_strikethrough{
+    padding-top: 0;
+}
+_::-webkit-full-page-media, _:future, :root .el_btn{
+	padding-top: 2px;
+}
+_::-webkit-full-page-media, _:future, :root .el_triangleLink::before{
+	top: 4px;
+}
+_::-webkit-full-page-media, _:future, :root .bl_catLabel{
+    padding-bottom: 11px;
+}
+}
+
+/* Mac Ssafari */
+@media only screen and (min-device-width:1025px) {
+_::-webkit-full-page-media, _:future, :root{
+
+}
+}
+
+/* iPad Safari */
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) {
+  _::-webkit-full-page-media, _:future, :root {
+
+  }
+}
