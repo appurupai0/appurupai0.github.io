@@ -921,7 +921,6 @@ textarea {
   background: url(../img/kaihatu.jpg);
   background-size: cover;
   padding-top: 67px;
-  height: 970px;
 }
 #omake .sec_mainTtl {
   letter-spacing: 0.06em;
@@ -960,6 +959,7 @@ textarea {
 	#omake {
 		background: url(../img/kaihatu.jpg);
 		background-size: cover;
+		height: 970px;
 	}
 	#omake .sec_mainTtl{
 		letter-spacing: .06em;
