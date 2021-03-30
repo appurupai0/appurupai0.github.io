@@ -448,7 +448,7 @@ textarea {
   margin-bottom: 45px;
   height: 65px;
   text-align: center;
-  background: url(../img/intro_h2_bg.png) center no-repeat;
+  background: url(../img/intro_h2_bg_sp.png) center no-repeat;
 }
 #pride .hp_mincho_only {
   font-family: "MS Mincho、ＭＳ 明朝";
@@ -535,6 +535,9 @@ textarea {
   #pride .min_font {
     font-size: 18px;
   }
+  #pride .sp-font{
+	  font-size: 24px;
+  }
 }
 /*=============================
 　3次元パン立体フィット
@@ -594,17 +597,22 @@ textarea {
 }
 @media screen and (max-width: 750px) {
   #about .sec_mainTtl {
-    font-size: 40px;
+    font-size: 42px;
+	height: 133px;
   }
   #about .el_txt {
     font-size: 30px;
     letter-spacing: 0.04em;
     line-height: 1.66;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
+  /* メロンパンが、マスクより優れてた */
   #about .mediam_font {
-    font-size: 30px;
-}
+    font-size: 32px;
+  }
+  #about .min-font{
+	  font-size: 20px;
+  }
 }
 /*=============================
 　メロンパンが、マスクより優れてた
@@ -862,10 +870,12 @@ textarea {
     margin-right: -20px;
     margin-top: 0;
     padding-left: 5.2em;
+	padding-bottom: 8px;
     text-indent: -5.2em;
     position: absolute;
     bottom: 30px;
     left: 0;
+    text-align: center;
   }
   #cart .ly_cont_inner > .el_txt {
     font-size: 28px;
@@ -947,8 +957,11 @@ textarea {
 		line-height: 1.66;
 	}
 	#omake .big-font {
-		font-size: 35px;
+		font-size: 38px;
 		width: 360px;
+	}
+	#omake .kennsyou-font{
+		font-size: 20px;
 	}
 }
 /*=============================
