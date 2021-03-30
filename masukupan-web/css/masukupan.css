@@ -219,12 +219,6 @@ textarea {
   padding: 0 0 0 1rem;
   position: relative;
 }
-.el_att::before {
-  content: "＊";
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 @media screen and (max-width: 750px) {
   /*レイアウト*/
   .ly_head_inner,
