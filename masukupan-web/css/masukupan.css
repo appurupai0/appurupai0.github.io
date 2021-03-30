@@ -602,6 +602,9 @@ textarea {
     line-height: 1.66;
     margin-bottom: 70px;
   }
+  #about .mediam_font {
+    font-size: 30px;
+}
 }
 /*=============================
 　メロンパンが、マスクより優れてた
@@ -771,7 +774,7 @@ textarea {
     padding-top: 30px;
   }
   #cart .bl_cartUnit {
-    height: 795px;
+    height: 545px;
     padding-top: 0;
     position: relative;
     padding-left: 67px;
@@ -942,7 +945,6 @@ textarea {
 		font-size: 30px;
 		letter-spacing: .04em;
 		line-height: 1.66;
-		margin-bottom: 70px;
 	}
 	#omake .big-font {
 		font-size: 35px;
