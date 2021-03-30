@@ -136,11 +136,6 @@ label:hover{
     margin-left: auto;
     position: relative;
 }
-
-.sp{
-	display: none!important;
-}
-
 .sec_mainTtl{
 	display: flex;
     justify-content: center;
@@ -153,6 +148,51 @@ label:hover{
 .hp_mincho{
 	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
     font-weight: bold;
+}
+/*el_btn*/
+.el_btn{
+    padding: 3px 0 0 0;
+    background: #a47e3b;
+	border-radius: 20px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+    text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+	width: 301px;
+	height: 62px;
+	font-size: 24px;
+	border-bottom: 4px solid #cfcfcd;
+}
+.el_btn::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+    margin: auto 0;
+	border-style: solid;
+	border-width: 5.5px 0 5.5px 9px;
+	border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top: 0;
+    right: 19px;
+    bottom: 0;
+}
+/*※*/
+.el_att{
+    padding: 0 0 0 1rem;
+	position: relative;
+}
+.el_att::before{
+	content: "＊";
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 @media screen and (max-width : 750px){
 	/*レイアウト*/
