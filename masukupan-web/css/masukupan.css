@@ -308,6 +308,9 @@ textarea {
   margin: 20px 125px 0 0;
 }
 @media screen and (max-width: 750px) {
+	.ly_head{
+		background: url(../img/top-siro-sp.png);
+	}
   .ly_head_inner {
     width: 100%;
   }
@@ -403,7 +406,6 @@ textarea {
 }
 @media screen and (max-width: 750px) {
   #intro {
-	  background: url(../img/top-siro-sp.png);
     padding-top: 81px;
   }
   #intro .el_sec_mainTtl {
@@ -416,8 +418,8 @@ textarea {
     line-height: 1.54;
     margin-bottom: 45px;
   }
-  #intro .le_text {
-    font-size: 30px;
+  #intro .el_txet {
+    font-size: 32px;
     letter-spacing: 0.04em;
     line-height: 1.54;
   }
@@ -535,7 +537,7 @@ textarea {
   #pride .min_font {
     font-size: 18px;
   }
-  #pride .sp-font{
+  .ex_txt .sp_font{
 	  font-size: 24px;
   }
 }
@@ -610,8 +612,8 @@ textarea {
   #about .mediam_font {
     font-size: 32px;
   }
-  #about .min-font{
-	  font-size: 20px;
+  #about .min_font{
+	  font-size: 18px;
   }
 }
 /*=============================
@@ -769,9 +771,9 @@ textarea {
   position: relative;
 }
 @media screen and (max-width: 750px) {
-  #cart {
+  /* #cart {
     padding-bottom: 50px;
-  }
+  } */
   #cart .ly_cont_inner {
     width: 690px;
   }
@@ -798,6 +800,12 @@ textarea {
   #cart .bl_cart_imgWrapper img {
 	height: 245px;
     width: auto;
+  }
+  #cart .bl_cart_btnUnit .el_text {
+	  padding-bottom: 8px;
+  }
+  #cart .el_sec_mainTtl{
+	  font-size: 38px;
   }
   #cart .el_sec_mainTtl::before {
     width: 128px;
@@ -901,6 +909,10 @@ textarea {
     margin-bottom: 30px;
     margin-left: -10px;
   }
+  #cart .el_btn{
+	width: 381px;
+    height: 72px;
+  }
 }
 /*=============================
 　開発中のおはなし
@@ -909,6 +921,7 @@ textarea {
   background: url(../img/kaihatu.jpg);
   background-size: cover;
   padding-top: 67px;
+  height: 970px;
 }
 #omake .sec_mainTtl {
   letter-spacing: 0.06em;
@@ -944,6 +957,10 @@ textarea {
   margin-right: auto;
 }
 @media screen and (max-width: 750px){
+	#omake {
+		background: url(../img/kaihatu.jpg);
+		background-size: cover;
+	}
 	#omake .sec_mainTtl{
 		letter-spacing: .06em;
 		margin-bottom: 55px;
