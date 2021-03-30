@@ -308,9 +308,10 @@ textarea {
   margin: 20px 125px 0 0;
 }
 @media screen and (max-width: 750px) {
-	.ly_head{
-		background: url(../img/top-siro-sp.png);
-	}
+  .ly_head {
+    background: url(../img/siro-head-bg.jpeg);
+	background-size: cover;
+  }
   .ly_head_inner {
     width: 100%;
   }
@@ -518,7 +519,7 @@ textarea {
     width: 650px;
   }
   #pride .sec_mainTtl {
-	background: url(../img/intro_h2_bg_sp.png);
+    background: url(../img/intro_h2_bg_sp.png);
     margin-bottom: 45px;
     padding-bottom: 8px;
     font-size: 44px;
@@ -537,8 +538,8 @@ textarea {
   #pride .min_font {
     font-size: 18px;
   }
-  .ex_txt .sp_font{
-	  font-size: 24px;
+  .ex_txt .sp_font {
+    font-size: 12px;
   }
 }
 /*=============================
@@ -600,7 +601,7 @@ textarea {
 @media screen and (max-width: 750px) {
   #about .sec_mainTtl {
     font-size: 42px;
-	height: 133px;
+    height: 133px;
   }
   #about .el_txt {
     font-size: 30px;
@@ -609,11 +610,11 @@ textarea {
     margin-bottom: 40px;
   }
   /* メロンパンが、マスクより優れてた */
-  #about .mediam_font {
+  #about .ly_cont_inner .mediam_font {
     font-size: 32px;
   }
-  #about .min_font{
-	  font-size: 18px;
+  #about .min_font {
+    font-size: 18px;
   }
 }
 /*=============================
@@ -778,7 +779,7 @@ textarea {
     width: 690px;
   }
   #cart .el_sec_mainTtl {
-	font-size: 48px;
+    font-size: 48px;
     display: block;
     margin-bottom: 95px;
     padding-top: 30px;
@@ -798,14 +799,14 @@ textarea {
     left: 67px;
   }
   #cart .bl_cart_imgWrapper img {
-	height: 245px;
+    height: 245px;
     width: auto;
   }
   #cart .bl_cart_btnUnit .el_text {
-	  padding-bottom: 8px;
+    padding-bottom: 8px;
   }
-  #cart .el_sec_mainTtl{
-	  font-size: 38px;
+  #cart .el_sec_mainTtl {
+    font-size: 38px;
   }
   #cart .el_sec_mainTtl::before {
     width: 128px;
@@ -849,12 +850,12 @@ textarea {
     padding-top: 6px;
   }
   #cart .el_cart_price::before {
-	font-size: 16px;
+    font-size: 16px;
     right: -10px;
     top: -7px;
   }
   #cart .bl_cart_btnUnit {
-	flex-wrap: wrap;
+    flex-wrap: wrap;
     position: absolute;
     bottom: -30px;
     width: 550px;
@@ -872,13 +873,13 @@ textarea {
   }
   #cart .bl_cart_btnUnit .el_att {
     font-size: 24px;
-    letter-spacing: .04em;
+    letter-spacing: 0.04em;
     line-height: 1.41;
     margin-left: 0;
     margin-right: -20px;
     margin-top: 0;
     padding-left: 5.2em;
-	padding-bottom: 8px;
+    padding-bottom: 8px;
     text-indent: -5.2em;
     position: absolute;
     bottom: 30px;
@@ -909,8 +910,8 @@ textarea {
     margin-bottom: 30px;
     margin-left: -10px;
   }
-  #cart .el_btn{
-	width: 381px;
+  #cart .el_btn {
+    width: 381px;
     height: 72px;
   }
 }
@@ -955,31 +956,31 @@ textarea {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width: 750px){
-	#omake {
-		background: url(../img/kaihatu.jpg);
-		background-size: cover;
-		height: 970px;
-	}
-	#omake .sec_mainTtl{
-		letter-spacing: .06em;
-		margin-bottom: 55px;
-		height: 83px;
-		text-align: center;
-		font-size: 40px;
-	}
-	#omake .el_txt{
-		font-size: 30px;
-		letter-spacing: .04em;
-		line-height: 1.66;
-	}
-	#omake .big-font {
-		font-size: 38px;
-		width: 360px;
-	}
-	#omake .kennsyou-font{
-		font-size: 20px;
-	}
+@media screen and (max-width: 750px) {
+  #omake {
+    background: url(../img/kaihatu.jpg);
+    background-size: cover;
+    height: 970px;
+  }
+  #omake .sec_mainTtl {
+    letter-spacing: 0.06em;
+    margin-bottom: 55px;
+    height: 83px;
+    text-align: center;
+    font-size: 40px;
+  }
+  #omake .el_txt {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    line-height: 1.66;
+  }
+  #omake .big-font {
+    font-size: 38px;
+    width: 360px;
+  }
+  #omake .kennsyou-font {
+    font-size: 20px;
+  }
 }
 /*=============================
 　footer
