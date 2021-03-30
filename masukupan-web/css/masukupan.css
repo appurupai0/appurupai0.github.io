@@ -154,7 +154,54 @@ label:hover{
 	font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
     font-weight: bold;
 }
-
+@media screen and (max-width : 750px){
+	/*レイアウト*/
+		.ly_head_inner,
+		.ly_foot_inner,
+		.ly_cont,
+		.ly_cont_inner{
+			width: 100%;
+		}
+	/*各セクション見出し*/
+		.el_sec_mainTtl {
+			font-size: 44px;
+		}
+	/*bl_media*/
+		.bl_mediaUnit,
+		.bl_media{
+			display: block;
+		}
+		.bl_media{
+			width: 100%!important;
+		}
+		.bl_media_imgWrapper{
+			width: 100%!important;
+			margin-bottom: 40px;
+		}
+		.bl_media_body{
+			width: 100%!important;
+			margin-top: 0;
+		}
+		.bl_media_body p{
+			margin-bottom: 35px;
+		}
+	/*el_btn*/
+		.el_btn{
+			height: 96px;
+			padding: 4px 10px 0 0;
+			border-bottom-width: 4px;
+			border-radius: 20px;
+			font-size: 38px;
+			width: 496px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 39px;
+		}
+		.el_btn::after{
+			border-width: 8.5px 0 8.5px 14px;
+			right: 29px;
+		}
+	}
 /*=============================
 　header
 ==============================*/
@@ -241,7 +288,17 @@ label:hover{
 	height: 224px;
     width: 417px;
 }
-
+@media screen and (max-width : 750px){
+	#intro .el_txt {
+    	font-size: 30px;
+    	letter-spacing: .04em;
+    	line-height: 1.54;
+    	margin-bottom: 45px;
+	}
+	/* #intro .el_imgWrapper {
+    	margin-top: 50px;
+	} */
+}
 /*=============================
 　マスクパンは高性能
 =============================*/
@@ -325,6 +382,19 @@ label:hover{
 	/* margin-right: 60px; */
 	font-size: 15px;
 }
+@media screen and (max-width : 750px){
+	#pride .el_txt {
+    	font-size: 32px;
+    	letter-spacing: .06em;
+    	line-height: 1.46;
+    	margin-bottom: 45px;
+	}
+	#pride .detail .bl_media_ttl {
+    	margin-bottom: 37px;
+    	font-size: 40px;
+    	height: 86px;
+	}
+}
 /*=============================
 　3次元パン立体フィット
 =============================*/
@@ -380,6 +450,14 @@ label:hover{
     letter-spacing: .08rem;
     line-height: 1.54;
     margin-bottom: 37px;
+}
+@media screen and (max-width : 750px){
+	#about .el_txt {
+    	font-size: 32px;
+    	letter-spacing: .04em;
+    	line-height: 1.66;
+    	margin-bottom: 70px;
+	}
 }
 /*=============================
 　メロンパンが、マスクより優れてた
@@ -534,6 +612,138 @@ label:hover{
 .el_att {
     padding: 0 0 0 1rem;
     position: relative;
+}
+@media screen and (max-width : 750px){
+	#cart {
+		padding-bottom: 50px;
+	}
+	#cart .ly_cont_inner {
+		width: 690px;
+	}
+	#cart .el_sec_mainTtl {
+    	font-size: 55px;
+    	display: block;
+		margin-bottom: 79px;
+		padding-top: 0;
+	}
+	#cart .bl_cartUnit {
+		height: 795px;
+    	padding-top: 0;
+    	position: relative;
+    	padding-left: 67px;
+    	padding-right: 67px;
+    	border: 3px solid #c2ad7b;
+	}
+	#cart .bl_cart_imgWrapper {
+    	width: 93px;
+    	position: absolute;
+    	top: 60px;
+    	left: 97px;
+	}
+	#cart .bl_cart_imgWrapper img {
+    	width: 93px;
+	}
+	#cart .el_sec_mainTtl::before {
+		width: 128px;
+    	height: 98px;
+    	top: -5px;
+    	left: 212px;
+	}
+	#cart .el_sec_mainTtl::after {
+		font-size: 26px;
+    	margin-top: 0;
+    	right: 0;
+    	left: initial;
+    	top: 120px;
+    	width: 100%;
+    	text-align: right;
+	}
+	#cart .el_sec_mainTtl span {
+    	font-size: 28px;
+    	margin-bottom: 15px;
+	}
+	#cart .bl_cart_head {
+		display: block;
+    	position: absolute;
+    	right: 87px;
+    	top: 60px;
+    	margin-bottom: 0;
+    	width: 343px;
+		margin-top: 0;
+	}
+	#cart .el_cart_price {
+		font-size: 65px;
+		display: flex;
+		align-items: center;
+		text-align: right;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		padding-right: 0;
+	}
+	#cart .el_cart_price span {
+		font-size: 40px;
+		padding-top: 6px;
+	}
+	#cart .el_cart_price::before {
+		font-size: 16px;
+		right: -11px;
+		top: -7px;
+		width: 100%;
+	}
+	#cart .bl_cart_btnUnit {
+    	flex-wrap: wrap;
+		position: absolute;
+    	bottom: 48px;
+    	width: 550px;
+		padding-bottom: 90px;
+	}
+	#cart .bl_cart_btnUnit .el_txt {
+    	width: 100%;
+    	height: 104px;
+    	padding-top: 15px;
+    	padding-left: 0;
+    	font-size: 28px;
+    	line-height: 1.4;
+		text-align: center;
+		margin-bottom: 32px;
+	}
+	#cart .bl_cart_btnUnit .el_att {
+    	font-size: 24px;
+    	letter-spacing: .04em;
+		line-height: 1.41;
+    	margin-left: 0;
+    	margin-right: -20px;
+    	margin-top: 0;
+    	padding-left: 5.2em;
+		text-indent: -5.2em;
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+	}
+	#cart .ly_cont_inner > .el_txt {
+    	font-size: 28px;
+    	line-height: 1.52;
+		margin-left: -10px;
+		margin-bottom: 10px;
+	}
+	#cart .el_att {
+    	font-size: 24px;
+    	margin-left: 27px;
+	}
+	#cart .el_cart_price::after {
+		font-size: 26px;
+    	margin-left: 0;
+    	display: block;
+    	text-align: right;
+		margin-top: 3px;
+		width: 100%;
+	}
+	#cart .ly_cont_inner > .el_att {
+    	font-size: 22px;
+    	line-height: 1.54;
+    	margin-bottom: 30px;
+    	margin-left: -10px;
+	}
 }
 /*=============================
 　開発中のおはなし
