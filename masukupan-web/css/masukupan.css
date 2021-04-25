@@ -296,16 +296,19 @@ textarea {
   height: 334px;
   width: 500px;
 }
-.head_title,
+.masukupan-logo,
 .head_subtex {
   text-align: right;
 }
-.head_title {
+.masukupan-logo {
   font-size: 40px;
-  margin: 40px 120px 0 0;
+  margin: 20px 170px 0 0;
+}
+.logo{
+	height: 140px;
 }
 .head_subtex {
-  margin: 20px 125px 0 0;
+  margin: 20px 190px 0 0;
 }
 @media screen and (max-width: 750px) {
   .ly_head {
@@ -405,6 +408,14 @@ textarea {
   height: 224px;
   width: 417px;
 }
+.tenten{
+	position: absolute;
+	right: -20px;
+	height: 450px;
+	width: auto;
+	bottom: -105px;
+	z-index: 2;
+}
 @media screen and (max-width: 750px) {
   #intro {
     padding-top: 81px;
@@ -446,12 +457,12 @@ textarea {
   padding-bottom: 44px;
 }
 #pride .sec_mainTtl {
-  color: #fff;
   letter-spacing: 0.06em;
   margin-bottom: 45px;
   height: 65px;
   text-align: center;
-  background: url(../img/intro_h2_bg_sp.png) center no-repeat;
+  background: url(../img/sen.png) top center no-repeat,
+    url(../img/sen.png) bottom center no-repeat;
 }
 #pride .hp_mincho_only {
   font-family: "MS Mincho、ＭＳ 明朝";
@@ -475,6 +486,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 35px;
+  text-align: center;
 }
 
 /* 検証結果 */
@@ -571,6 +583,30 @@ textarea {
   background: url(../img/test1.jpeg) no-repeat;
   background-size: cover;
   padding-top: 67px;
+}
+.ti-ti{
+	position: absolute;
+	right: 0;
+	top: 50px;
+	height: 280px
+}
+.asahi{
+	position: absolute;
+	left: -100px;
+	top: -60px;
+	height: 280px
+}
+.katsumi{
+	position: absolute;
+	right: -25px;
+	bottom: -40px;
+	height: 250px
+}
+.yuu{
+	position: absolute;
+	right: -30px;
+	bottom: -40px;
+	height: 330px
 }
 #about .sec_mainTtl {
   letter-spacing: 0.06em;
@@ -719,12 +755,18 @@ textarea {
   margin-left: auto;
   flex-wrap: wrap;
 }
-#cart .bl_cart_btnUnit .el_text {
-  width: 287px;
-  padding-top: 8px;
-  font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
+#cart .bl_cart_btnUnit .cart-logo-img {
+	width: 287px;
+    /* padding-top: 8px; */
+    /* font-size: 20px; */
+    /* line-height: 1.4; */
+    position: relative;
+    top: -15px;
+	margin-left: 6px;
+    text-align: center;
+}
+.cart-logo{
+	height: 85px;
 }
 .el_btn {
   padding: 3px 0 0 0;
