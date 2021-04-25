@@ -368,6 +368,7 @@ textarea {
 #intro {
   /* background: url(../img/top-siro.png); */
   padding-top: 67px;
+  padding-bottom: 100px;
 }
 
 #intro .sec_mainTtl {
@@ -584,6 +585,7 @@ textarea {
   background-size: cover;
   padding-top: 67px;
 }
+/* position: absoluteの画像設定 */
 .ti-ti{
 	position: absolute;
 	right: 0;
