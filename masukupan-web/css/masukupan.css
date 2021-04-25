@@ -512,6 +512,18 @@ textarea {
   width: 350px;
   object-fit: cover;
 }
+.experiment_imgWrapper02 {
+	margin-top: 25px;
+	margin-bottom: 20px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+.experiment_imgWrapper02 img {
+	height: 224px;
+	width: 560px;
+	object-fit: cover;
+}
 .ex_txt {
   text-align: center;
   font-size: 22px;
