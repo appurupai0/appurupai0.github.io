@@ -523,6 +523,8 @@ textarea {
 	height: 224px;
 	width: 560px;
 	object-fit: cover;
+	padding: 8px;
+	border: 1px solid;
 }
 .ex_txt {
   text-align: center;
@@ -639,6 +641,9 @@ textarea {
 #about .figure_Wrapper img {
   height: 250px;
   width: 417px;
+}
+#about .figure_Wrapper .height{
+	height: 280px;
 }
 #about .el_txt {
   text-align: center;
