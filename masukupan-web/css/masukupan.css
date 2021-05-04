@@ -276,7 +276,6 @@ textarea {
   position: relative;
   border: none;
   box-shadow: none;
-  background: url(../img/top-siro2.png);
 }
 .ly_head_inner {
   width: 1020;
@@ -284,37 +283,14 @@ textarea {
   margin-right: auto;
   position: relative;
 }
-/* .madia_head img{
-	border-radius: 20px;
-} */
-.head_figure {
-  text-align: center;
-  padding-top: 120px;
+.top_img{
+	margin: 6px 5% 0;
 }
-.head_figure img {
-  border-radius: 50px;
-  height: 334px;
-  width: 500px;
-}
-.masukupan-logo,
-.head_subtex {
-  text-align: right;
-}
-.masukupan-logo {
-  font-size: 40px;
-  margin: 20px 170px 0 0;
-}
-.logo{
-	height: 140px;
-}
-.head_subtex {
-  margin: 20px 190px 0 0;
+.top_img img{
+	height: 860px;
+	width: 100%;
 }
 @media screen and (max-width: 750px) {
-  .ly_head {
-    background: url(../img/siro-head-bg.jpeg);
-	background-size: cover;
-  }
   .ly_head_inner {
     width: 100%;
   }
@@ -546,7 +522,8 @@ textarea {
     width: 650px;
   }
   #pride .sec_mainTtl {
-    background: url(../img/intro_h2_bg_sp.png);
+    background: url(../img/sen_sp.png) top center no-repeat,
+    url(../img/sen_sp.png) bottom center no-repeat;
     margin-bottom: 45px;
     padding-bottom: 8px;
     font-size: 44px;
@@ -844,6 +821,7 @@ textarea {
     display: block;
     margin-bottom: 95px;
     padding-top: 30px;
+	margin-left: 35px;
   }
   #cart .bl_cartUnit {
     height: 545px;
@@ -863,11 +841,22 @@ textarea {
     height: 245px;
     width: auto;
   }
+  #cart .bl_cart_btnUnit .cart-logo-img {
+    width: 287px;
+    /* padding-top: 8px; */
+    /* font-size: 20px; */
+    /* line-height: 1.4; */
+    position: relative;
+    top: -210px;
+    margin-left: 420px;
+    /* right: 0px; */
+    text-align: center;
+}
   #cart .bl_cart_btnUnit .el_text {
     padding-bottom: 8px;
   }
   #cart .el_sec_mainTtl {
-    font-size: 38px;
+    font-size: 34px;
   }
   #cart .el_sec_mainTtl::before {
     width: 128px;
@@ -876,14 +865,15 @@ textarea {
     left: 212px;
   }
   #cart .el_sec_mainTtl::after {
-    font-size: 26px;
+    font-size: 22px;
     margin-top: 0;
-    right: 0;
+    right: 130px;
+    /* left: 20px; */
     left: initial;
-    top: 120px;
+    top: 85px;
     width: 100%;
     text-align: right;
-  }
+}
   #cart .el_sec_mainTtl span {
     font-size: 28px;
     margin-bottom: 15px;
