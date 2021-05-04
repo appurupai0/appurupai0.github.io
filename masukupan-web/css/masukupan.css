@@ -533,11 +533,11 @@ textarea {
     font-size: 44px;
 	height: 85px;
   }
-  #pride .sec_mainTtl .sen1{
+  #pride .sec_mainTtl .sp_sen01{
 	background: url(../img/sen_sp_01.png) top center no-repeat,
     url(../img/sen_sp_01.png) bottom center no-repeat;
   }
-  #pride .sec_mainTtl .sen2{
+  #pride .sec_mainTtl .sp_sen02{
 	background: url(../img/sen_sp.png) top center no-repeat,
     url(../img/sen_sp.png) bottom center no-repeat;
   }
