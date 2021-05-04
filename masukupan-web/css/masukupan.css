@@ -284,7 +284,7 @@ textarea {
   position: relative;
 }
 .top_img{
-	margin: 6px 5% 0;
+	margin: 6px 70px 0;
 }
 .top_img img{
 	height: 860px;
@@ -572,7 +572,7 @@ textarea {
 　世界一幸せなマスクです
 =============================*/
 #about {
-  background: url(../img/test1.jpeg) no-repeat;
+  background: url(../img/AdobeStock_411733446.jpeg) no-repeat;
   background-size: cover;
   padding-top: 67px;
 }
@@ -970,7 +970,7 @@ textarea {
 　開発中のおはなし
 =============================*/
 #omake {
-  background: url(../img/kaihatu.jpg);
+  background: url(../img/gray_back.png);
   background-size: cover;
   padding-top: 67px;
 }
