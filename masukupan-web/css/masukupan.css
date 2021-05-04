@@ -983,7 +983,7 @@ textarea {
 　開発中のおはなし
 =============================*/
 #omake {
-  background: url(../img/gray_back.png);
+  background: url(../img/AdobeStock_393530565.jpeg);
   background-size: cover;
   padding-top: 67px;
 }
@@ -1022,7 +1022,7 @@ textarea {
 }
 @media screen and (max-width: 750px) {
   #omake {
-    background: url(../img/kaihatu.jpg);
+    background: url(../img/gray_back.png);
     background-size: cover;
     height: 970px;
   }
