@@ -506,11 +506,8 @@ textarea {
 	display: flex;
 	justify-content: center;
 }
-.experiment_imgWrapper02 img {
-	height: 224px;
-	width: 560px;
-	object-fit: cover;
-	padding: 8px;
+.border {
+	padding: 2px;
 	border: 1px solid;
 }
 .ex_txt {
@@ -567,6 +564,9 @@ textarea {
 /*=============================
 　3次元パン立体フィット
 =============================*/
+#pride .none_bottom{
+	padding-bottom: 0;
+}
 .margin-top {
   margin-top: 67px;
 }
@@ -577,14 +577,20 @@ textarea {
   letter-spacing: 0.08rem;
   line-height: 1.54;
 }
-.figure_Wrapper {
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 40px;
+.figure_Wrapper{
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 40px;
 }
-.figure_Wrapper img {
-  height: 267px;
-  width: 421px;
+.figure_Wrapper_3d {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 40px;
+}
+.figure_Wrapper_3d .img01{
+	height: 230px;
+	position: relative;
+	top: 60px;
 }
 /*=============================
 　世界一幸せなマスクです
