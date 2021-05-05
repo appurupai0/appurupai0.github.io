@@ -847,7 +847,7 @@ textarea {
 	margin-left: 35px;
   }
   #cart .bl_cartUnit {
-    height: 545px;
+    height: 665px;
     padding-top: 0;
     position: relative;
     padding-left: 67px;
@@ -866,13 +866,9 @@ textarea {
   }
   #cart .bl_cart_btnUnit .cart-logo-img {
     width: 287px;
-    /* padding-top: 8px; */
-    /* font-size: 20px; */
-    /* line-height: 1.4; */
     position: relative;
-    top: -210px;
+    top: -325px;
     margin-left: 420px;
-    /* right: 0px; */
     text-align: center;
 }
   #cart .bl_cart_btnUnit .el_text {
@@ -956,8 +952,7 @@ textarea {
     padding-bottom: 8px;
     /* text-indent: -5.2em; */
     position: absolute;
-	top: 180px;
-    bottom: 30px;
+    bottom: 80px;
     left: 0;
     text-align: center;
   }
@@ -988,6 +983,7 @@ textarea {
   #cart .el_btn {
     width: 381px;
     height: 72px;
+	top: -145px;
   }
 }
 /*=============================
