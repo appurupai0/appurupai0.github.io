@@ -946,16 +946,17 @@ textarea {
     margin-bottom: 32px;
   }
   #cart .bl_cart_btnUnit .el_att {
-    font-size: 24px;
+	font-size: 22px;
     letter-spacing: 0.04em;
     line-height: 1.41;
     margin-left: 0;
     margin-right: -20px;
     margin-top: 0;
-    padding-left: 5.2em;
+    padding-left: 3.2em;
     padding-bottom: 8px;
-    text-indent: -5.2em;
+    /* text-indent: -5.2em; */
     position: absolute;
+	top: 180px;
     bottom: 30px;
     left: 0;
     text-align: center;
