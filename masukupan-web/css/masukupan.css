@@ -354,6 +354,8 @@ textarea {
 }
 
 #intro .sec_mainTtl {
+  flex-direction: column;
+  align-items: center;
   letter-spacing: 0.06em;
   margin-bottom: 75px;
   text-align: center;
@@ -481,6 +483,9 @@ textarea {
   align-items: flex-start;
   display: flex;
   justify-content: center;
+}
+.no_margin{
+	margin-top: 0;
 }
 .expt_left {
   margin-right: 25px;
@@ -728,7 +733,7 @@ textarea {
   align-items: center;
 }
 #cart .el_cart_price::before {
-  content: "（税抜）";
+  content: "（税込）";
   display: block;
   position: absolute;
   top: -8px;
