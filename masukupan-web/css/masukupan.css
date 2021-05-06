@@ -538,22 +538,20 @@ textarea {
 	height: 85px;
   }
   #pride .sp_sen01{
-	background: url(../img/sen_sp_01.png) top center no-repeat,
-    url(../img/sen_sp_01.png) bottom center no-repeat;
+	background: url(../img/intro_h2_bg_sp.png) center no-repeat;
   }
   #pride .sp_sen02{
-	background: url(../img/sen_sp.png) top center no-repeat,
-    url(../img/sen_sp.png) bottom center no-repeat;
+	background: url(../img/intro_h2_bg_sp.png) center no-repeat;
   }
   #pride .el_txt {
 	text-align: left;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 0.06em;
     line-height: 1.46;
     margin-bottom: 45px;
   }
   #pride .expt_Ttl {
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
     width: auto;
   }
@@ -1038,9 +1036,6 @@ textarea {
 #omake .figure_Wrapper img{
 	height: 220px;
 	width: 320px;
-}
-.padding {
-  margin-bottom: 20px;
 }
 #omake .omake_text{
 	margin-top: 25px;
