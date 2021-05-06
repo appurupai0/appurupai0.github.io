@@ -1016,7 +1016,6 @@ textarea {
 #omake .sec_mainTtl img{
 	position: absolute;
 	top: 40px;
-	left: -20px;
 }
 #omake .el_txt {
   text-align: center;
@@ -1070,6 +1069,9 @@ textarea {
     background-size: cover;
     height: 970px;
   }
+  #omake .ly_cont_inner{
+	  height: 823px;
+  }
   #omake .sec_mainTtl {
     letter-spacing: 0.06em;
     margin-bottom: 55px;
@@ -1077,18 +1079,31 @@ textarea {
     text-align: center;
     font-size: 40px;
   }
+  #omake .sec_mainTtl img{
+	top: 55px;
+}
   #omake .el_txt {
     font-size: 30px;
     letter-spacing: 0.04em;
     line-height: 1.66;
   }
+  #omake .omake_content {
+    margin-left: 0;
+}
+.figure_Wrapper {
+    padding-top: 90px;
+}
   #omake .big-font {
-    font-size: 38px;
-    width: 360px;
+    font-size: 34px;
+	margin-left: -90px;
+	margin-top: 10px;
   }
   #omake .kennsyou-font {
     font-size: 20px;
   }
+  #omake .none-margin {
+	font-size: 28px;
+	background-size: 440px;
 }
 /*=============================
 　footer
