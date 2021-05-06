@@ -448,7 +448,7 @@ textarea {
   padding-top: 54px;
   padding-left: 56px;
   padding-right: 56px;
-  padding-bottom: 44px;
+  padding-bottom: 10px;
 }
 #pride .sec_mainTtl {
   color: #fff;
@@ -469,10 +469,19 @@ textarea {
   line-height: 1.54;
   margin-bottom: 37px;
 }
+
+/*---------- 検証結果 ------------*/
 .expt {
   margin-top: 74px;
+  background-color: #fff;
+  padding: 24px 0 24px;
+}
+.expt_all{
+	margin: 24px 20px 24px;
+	border: 3px dashed rgba(37, 30, 61, 0.925);
 }
 .expt_Ttl {
+  font-size: 25px;
   letter-spacing: 0.06em;
   padding-bottom: 5px;
   border-bottom: 2px solid;
@@ -480,10 +489,9 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 35px;
+  padding-top: 30px;
   text-align: center;
 }
-
-/* 検証結果 */
 .expt_contener {
   margin-left: auto;
   margin-right: auto;
@@ -497,15 +505,15 @@ textarea {
 	margin-top: 0;
 }
 .expt_left {
-  margin-right: 25px;
+  margin-right: 40px;
 }
 .experiment_imgWrapper {
   margin-bottom: 20px;
   position: relative;
 }
 .experiment_imgWrapper img {
-  height: 224px;
-  width: 350px;
+  height: 255px;
+  width: 375px;
   object-fit: cover;
 }
 .experiment_imgWrapper02 {
@@ -528,6 +536,8 @@ textarea {
 }
 .ex_subTxt {
   text-align: right;
+  padding-bottom: 30px;
+  padding-right: 50px;
   /* margin-right: 60px; */
   font-size: 15px;
 }
@@ -685,6 +695,11 @@ textarea {
   margin-bottom: 37px;
 }
 @media screen and (max-width: 750px) {
+  #siawase{
+	background: url(../img/siawase-letter-bg-sp.png) center no-repeat;
+	/* margin-top: 60px;
+	padding: 67px 30px 67px; */
+  }
   #about .sec_mainTtl {
     font-size: 42px;
     height: 133px;
