@@ -284,16 +284,15 @@ textarea {
   position: relative;
 }
 .top_img{
-	margin: 0 160px 0;
+	background: url(../img/siro-head-bg.jpg) no-repeat;
+	background-size: cover;
+	text-align: center;
 }
 .top_img img{
-	height: 750px;
-	width: 100%;
+	height: 680px;
+    width: 885px;
 }
 @media screen and (max-width: 750px) {
-  .top_img{
-	  margin: 0;
-  }
   .ly_head_inner {
     width: 100%;
   }
@@ -901,7 +900,7 @@ textarea {
   }
   #cart .bl_cart_imgWrapper img {
     height: 245px;
-    width: auto;
+    width: 178px;
   }
   #cart .bl_cart_btnUnit .cart-logo-img {
     width: 287px;
