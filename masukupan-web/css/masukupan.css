@@ -381,7 +381,7 @@ textarea {
 }
 #intro .el_txet {
   text-align: center;
-  font-size: 21px;
+  font-size: 22px;
   /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
@@ -418,7 +418,7 @@ textarea {
     margin-bottom: 45px;
   }
   #intro .el_txet {
-    font-size: 32px;
+    font-size: 30px;
     letter-spacing: 0.04em;
     line-height: 1.54;
   }
@@ -546,6 +546,7 @@ textarea {
     url(../img/sen_sp.png) bottom center no-repeat;
   }
   #pride .el_txt {
+	text-align: left;
     font-size: 30px;
     letter-spacing: 0.06em;
     line-height: 1.46;
@@ -666,7 +667,6 @@ textarea {
     height: 133px;
   }
   #about .el_txt {
-	text-align: left;
     font-size: 30px;
     letter-spacing: 0.04em;
     line-height: 1.66;
