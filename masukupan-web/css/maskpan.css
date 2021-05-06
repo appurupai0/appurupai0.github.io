@@ -305,6 +305,44 @@ textarea {
 	  height: auto;
 	  width: 100%;
   }
+  /* .ly_head .el_mainTtl {
+		top: 723px;
+		left: 44px;
+	}
+	.ly_head .el_secTtl::before {
+		content: none;
+	}
+	.ly_head .el_mainTtl img {
+		width: 350px;
+	}
+	.ly_head .el_mainTxt {
+ 		top: 183px;
+	}
+	.ly_head .el_mainTxt img {
+		width: 505px;
+	}
+	.ly_head .el_subTxt {
+		right: 42px;
+		top: 794px;
+		font-size: 26px;
+		line-height: 1.4;
+	}
+	.ly_head .el_subTxt span {
+		font-size: 22px;
+	}
+	.ly_head .el_secTtl {
+		font-size: 34px;
+		letter-spacing: 0.08em;
+		width: 651px;
+		height: 213px;
+		top: 888px;
+		background: url(../images/hitoka/el_secTtl_bg_sp.png) center no-repeat;
+		line-height: 1.4;
+	}
+	.ly_head .el_secTtl::after {
+		top: 181px;
+		right: 57px;
+	} */
 }
 /*=========================================
  子どもだらけの研究集団「THE LABO」の新作
