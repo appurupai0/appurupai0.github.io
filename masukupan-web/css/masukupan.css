@@ -665,11 +665,13 @@ textarea {
   margin-bottom: 37px;
 }
 @media screen and (max-width: 750px) {
-  #about .sec_mainTtl {
+  #about .sec_mainTtl,
+  #siawase .sec_mainTtl {
     font-size: 42px;
     height: 133px;
   }
-  #about .el_txt {
+  #about .el_txt,
+  #siawase .el_txt{
     font-size: 30px;
     letter-spacing: 0.04em;
     line-height: 1.66;
