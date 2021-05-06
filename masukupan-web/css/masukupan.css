@@ -444,12 +444,12 @@ textarea {
   padding-bottom: 44px;
 }
 #pride .sec_mainTtl {
+  color: #fff;
   letter-spacing: 0.06em;
   margin-bottom: 45px;
   height: 65px;
   text-align: center;
-  background: url(../img/sen.png) top center no-repeat,
-    url(../img/sen.png) bottom center no-repeat;
+  background: url(../img/intro_h2_bg.png) top center no-repeat;
 }
 #pride .hp_mincho_only {
   font-family: "MS Mincho、ＭＳ 明朝";
@@ -646,11 +646,14 @@ textarea {
   background: url(../img/about_h2_bg.png) top center no-repeat,
     url(../img/about_h2_bg.png) bottom center no-repeat;
 }
-#about .figure_Wrapper img, #siawase .figure_Wrapper img{
+#about .figure_Wrapper img, 
+#siawase .figure_Wrapper img,
+#omake .figure_Wrapper img{
   height: 250px;
   width: 417px;
 }
-#about .figure_Wrapper .height, #siawase .figure_Wrapper .height{
+#about .figure_Wrapper .height, 
+#siawase .figure_Wrapper .height{
 	height: 280px;
 }
 #about .el_txt, #siawase .el_txt{
