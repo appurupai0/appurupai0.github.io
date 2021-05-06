@@ -411,7 +411,7 @@ textarea {
 }
 @media screen and (max-width: 750px) {
   #intro {
-	background: url(../img/round-bg-sp.png) center no-repeat;
+	/* background: url(../img/round-bg-sp.png) center no-repeat; */
     padding-top: 81px;
   }
   #intro .sec_mainTtl{
