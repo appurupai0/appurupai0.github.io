@@ -284,10 +284,10 @@ textarea {
   position: relative;
 }
 .top_img{
-	margin: 6px 70px 0;
+	margin: 6px 160px 0;
 }
 .top_img img{
-	height: 850px;
+	height: 750px;
 	width: 100%;
 }
 @media screen and (max-width: 750px) {
@@ -349,25 +349,31 @@ textarea {
  子どもだらけの研究集団「THE LABO」の新作
  =========================================*/
 #intro {
+	background: url(../img/round-bg.png) center no-repeat;
   padding-top: 40px;
   padding-bottom: 50px;
 }
 
 #intro .sec_mainTtl {
-  background: url(../img/f1528_0.png) center no-repeat;
+  background: url(../img/intro-h2-bg.png) no-repeat top;
   flex-direction: column;
   align-items: center;
   letter-spacing: 0.06em;
-  margin-bottom: 75px;
+  margin-bottom: 45px;
   text-align: center;
-  width: 560px;
-  height: 100px;
+  width: 630px;
+  height: 130px;
   /* background: linear-gradient(to right, #fffcf0, #ceef90, #fffcf0); */ 
   /* box-shadow: 0 1px 10px -3px #000000 inset; */
   /* border-bottom: 2px solid #b99e65; */
   /* border-radius: 30px; */
-  text-shadow: 1px 2px 2px #fff;
+  color: #fff;
+  text-shadow: 1px 2px 2px #000;
   font-size: 29px;
+}
+#intro .labo-link a{
+	color:  rgb(225 246 140);
+	text-shadow: 2px 2px 2px #000;
 }
 #intro .el_txt {
   text-align: center;
@@ -569,6 +575,9 @@ textarea {
 #pride .none_bottom{
 	padding-bottom: 0;
 }
+#pride .little_margin{
+	margin-bottom: 0;
+}
 .margin-top {
   margin-top: 67px;
 }
@@ -578,33 +587,33 @@ textarea {
   /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
+
+/* 共通画像サイズ */
 .figure_Wrapper{
 	text-align: center;
 	padding-top: 10px;
 	padding-bottom: 40px;
 }
-.figure_Wrapper_3d {
-	display: flex;
-	justify-content: space-around;
-	padding-top: 40px;
+.figure_Wrapper img{
+	height: 350px;
+  	width: 487px;
 }
-.figure_Wrapper_3d .img01{
-	height: 230px;
-	position: relative;
-	top: 60px;
-}
+/* 共通画像サイズ（終） */
 /*=============================
 　世界一幸せなマスクです
 =============================*/
+#siawase{
+	background: url(../img/siawase-letter-bg3.png) center no-repeat;
+	margin-top: 60px;
+	padding: 67px 30px 67px;
+}
 #about {
   background: url(../img/flower.jpg) no-repeat;
   background-size: cover;
+  margin-top: 60px;
   padding-top: 1px;
-}
-#siawase{
-	padding-top: 67px;
 }
 /* position: absoluteの画像設定 */
 /* .ti-ti{
@@ -631,7 +640,13 @@ textarea {
 	bottom: -40px;
 	height: 330px
 } */
-#about .sec_mainTtl, #siawase .sec_mainTtl {
+#siawase .sec_mainTtl{
+	letter-spacing: 0.06em;
+    height: 73px;
+    text-align: center;
+    margin-bottom: 26px;
+}
+#about .sec_mainTtl{
   letter-spacing: 0.06em;
   margin-bottom: 55px;
   height: 83px;
@@ -639,11 +654,14 @@ textarea {
 }
 #about .bg_deco1, #siawase .bg_deco1{
   background: url(../img/detail_h2_bg.png) top center no-repeat,
-    url(../img/detail_h2_bg.png) bottom center no-repeat;
+    url(../img/about_h2_bg.png) bottom center no-repeat;
 }
 #about .bg_deco2, #siawase .bg_deco2{
   background: url(../img/about_h2_bg.png) top center no-repeat,
     url(../img/about_h2_bg.png) bottom center no-repeat;
+}
+#about .figure_Wrapper{
+	padding-bottom: 67px;
 }
 #about .figure_Wrapper img, 
 #siawase .figure_Wrapper img{
@@ -695,7 +713,7 @@ textarea {
 =============================*/
 #cart {
   padding-top: 62px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 #cart .bl_cartUnit {
   border: 2px solid #c2ad7b;
