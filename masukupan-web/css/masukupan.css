@@ -476,7 +476,7 @@ textarea {
 
 /*---------- 検証結果 ------------*/
 .expt {
-  margin-top: 74px;
+  /* margin-top: 74px; */
   background-color: #fff;
   padding: 24px 0 24px;
 }
@@ -512,7 +512,7 @@ textarea {
   margin-right: 40px;
 }
 .experiment_imgWrapper {
-  margin-bottom: 20px;
+  margin-bottom: 6px;
   position: relative;
 }
 .experiment_imgWrapper img {
@@ -593,7 +593,7 @@ textarea {
 	margin-bottom: 0;
 }
 .margin-top {
-  margin-top: 67px;
+  margin-top: 97px;
 }
 .min_font {
   text-align: center;
@@ -635,31 +635,6 @@ textarea {
   margin-top: 60px;
   padding-top: 1px;
 }
-/* position: absoluteの画像設定 */
-/* .ti-ti{
-	position: absolute;
-	right: 0;
-	top: 50px;
-	height: 280px
-}
-.asahi{
-	position: absolute;
-	left: -100px;
-	top: -60px;
-	height: 280px
-}
-.katsumi{
-	position: absolute;
-	right: -25px;
-	bottom: -40px;
-	height: 250px
-}
-.yuu{
-	position: absolute;
-	right: -30px;
-	bottom: -40px;
-	height: 330px
-} */
 #siawase .sec_mainTtl{
 	letter-spacing: 0.06em;
     height: 73px;
@@ -685,16 +660,18 @@ textarea {
 }
 
 /* -----共通画像ー大きさ------------- */
-#intro .figure_Wrapper img,
-#about .figure_Wrapper img, 
+#intro .figure_Wrapper img, 
 #siawase .figure_Wrapper img{
   height: 250px;
   width: 417px;
 }
 /* -------------------------------- */
-#about .figure_Wrapper .height, 
 #siawase .figure_Wrapper .height{
 	height: 280px;
+}
+#about .figure_Wrapper img{
+    height: 360px;
+    width: 460px;
 }
 #about .el_txt, #siawase .el_txt{
   text-align: center;
@@ -738,6 +715,7 @@ textarea {
 =============================*/
 #about .mediam_font {
   font-size: 23px;
+  margin-bottom: 0;
 }
 
 /*=============================
@@ -1072,7 +1050,7 @@ textarea {
   /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 #omake .figure_Wrapper{
 	padding-top: 0;
@@ -1094,7 +1072,7 @@ textarea {
 }
 #omake .kennsyou-font{
 	text-align: center;
-	margin-top: 8px;
+	margin-top: 10px;
 }
 #omake .none-margin {
 	display: flex;
