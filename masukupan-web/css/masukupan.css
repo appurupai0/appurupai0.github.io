@@ -349,7 +349,7 @@ textarea {
  子どもだらけの研究集団「THE LABO」の新作
  =========================================*/
 #intro {
-  padding-top: 67px;
+  padding-top: 40px;
   padding-bottom: 50px;
 }
 
@@ -376,9 +376,12 @@ textarea {
   line-height: 1.54;
   margin-bottom: 15px;
 }
+.el_txt .font_origin{
+	font-family: 'Abril Fatface', cursive;
+}
 #intro .el_txet {
   text-align: center;
-  font-size: 22px;
+  font-size: 21px;
   /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
@@ -575,6 +578,7 @@ textarea {
   /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
+  margin-bottom: 30px;
 }
 .figure_Wrapper{
 	text-align: center;
@@ -597,10 +601,13 @@ textarea {
 #about {
   background: url(../img/AdobeStock_411733446.jpeg) no-repeat;
   background-size: cover;
-  padding-top: 67px;
+  padding-top: 1px;
+}
+#siawase{
+	padding-top: 67px;
 }
 /* position: absoluteの画像設定 */
-.ti-ti{
+/* .ti-ti{
 	position: absolute;
 	right: 0;
 	top: 50px;
@@ -623,29 +630,29 @@ textarea {
 	right: -30px;
 	bottom: -40px;
 	height: 330px
-}
-#about .sec_mainTtl {
+} */
+#about .sec_mainTtl, #siawase .sec_mainTtl {
   letter-spacing: 0.06em;
   margin-bottom: 55px;
   height: 83px;
   text-align: center;
 }
-#about .bg_deco1 {
+#about .bg_deco1, #siawase .bg_deco1{
   background: url(../img/detail_h2_bg.png) top center no-repeat,
     url(../img/detail_h2_bg.png) bottom center no-repeat;
 }
-#about .bg_deco2 {
+#about .bg_deco2, #siawase .bg_deco2{
   background: url(../img/about_h2_bg.png) top center no-repeat,
     url(../img/about_h2_bg.png) bottom center no-repeat;
 }
-#about .figure_Wrapper img {
+#about .figure_Wrapper img, #siawase .figure_Wrapper img{
   height: 250px;
   width: 417px;
 }
-#about .figure_Wrapper .height{
+#about .figure_Wrapper .height, #siawase .figure_Wrapper .height{
 	height: 280px;
 }
-#about .el_txt {
+#about .el_txt, #siawase .el_txt{
   text-align: center;
   font-size: 22px;
   /* color: #fff; */
@@ -659,6 +666,7 @@ textarea {
     height: 133px;
   }
   #about .el_txt {
+	text-align: left;
     font-size: 30px;
     letter-spacing: 0.04em;
     line-height: 1.66;
