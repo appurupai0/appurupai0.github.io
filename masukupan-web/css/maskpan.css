@@ -305,44 +305,6 @@ textarea {
 	  height: auto;
 	  width: 100%;
   }
-  /* .ly_head .el_mainTtl {
-		top: 723px;
-		left: 44px;
-	}
-	.ly_head .el_secTtl::before {
-		content: none;
-	}
-	.ly_head .el_mainTtl img {
-		width: 350px;
-	}
-	.ly_head .el_mainTxt {
- 		top: 183px;
-	}
-	.ly_head .el_mainTxt img {
-		width: 505px;
-	}
-	.ly_head .el_subTxt {
-		right: 42px;
-		top: 794px;
-		font-size: 26px;
-		line-height: 1.4;
-	}
-	.ly_head .el_subTxt span {
-		font-size: 22px;
-	}
-	.ly_head .el_secTtl {
-		font-size: 34px;
-		letter-spacing: 0.08em;
-		width: 651px;
-		height: 213px;
-		top: 888px;
-		background: url(../images/hitoka/el_secTtl_bg_sp.png) center no-repeat;
-		line-height: 1.4;
-	}
-	.ly_head .el_secTtl::after {
-		top: 181px;
-		right: 57px;
-	} */
 }
 /*=========================================
  子どもだらけの研究集団「THE LABO」の新作
@@ -362,10 +324,6 @@ textarea {
   text-align: center;
   width: 630px;
   height: 130px;
-  /* background: linear-gradient(to right, #fffcf0, #ceef90, #fffcf0); */ 
-  /* box-shadow: 0 1px 10px -3px #000000 inset; */
-  /* border-bottom: 2px solid #b99e65; */
-  /* border-radius: 30px; */
   color: #fff;
   text-shadow: 1px 2px 2px #000;
   font-size: 29px;
@@ -377,7 +335,6 @@ textarea {
 #intro .el_txt {
   text-align: center;
   font-size: 22px;
-  /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
   margin-bottom: 15px;
@@ -388,14 +345,12 @@ textarea {
 #intro .el_txet {
   text-align: center;
   font-size: 22px;
-  /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
   margin-bottom: 12px;
 }
 #intro .figure_Wrapper {
   text-align: center;
-  /* padding-bottom: 60px; */
 }
 #intro .figure_Wrapper img {
   height: 224px;
@@ -411,7 +366,6 @@ textarea {
 }
 @media screen and (max-width: 750px) {
   #intro {
-	/* background: url(../img/round-bg-sp.png) center no-repeat; */
     padding-top: 81px;
   }
   #intro .sec_mainTtl{
@@ -440,7 +394,6 @@ textarea {
 　マスクパンは高性能
 =============================*/
 #pride {
-  /* background: url(../img/kon3.png); */
   background-color: rgba(37, 30, 61, 0.925);
   padding-top: 65px;
   padding-bottom: 63px;
@@ -468,7 +421,6 @@ textarea {
   position: relative;
   text-align: center;
   font-size: 22px;
-  /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
   margin-bottom: 37px;
@@ -476,7 +428,6 @@ textarea {
 
 /*---------- 検証結果 ------------*/
 .expt {
-  /* margin-top: 74px; */
   background-color: #fff;
   padding: 24px 0 24px;
 }
@@ -534,7 +485,6 @@ textarea {
 .ex_txt {
   text-align: center;
   font-size: 22px;
-  /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
 }
@@ -542,7 +492,6 @@ textarea {
   text-align: right;
   padding-bottom: 30px;
   padding-right: 50px;
-  /* margin-right: 60px; */
   font-size: 15px;
 }
 @media screen and (max-width: 750px) {
@@ -598,7 +547,6 @@ textarea {
 .min_font {
   text-align: center;
   font-size: 16px;
-  /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
   padding-bottom: 30px;
@@ -676,7 +624,6 @@ textarea {
 #about .el_txt, #siawase .el_txt{
   text-align: center;
   font-size: 22px;
-  /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
   margin-bottom: 37px;
@@ -684,8 +631,6 @@ textarea {
 @media screen and (max-width: 750px) {
   #siawase{
 	background: url(../img/siawase-letter-bg-sp.png) center no-repeat;
-	/* margin-top: 60px;
-	padding: 67px 30px 67px; */
   }
   #about .sec_mainTtl {
     font-size: 42px;
@@ -815,9 +760,6 @@ textarea {
 }
 #cart .bl_cart_btnUnit .cart-logo-img {
 	width: 287px;
-    /* padding-top: 8px; */
-    /* font-size: 20px; */
-    /* line-height: 1.4; */
     position: relative;
     top: -15px;
 	margin-left: 6px;
@@ -871,9 +813,6 @@ textarea {
   position: relative;
 }
 @media screen and (max-width: 750px) {
-  /* #cart {
-    padding-bottom: 50px;
-  } */
   #cart .ly_cont_inner {
     width: 690px;
   }
@@ -925,7 +864,6 @@ textarea {
     font-size: 22px;
     margin-top: 0;
     right: 130px;
-    /* left: 20px; */
     left: initial;
     top: 85px;
     width: 100%;
@@ -987,7 +925,6 @@ textarea {
     margin-right: -20px;
     margin-top: 0;
     padding-left: 3.2em;
-    /* text-indent: -5.2em; */
     position: absolute;
     bottom: 50px;
     left: 0;
@@ -1047,7 +984,6 @@ textarea {
 #omake .el_txt {
   text-align: center;
   font-size: 22px;
-  /* color: #fff; */
   letter-spacing: 0.08rem;
   line-height: 1.54;
   margin-bottom: 25px;
