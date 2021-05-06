@@ -291,6 +291,9 @@ textarea {
 	width: 100%;
 }
 @media screen and (max-width: 750px) {
+  .top_img{
+	  margin: 0;
+  }
   .ly_head_inner {
     width: 100%;
   }
@@ -422,7 +425,7 @@ textarea {
     font-size: 30px;
     letter-spacing: 0.04em;
     line-height: 1.54;
-    margin-bottom: 45px;
+    margin-bottom: 0;
   }
   #intro .el_txet {
     font-size: 30px;
@@ -462,6 +465,7 @@ textarea {
   font-family: "MS Mincho、ＭＳ 明朝";
 }
 #pride .el_txt {
+  position: relative;
   text-align: center;
   font-size: 22px;
   /* color: #fff; */
@@ -570,7 +574,7 @@ textarea {
   #pride .expt_Ttl {
     font-size: 22px;
     text-align: center;
-    width: auto;
+    width: 420px;
   }
   #pride .min_font {
     font-size: 18px;
@@ -611,6 +615,12 @@ textarea {
   	width: 487px;
 }
 /* 共通画像サイズ（終） */
+
+@media screen and (max-width: 750px) {
+	#pride .figure_Wrapper{
+		margin-top: -55px;
+	}
+  }
 /*=============================
 　世界一幸せなマスクです
 =============================*/
@@ -992,7 +1002,7 @@ textarea {
     margin-bottom: 32px;
   }
   #cart .bl_cart_btnUnit .el_att {
-	font-size: 22px;
+	font-size: 20px;
     letter-spacing: 0.04em;
     line-height: 1.41;
     margin-left: 0;
@@ -1001,7 +1011,7 @@ textarea {
     padding-left: 3.2em;
     /* text-indent: -5.2em; */
     position: absolute;
-    bottom: 80px;
+    bottom: 50px;
     left: 0;
     text-align: center;
   }
@@ -1120,12 +1130,8 @@ textarea {
   #omake .omake_content {
     margin-left: 0;
 }
-.figure_Wrapper {
-    padding-top: 5px;
-}
   #omake .big-font {
     font-size: 34px;
-	margin-left: -90px;
 	margin-top: 10px;
   }
   #omake .kennsyou-font {
