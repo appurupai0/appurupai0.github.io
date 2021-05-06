@@ -1005,6 +1005,7 @@ textarea {
   background: url(../img/AdobeStock_393530565.jpeg);
   background-size: cover;
   padding-top: 67px;
+  padding-bottom: 40px;
 }
 #omake .sec_mainTtl {
   position: relative;
@@ -1031,6 +1032,9 @@ textarea {
 	display: flex;
 	margin-left: 80px;
 }
+#omake .figure_Wrapper{
+	padding-bottom: 20px;
+}
 #omake .figure_Wrapper img{
 	height: 220px;
 	width: 320px;
@@ -1056,9 +1060,14 @@ textarea {
 	text-align: right;
 }
 #omake .none-margin {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+	background: url(../img/book.png) center no-repeat;
+	font-size: 24px;
 	margin-bottom: 0;
 	padding-top: 0;
-	padding-bottom: 40px;
 }
 @media screen and (max-width: 750px) {
   #omake {
