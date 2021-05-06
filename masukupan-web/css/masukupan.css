@@ -414,6 +414,9 @@ textarea {
   #intro {
     padding-top: 81px;
   }
+  #intro .sec_mainTtl{
+	  margin-bottom: 25px;
+  }
   #intro .el_sec_mainTtl {
     width: 550px;
     height: 84px;
@@ -663,11 +666,15 @@ textarea {
 #about .figure_Wrapper{
 	padding-bottom: 67px;
 }
+
+/* -----共通画像ー大きさ------------- */
+#intro .figure_Wrapper img,
 #about .figure_Wrapper img, 
 #siawase .figure_Wrapper img{
   height: 250px;
   width: 417px;
 }
+/* -------------------------------- */
 #about .figure_Wrapper .height, 
 #siawase .figure_Wrapper .height{
 	height: 280px;
@@ -681,10 +688,13 @@ textarea {
   margin-bottom: 37px;
 }
 @media screen and (max-width: 750px) {
-  #about .sec_mainTtl,
-  #siawase .sec_mainTtl {
+  #about .sec_mainTtl {
     font-size: 42px;
     height: 133px;
+  }
+  #siawase .sec_mainTtl{
+	font-size: 42px;
+    height: 86px;
   }
   #about .el_txt,
   #siawase .el_txt{
@@ -876,7 +886,7 @@ textarea {
 	margin-left: 35px;
   }
   #cart .bl_cartUnit {
-    height: 665px;
+    height: 655px;
     padding-top: 0;
     position: relative;
     padding-left: 67px;
@@ -978,7 +988,6 @@ textarea {
     margin-right: -20px;
     margin-top: 0;
     padding-left: 3.2em;
-    padding-bottom: 8px;
     /* text-indent: -5.2em; */
     position: absolute;
     bottom: 80px;
@@ -1044,19 +1053,12 @@ textarea {
   line-height: 1.54;
   margin-bottom: 40px;
 }
-#omake .omake_content{
-	display: flex;
-	margin-left: 80px;
-}
 #omake .figure_Wrapper{
 	padding-bottom: 20px;
 }
 #omake .figure_Wrapper img{
 	height: 220px;
 	width: 320px;
-}
-#omake .omake_text{
-	margin-top: 25px;
 }
 #omake .big-font {
   letter-spacing: 0.08rem;
@@ -1067,7 +1069,6 @@ textarea {
   font-weight: bold;
   color: #000;
   width: 450px;
-  background: url(../img/result-back.png) center no-repeat;
 }
 #omake .kennsyou-font{
 	text-align: right;
@@ -1086,20 +1087,17 @@ textarea {
   #omake {
     background: url(../img/gray_sp.png) center no-repeat;
     background-size: cover;
-    height: 970px;
-  }
-  #omake .ly_cont_inner{
-	  height: 823px;
+    height: 835px;
   }
   #omake .sec_mainTtl {
     letter-spacing: 0.06em;
-    margin-bottom: 55px;
+    margin-bottom:40px;
     height: 83px;
     text-align: center;
     font-size: 40px;
   }
   #omake .sec_mainTtl img{
-	top: 55px;
+	top: 65px;
 }
   #omake .el_txt {
     font-size: 30px;
@@ -1110,7 +1108,7 @@ textarea {
     margin-left: 0;
 }
 .figure_Wrapper {
-    padding-top: 90px;
+    padding-top: 5px;
 }
   #omake .big-font {
     font-size: 34px;
@@ -1123,6 +1121,7 @@ textarea {
   #omake .none-margin {
 	font-size: 28px;
 	background-size: 440px;
+	margin-top: 15px;
  }
 }
 /*=============================
