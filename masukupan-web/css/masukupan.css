@@ -354,6 +354,7 @@ textarea {
 }
 
 #intro .sec_mainTtl {
+  background: url(../img/f1528_0.png) center no-repeat;
   flex-direction: column;
   align-items: center;
   letter-spacing: 0.06em;
@@ -362,9 +363,9 @@ textarea {
   width: 560px;
   height: 100px;
   /* background: linear-gradient(to right, #fffcf0, #ceef90, #fffcf0); */ 
-    /* box-shadow: 0 1px 10px -3px #000000 inset; */
-    border-bottom: 2px solid #b99e65;
-    /* border-radius: 30px; */
+  /* box-shadow: 0 1px 10px -3px #000000 inset; */
+  /* border-bottom: 2px solid #b99e65; */
+  /* border-radius: 30px; */
   text-shadow: 1px 2px 2px #fff;
   font-size: 29px;
 }
@@ -598,7 +599,7 @@ textarea {
 　世界一幸せなマスクです
 =============================*/
 #about {
-  background: url(../img/AdobeStock_411733446.jpeg) no-repeat;
+  background: url(../img/flower.jpg) no-repeat;
   background-size: cover;
   padding-top: 1px;
 }
@@ -1000,7 +1001,7 @@ textarea {
 　開発中のおはなし
 =============================*/
 #omake {
-  background: url(../img/AdobeStock_393530565.jpeg);
+  background: url(../img/gray_pc.jpg) no-repeat;
   background-size: cover;
   padding-top: 67px;
   padding-bottom: 40px;
@@ -1048,7 +1049,7 @@ textarea {
   font-weight: bold;
   color: #000;
   width: 450px;
-  background: url(../img/f1408_1.png) center no-repeat;
+  background: url(../img/result-back.png) center no-repeat;
 }
 #omake .kennsyou-font{
 	text-align: right;
@@ -1065,7 +1066,7 @@ textarea {
 }
 @media screen and (max-width: 750px) {
   #omake {
-    background: url(../img/gray_back.png);
+    background: url(../img/gray_sp.png) center no-repeat;
     background-size: cover;
     height: 970px;
   }
@@ -1104,143 +1105,144 @@ textarea {
   #omake .none-margin {
 	font-size: 28px;
 	background-size: 440px;
+ }
 }
 /*=============================
 　footer
 =============================*/
 main {
-  min-height: calc(100vh - 285px /*header + footerの高さ*/);
-}
-.ly_foot {
-  background: #1c243a;
-  padding-top: 50px;
-}
-.ly_foot_inner {
-  padding-bottom: 40px;
-}
-/*ナビ*/
-.bl_foot_gloNav {
-  width: 910px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.bl_foot_gloNav_inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.bl_foot_gloNav_inner li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fff;
-  text-decoration: underline;
-}
-.bl_foot_gloNav_inner li::before {
-  content: "";
-  display: block;
-  justify-content: center;
-  margin-right: 7px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5.5px 0 5.5px 9px;
-  border-color: transparent transparent transparent #c5b283;
-}
-.bl_foot_gloNav_inner a {
-  color: #fff;
-}
-/*コピーライト*/
-.bl_foot_copyright {
-  width: 100%;
-  height: 35px;
-  background: #000;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.bl_foot_copyright small {
-  color: #fff;
-  font-size: 12px;
-  font-family: Verdana; /* Android */
-}
-@media screen and (max-width: 750px) {
-  .ly_foot_inner {
-    padding-bottom: 20px;
+	min-height: calc(100vh - 285px /*header + footerの高さ*/);
   }
+  .ly_foot {
+	background: #1c243a;
+	padding-top: 50px;
+  }
+  .ly_foot_inner {
+	padding-bottom: 40px;
+  }
+  /*ナビ*/
   .bl_foot_gloNav {
-    width: initial;
+	width: 910px;
+	margin-left: auto;
+	margin-right: auto;
   }
   .bl_foot_gloNav_inner {
-    display: block;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
   }
   .bl_foot_gloNav_inner li {
-    margin-bottom: 30px;
-    justify-content: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #fff;
+	text-decoration: underline;
   }
   .bl_foot_gloNav_inner li::before {
-    margin-right: 10px;
-    border-width: 8.5px 0 8.5px 12px;
+	content: "";
+	display: block;
+	justify-content: center;
+	margin-right: 7px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 5.5px 0 5.5px 9px;
+	border-color: transparent transparent transparent #c5b283;
   }
+  .bl_foot_gloNav_inner a {
+	color: #fff;
+  }
+  /*コピーライト*/
   .bl_foot_copyright {
-    height: 48px;
+	width: 100%;
+	height: 35px;
+	background: #000;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
   }
   .bl_foot_copyright small {
-    font-size: 16px;
+	color: #fff;
+	font-size: 12px;
+	font-family: Verdana; /* Android */
   }
-}
-/* Edge */
-_:-ms-lang(x)::backdrop {
-}
-
-/* firefox */
-_:lang(x)::-moz-placeholder {
-}
-
-/* Mac,iPad Safari */
-@media only screen and (min-device-width: 768px) {
-  _::-webkit-full-page-media,
-  _:future,
-  :root .el_label,
-  _::-webkit-full-page-media,
-  _:future,
-  :root .bl_vertPosts_date,
-  _::-webkit-full-page-media,
-  _:future,
-  :root .hp_strikethrough {
-    padding-top: 0;
+  @media screen and (max-width: 750px) {
+	.ly_foot_inner {
+	  padding-bottom: 20px;
+	}
+	.bl_foot_gloNav {
+	  width: initial;
+	}
+	.bl_foot_gloNav_inner {
+	  display: block;
+	}
+	.bl_foot_gloNav_inner li {
+	  margin-bottom: 30px;
+	  justify-content: center;
+	}
+	.bl_foot_gloNav_inner li::before {
+	  margin-right: 10px;
+	  border-width: 8.5px 0 8.5px 12px;
+	}
+	.bl_foot_copyright {
+	  height: 48px;
+	}
+	.bl_foot_copyright small {
+	  font-size: 16px;
+	}
   }
-  _::-webkit-full-page-media,
-  _:future,
-  :root .el_btn {
-    padding-top: 2px;
+  /* Edge */
+  _:-ms-lang(x)::backdrop {
   }
-  _::-webkit-full-page-media,
-  _:future,
-  :root .el_triangleLink::before {
-    top: 4px;
+  
+  /* firefox */
+  _:lang(x)::-moz-placeholder {
   }
-  _::-webkit-full-page-media,
-  _:future,
-  :root .bl_catLabel {
-    padding-bottom: 11px;
+  
+  /* Mac,iPad Safari */
+  @media only screen and (min-device-width: 768px) {
+	_::-webkit-full-page-media,
+	_:future,
+	:root .el_label,
+	_::-webkit-full-page-media,
+	_:future,
+	:root .bl_vertPosts_date,
+	_::-webkit-full-page-media,
+	_:future,
+	:root .hp_strikethrough {
+	  padding-top: 0;
+	}
+	_::-webkit-full-page-media,
+	_:future,
+	:root .el_btn {
+	  padding-top: 2px;
+	}
+	_::-webkit-full-page-media,
+	_:future,
+	:root .el_triangleLink::before {
+	  top: 4px;
+	}
+	_::-webkit-full-page-media,
+	_:future,
+	:root .bl_catLabel {
+	  padding-bottom: 11px;
+	}
   }
-}
-
+  
 /* Mac Ssafari */
-@media only screen and (min-device-width: 1025px) {
-  _::-webkit-full-page-media,
-  _:future,
+ @media only screen and (min-device-width: 1025px) {
+　_::-webkit-full-page-media,
+　_:future,
   :root {
   }
 }
-
+  
 /* iPad Safari */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  _::-webkit-full-page-media,
-  _:future,
-  :root {
+	_::-webkit-full-page-media,
+	_:future,
+	:root {
+	}
   }
-}
