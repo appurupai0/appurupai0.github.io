@@ -1050,10 +1050,11 @@ textarea {
     margin-left: 0;
 }
 #omake .figure_Wrapper{
-	margin-bottom: 95px;
+	margin-bottom: 45px;
 }
-#omake .figure_Wrapper{
-	height: 400px;
+#omake .figure_Wrapper img {
+    height: 400px;
+    width: 560px;
 }
   #omake .big-font {
     font-size: 34px;
