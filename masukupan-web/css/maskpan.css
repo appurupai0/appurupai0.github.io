@@ -284,13 +284,20 @@ textarea {
   position: relative;
 }
 .top_img{
-	background: url(../img/siro-head-bg.jpg) no-repeat;
-	background-size: cover;
 	text-align: center;
 }
 .top_img img{
-	height: 680px;
-    width: 835px;
+	height: 820px;
+	width: 100%
+}
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc-img { display: block !important; }
+.sp-img { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 750px) {
+    .pc-img { display: none !important; }
+    .sp-img { display: block !important; }
 }
 @media screen and (max-width: 750px) {
   .ly_head_inner {
