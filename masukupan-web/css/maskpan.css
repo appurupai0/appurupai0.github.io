@@ -1028,7 +1028,7 @@ textarea {
   #omake {
     background: url(../img/gray_sp.png) center no-repeat;
     background-size: cover;
-    height: 915px;
+    height: 1185px;
   }
   #omake .sec_mainTtl {
     letter-spacing: 0.06em;
@@ -1044,9 +1044,13 @@ textarea {
     font-size: 30px;
     letter-spacing: 0.04em;
     line-height: 1.66;
+	margin-bottom: 70px;
   }
   #omake .omake_content {
     margin-left: 0;
+}
+#omake .figure_Wrapper{
+	padding-bottom: 70px;
 }
   #omake .big-font {
     font-size: 34px;
