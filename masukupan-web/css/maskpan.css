@@ -997,8 +997,8 @@ textarea {
 	padding-bottom: 50px;
 }
 #omake .figure_Wrapper img{
-	height: 360px;
-    width: 520px;
+	height: 380px;
+    width: 540px;
 }
 #omake .big-font {
   letter-spacing: 0.08rem;
@@ -1028,11 +1028,11 @@ textarea {
   #omake {
     background: url(../img/gray_sp.png) center no-repeat;
     background-size: cover;
-    height: 1185px;
+    height: 1270px;
   }
   #omake .sec_mainTtl {
     letter-spacing: 0.06em;
-    margin-bottom:40px;
+    margin-bottom:85px;
     height: 83px;
     text-align: center;
     font-size: 40px;
@@ -1051,6 +1051,10 @@ textarea {
 }
 #omake .figure_Wrapper{
 	padding-bottom: 70px;
+}
+#omake .figure_Wrapper{
+	height: 400px;
+    width: 550px;
 }
   #omake .big-font {
     font-size: 34px;
