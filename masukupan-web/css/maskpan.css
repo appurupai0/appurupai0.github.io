@@ -305,44 +305,6 @@ textarea {
 	  height: auto;
 	  width: 100%;
   }
-  /* .ly_head .el_mainTtl {
-		top: 723px;
-		left: 44px;
-	}
-	.ly_head .el_secTtl::before {
-		content: none;
-	}
-	.ly_head .el_mainTtl img {
-		width: 350px;
-	}
-	.ly_head .el_mainTxt {
- 		top: 183px;
-	}
-	.ly_head .el_mainTxt img {
-		width: 505px;
-	}
-	.ly_head .el_subTxt {
-		right: 42px;
-		top: 794px;
-		font-size: 26px;
-		line-height: 1.4;
-	}
-	.ly_head .el_subTxt span {
-		font-size: 22px;
-	}
-	.ly_head .el_secTtl {
-		font-size: 34px;
-		letter-spacing: 0.08em;
-		width: 651px;
-		height: 213px;
-		top: 888px;
-		background: url(../images/hitoka/el_secTtl_bg_sp.png) center no-repeat;
-		line-height: 1.4;
-	}
-	.ly_head .el_secTtl::after {
-		top: 181px;
-		right: 57px;
-	} */
 }
 /*=========================================
  子どもだらけの研究集団「THE LABO」の新作
@@ -367,8 +329,7 @@ textarea {
   font-size: 29px;
 }
 #intro .labo-link a{
-	color:  rgb(225 246 140);
-	text-shadow: 2px 2px 2px #000;
+	text-shadow: 2px 2px 2px #fff;
 }
 #intro .el_txt {
   text-align: center;
@@ -463,6 +424,9 @@ textarea {
   line-height: 1.54;
   margin-bottom: 37px;
 }
+#pride .bottom-none-margin{
+	margin-bottom: 0;
+}
 
 /*---------- 検証結果 ------------*/
 .expt {
@@ -470,19 +434,21 @@ textarea {
   padding: 24px 0 24px;
 }
 .expt_all{
-	margin: 24px 20px 24px;
+	margin: 24px 14px 24px;
+	padding: 0 6px 0;
 	border: 3px dashed rgba(37, 30, 61, 0.925);
 }
 .expt_Ttl {
   font-size: 25px;
   letter-spacing: 0.06em;
-  padding-bottom: 5px;
+  border-top: 2px solid;
   border-bottom: 2px solid;
   width: 400px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 35px;
-  padding-top: 30px;
+  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
 }
 .expt_contener {
@@ -1004,13 +970,13 @@ textarea {
 #omake {
   background: url(../img/gray_pc.jpg) no-repeat;
   background-size: cover;
-  padding-top: 67px;
+  padding-top: 70px;
   padding-bottom: 40px;
 }
 #omake .sec_mainTtl {
   position: relative;
   letter-spacing: 0.06em;
-  margin-bottom: 55px;
+  margin-bottom: 95px;
   width: 360px;
   text-align: center;
   padding-bottom: 5px;
@@ -1024,20 +990,20 @@ textarea {
   font-size: 22px;
   letter-spacing: 0.08rem;
   line-height: 1.54;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 #omake .figure_Wrapper{
 	padding-top: 0;
-	padding-bottom: 20px;
+	padding-bottom: 50px;
 }
 #omake .figure_Wrapper img{
-	height: 220px;
-	width: 320px;
+	height: 360px;
+    width: 520px;
 }
 #omake .big-font {
   letter-spacing: 0.08rem;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
   line-height: 2.1;
   font-size: 31px;
   font-weight: bold;
@@ -1046,7 +1012,7 @@ textarea {
 }
 #omake .kennsyou-font{
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 15px;
 }
 #omake .none-margin {
 	display: flex;
@@ -1055,7 +1021,7 @@ textarea {
 	height: 100px;
 	background: url(../img/book.png) center no-repeat;
 	font-size: 24px;
-	margin-bottom: 0;
+	margin-bottom: 27px;
 	padding-top: 0;
 }
 @media screen and (max-width: 750px) {
