@@ -860,10 +860,10 @@ textarea {
   #cart .bl_cart_btnUnit .cart-logo-img {
     width: 287px;
     position: relative;
-    top: -350px;
+    top: -250px;
     margin-left: 420px;
     text-align: center;
-}
+  }
   #cart .bl_cart_btnUnit .el_text {
     padding-bottom: 8px;
   }
@@ -974,12 +974,12 @@ textarea {
   #cart .el_btn {
     width: 381px;
     height: 72px;
-	top: -175px;
+	top: -75px;
   }
   #cart .news-7 {
     position: absolute;
 	top: -50px;
-}
+  }
 }
 /*=============================
 　開発中のおはなし
