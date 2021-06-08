@@ -860,7 +860,7 @@ textarea {
   #cart .bl_cart_btnUnit .cart-logo-img {
     width: 287px;
     position: relative;
-    top: -75px;
+    top: -425px;
     margin-left: 420px;
     text-align: center;
   }
@@ -974,11 +974,13 @@ textarea {
   #cart .el_btn {
     width: 381px;
     height: 72px;
-	top: -205px;
+	top: -255px;
   }
   #cart .news-7 {
     position: absolute;
 	top: -50px;
+	text-align: center;
+    padding-left: 64px;
   }
 }
 /*=============================
