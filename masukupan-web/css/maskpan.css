@@ -835,12 +835,12 @@ textarea {
   #cart .el_sec_mainTtl {
     font-size: 48px;
     display: block;
-    margin-bottom: 95px;
+    margin-bottom: 75px;
     padding-top: 30px;
 	margin-left: 35px;
   }
   #cart .bl_cartUnit {
-    height: 655px;
+    height: 755px;
     padding-top: 0;
     position: relative;
     padding-left: 67px;
@@ -860,7 +860,7 @@ textarea {
   #cart .bl_cart_btnUnit .cart-logo-img {
     width: 287px;
     position: relative;
-    top: -325px;
+    top: -350px;
     margin-left: 420px;
     text-align: center;
 }
@@ -942,6 +942,7 @@ textarea {
     margin-top: 0;
     padding-left: 3.2em;
     position: absolute;
+	top: 40px;
     bottom: 50px;
     left: 0;
     text-align: center;
@@ -973,8 +974,12 @@ textarea {
   #cart .el_btn {
     width: 381px;
     height: 72px;
-	top: -145px;
+	top: -175px;
   }
+  #cart .news-7 {
+    position: absolute;
+	top: -50px;
+}
 }
 /*=============================
 　開発中のおはなし
