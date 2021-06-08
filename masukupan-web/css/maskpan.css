@@ -683,7 +683,7 @@ textarea {
 }
 #cart .bl_cartUnit {
   border: 2px solid #c2ad7b;
-  height: 280px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -760,7 +760,7 @@ textarea {
   align-items: center;
   justify-content: space-between;
   margin-top: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   margin-left: -5px;
 }
 #cart .bl_cart_btnUnit {
@@ -818,6 +818,11 @@ textarea {
   margin-left: 50px;
   margin-right: -80px;
   padding-left: 0;
+}
+#cart .news-7{
+	margin: 0 auto;
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 .el_att {
   padding: 0 0 0 1rem;
