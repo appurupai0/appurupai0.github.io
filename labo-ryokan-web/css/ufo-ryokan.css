@@ -272,6 +272,10 @@ textarea {
     border-width: 8.5px 0 8.5px 14px;
     right: 29px;
   }
+  /* el_txt */
+  .el_txt{
+	font-size: 25px;
+  }
 }
 /*=============================
 　header
@@ -335,6 +339,25 @@ textarea {
 @media screen and (max-width: 750px){
 	.ly_head{
 		width: 100%;
+	}
+	.ly_head .el_mainTtl{
+		margin-right: 3%;
+	}
+	.ly_head .el_mainTtl img{
+		margin-bottom: 20px;
+	}
+	.ly_head .el_btn{
+		margin-right: 0;
+		width: 326px;
+		height: 76px;
+		font-size: 25px; 
+	}
+	.head_txt{
+		margin-right: 3%;
+	}
+	.ly_head .sub-top{
+		margin-right: auto;
+		margin-left: auto;
 	}
 }
 
@@ -402,6 +425,14 @@ textarea {
 @media screen and (max-width: 750px){
 	#intro .ly_cont_inner{
 		width: 80%;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+	.fx-end {
+		left: 500px;
+	}
+	#intro .el_txt{
+		width: auto;
 	}
 }
 
@@ -440,8 +471,14 @@ textarea {
 }
 
 @media screen and (max-width: 750px){
-	#history .le_media_imgWrapper{
+	#history .sec_mainTtl{
+		margin-left: 66px;
+	}
+	#history .el_media_imgWrapper{
 		width: 100%;
+	}
+	#history .white_font_etc{
+		margin-left: 56px;
 	}
 }
 
@@ -496,6 +533,9 @@ textarea {
 		width: 85%;
 		margin: 40px auto 0;
 		padding: 52px 20px;
+	}
+	#plan .plan_info{
+		margin-left: 5%;
 	}
 }
 
@@ -573,6 +613,9 @@ textarea {
 	margin-top: 10px;
 }
 @media screen and (max-width: 750px){
+	#reserve .ly_cont_inner{
+		width: 80%;
+	}
 	#reserve .small_font{
 		font-size:20px;
 	}
