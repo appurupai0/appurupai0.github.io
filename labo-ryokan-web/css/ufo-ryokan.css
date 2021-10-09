@@ -332,6 +332,12 @@ textarea {
 	border-bottom:solid 2px rgb(3, 143, 15);
 }
 
+@media screen and (max-width: 750px){
+	.ly_head{
+		width: 100%;
+	}
+}
+
 /*=============================
 　天成園ーイントロダクション
 ==============================*/
@@ -393,6 +399,12 @@ textarea {
 	padding: 50px;
 }
 
+@media screen and (max-width: 750px){
+	#intro .ly_cont_inner{
+		width: 80%;
+	}
+}
+
 /*=============================
 　これまでの歩み
 =============================*/
@@ -402,7 +414,7 @@ textarea {
 	background: url(../ufo-ryokan/mon.png) no-repeat,
 				url(../ufo-ryokan/no-moon-bg.png) no-repeat;
 	background-position: top right, top;
-	background-size: 27% auto, 100% auto;
+	background-size: 27% auto, auto;
 }
 #history .sec_mainTtl{
 	justify-content: flex-start;
@@ -425,6 +437,12 @@ textarea {
 #history .el_media_imgWrapper{
 	width: 885px;
 	margin: 47px auto 0;
+}
+
+@media screen and (max-width: 750px){
+	#history .le_media_imgWrapper{
+		width: 100%;
+	}
 }
 
 /*=============================
@@ -473,6 +491,13 @@ textarea {
 	justify-content: center;
 	margin-top: 60px;
 }
+@media screen and (max-width: 750px){
+	#plan .sec{
+		width: 85%;
+		margin: 40px auto 0;
+		padding: 52px 20px;
+	}
+}
 
 /*=============================
 　経営者の声
@@ -496,6 +521,13 @@ textarea {
 #exe .space{
 	margin-top: 40px;
 }
+
+@media screen and (max-width: 750px){
+	#exe .end-start{
+		font-size: 20px;
+	}
+}
+
 /*=============================
 　ご案内（予約ページ）
 =============================*/
@@ -539,6 +571,11 @@ textarea {
 }
 #reserve .small_font{
 	margin-top: 10px;
+}
+@media screen and (max-width: 750px){
+	#reserve .small_font{
+		font-size:20px;
+	}
 }
 
 /*=============================
