@@ -178,13 +178,19 @@ textarea {
 .hp_mincho {
   font-family: "游明朝体", "Yu Mincho", YuMincho, "ヒラギノ明朝 Pro",
     "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
-  font-weight: bold;
+  font-weight:inherit;
+}
+.el_txt{
+	font-size: 22px;
+	letter-spacing: 0.08rem;
+    line-height: 1.54;
+	text-align: center;
 }
 /*el_btn*/
 .el_btn {
   padding: 3px 0 0 0;
-  background: #a47e3b;
-  border-radius: 20px;
+  background: #0f0664;
+  border-radius: 10px;
   color: #fff;
   font-weight: bold;
   text-align: center;
@@ -255,7 +261,7 @@ textarea {
     height: 96px;
     padding: 4px 10px 0 0;
     border-bottom-width: 4px;
-    border-radius: 20px;
+    border-radius: 10px;
     font-size: 38px;
     width: 496px;
     margin-left: auto;
@@ -270,8 +276,270 @@ textarea {
 /*=============================
 　header
 ==============================*/
+.ly_head{
+	background: rgb(176,176,186);
+	background: linear-gradient(180deg, rgba(176,176,186,1) 0%,
+				 rgba(255,255,255,1) 66%);
+	/* background: url(../ufo-ryokan/) */
+	height: auto;
+    position: relative;
+    border: none;
+    box-shadow: none;
+	padding-top: 240px;
+	padding-right: 45px;
+}
+.ly_head .el_media_imgWrapper{
+	width: 493px;
+	height: 283px;
+	margin: 0 auto;
+}
+.ly_head .el_mainTtl img{
+	width: 300px;
+	height: 157px;
+	margin-top: 60px;
+	margin-bottom: 10px;
+}
+.ly_head .el_mainTtl{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-right: 18%;
+}
+.ly_head .sub-top{
+	margin-top: 67px;
+}
+.head_txt{
+	text-align: end;
+	font-size: 20px;
+	line-height: 28px;
+	margin-right: 18%;
+	padding-top: 40px;
+}
+.ly_head .sub-top{
+	background: url(../ufo-ryokan/ufo.png)center no-repeat;
+    background-size: contain;
+    height: 285px;
+}
+.ly_head .flex{
+	display: flex;
+	justify-content: center;
+}
+.ly_head .boldFont{
+	margin-top: 72px;
+	text-align: initial;
+}
+.ly_head .under_line{
+	border-bottom:solid 2px rgb(3, 143, 15);
+}
 
+/*=============================
+　天成園ーイントロダクション
+==============================*/
+#intro{
+	background:url(../ufo-ryokan/bg01.png) center no-repeat;
+	background-size: cover;
+	padding-top: 60px;
+	padding-bottom: 100px;
+	margin-top: 67px;
+}
+#intro .ly_cont_inner{
+	box-shadow:0px 0px 10px 5px rgba(0, 0, 0, 0.35);
+     width:100px;
+	background-color: rgb(247, 255, 242);
+	width: 1020px;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 52px 75px;
+	position: relative
+}
+#intro .subTtl{
+	font-size: 27px;
+}
+#intro .mar-left{
+	margin-left: 145px;
+}
+.gyousyo{
+	font-family: ta-kouran,sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	margin-top: 25px;
+}
+.fx-end{
+	position: absolute;
+    left: 760px;
+    top: 113px;
+}
+#intro .el_txt{
+	font-size: 22px;
+	letter-spacing: 0.08rem;
+    line-height: 1.54;
+	text-align: initial;
+	width: 670px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#intro .el_media_imgWrapper{
+	width: 550px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+#intro .media_bg{
+	background: url(../ufo-ryokan/frame01.png) center no-repeat;
+	background-size: contain;
+	margin-top: 45px;
+}
+#intro .el_media_imgWrapper img{
+	padding: 50px;
+}
 
+/*=============================
+　これまでの歩み
+=============================*/
+#history .ly_cont_inner{
+	width: 100%;
+	padding-bottom: 67px;
+	background: url(../ufo-ryokan/mon.png) no-repeat,
+				url(../ufo-ryokan/no-moon-bg.png) no-repeat;
+	background-position: top right, top;
+	background-size: 27% auto, 100% auto;
+}
+#history .sec_mainTtl{
+	justify-content: flex-start;
+	margin-left: 180px;
+	color: #fff;
+	padding-top: 120px;
+}
+#history .white_font_etc{
+	color: #fff;
+	text-align: initial;
+	margin-left: 180px;
+	margin-top: 67px;
+}
+#history .his_info_box{
+	position: relative;
+	padding: 45px 120px 45px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#history .el_media_imgWrapper{
+	width: 885px;
+	margin: 47px auto 0;
+}
+
+/*=============================
+　宿泊プラン
+=============================*/
+#plan .ly_cont_inner{
+	width: 100%;
+	padding-bottom: 45px;
+	background: url(../ufo-ryokan/background5.png) center no-repeat;
+	background-size: cover;
+}
+#plan .sec_mainTtl{
+	padding-top: 77px;
+}
+#plan .sec{
+	background-color: rgba(255, 255, 255);
+	border: solid 2px rgb(3, 168, 3);
+	width: 885px;
+	margin: 40px auto 0;
+	padding: 52px 175px;
+}
+#plan .plan_info{
+	display: flex;
+	flex-direction: column;
+	align-items:flex-start;
+}
+#plan .good_li{
+	list-style: disc;
+	margin-top: 45px;
+}
+#plan .good_li .no-point{
+	list-style: none;
+}
+.boldFont{
+	font-weight: bold;
+}
+#plan .list{
+	margin-left: 40px;
+}
+#plan .el_txt{
+	text-align: start;
+}
+#plan .el_media_imgWrapper{
+	width: auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+/*=============================
+　経営者の声
+=============================*/
+#exe{
+	padding: 55px 0 65px;
+	background: url(../ufo-ryokan/background6.png)no-repeat;
+	background-size: cover;
+}
+#exe .ly_cont_inner{
+	padding: 30px 160px 30px;
+}
+#exe .end-start{
+	text-align: end;
+	margin-top: 85px;
+}
+#exe .txt_box{
+	margin-top: 60px;
+	text-align: initial;
+}
+#exe .space{
+	margin-top: 40px;
+}
+/*=============================
+　ご案内（予約ページ）
+=============================*/
+#reserve{
+	margin: 47px 0 57px 0;
+}
+#reserve .ly_cont_inner{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 3px solid rgb(74, 241, 33);
+	background-color:rgb(234, 255, 220, 0.6);
+	padding: 35px 0 50px;
+}
+#reserve .reserve-top img{
+	width:270px;
+	height: 142px;
+}
+#reserve .el_media_imgWrapper{
+	margin-top: 30px;
+}
+#reserve .hotel_cont{
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+#reserve .cont_list{
+	text-align: initial;
+	margin-bottom: 40px;
+}
+#reserve .reception{
+	width: 495px;
+	border: 1px solid;
+	padding: 18px 40px;
+	background-color: #fff;
+	margin: 30px 0 30px 0;
+}
+.red{
+	color: red;
+	margin-bottom: 15px;
+	font-size: 24px;
+}
+#reserve .small_font{
+	margin-top: 10px;
+}
 
 /*=============================
 　footer
