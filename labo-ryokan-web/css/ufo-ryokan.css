@@ -290,7 +290,6 @@ textarea {
     border: none;
     box-shadow: none;
 	padding-top: 240px;
-	padding-right: 45px;
 }
 .ly_head .el_media_imgWrapper{
 	width: 493px;
@@ -341,7 +340,7 @@ textarea {
 		width: 100%;
 	}
 	.ly_head .el_mainTtl{
-		margin-right: 3%;
+		margin-right: 7%;
 	}
 	.ly_head .el_mainTtl img{
 		margin-bottom: 20px;
@@ -353,11 +352,12 @@ textarea {
 		font-size: 25px; 
 	}
 	.head_txt{
-		margin-right: 3%;
+		margin-right: 5%;
 	}
 	.ly_head .sub-top{
 		margin-right: auto;
 		margin-left: auto;
+		margin-top: 37px;
 	}
 }
 
@@ -433,6 +433,7 @@ textarea {
 	}
 	#intro .el_txt{
 		width: auto;
+		font-size: 25px;
 	}
 }
 
@@ -445,7 +446,7 @@ textarea {
 	background: url(../ufo-ryokan/mon.png) no-repeat,
 				url(../ufo-ryokan/no-moon-bg.png) no-repeat;
 	background-position: top right, top;
-	background-size: 27% auto, auto;
+	background-size: 27% auto, 100% auto;
 }
 #history .sec_mainTtl{
 	justify-content: flex-start;
@@ -539,7 +540,7 @@ textarea {
 }
 
 /*=============================
-　経営者の声
+　ufoが残した謎
 =============================*/
 #exe{
 	padding: 55px 0 65px;
@@ -562,8 +563,14 @@ textarea {
 }
 
 @media screen and (max-width: 750px){
+	#exe .ly_cont_inner{
+		padding: 0;
+	}
 	#exe .end-start{
 		font-size: 20px;
+	}
+	#exe .txt_box{
+		padding-left: 18%;
 	}
 }
 
@@ -615,8 +622,20 @@ textarea {
 	#reserve .ly_cont_inner{
 		width: 80%;
 	}
+	#reserve .ly_cont_inner span{
+		font-size: 16px;
+	}
+	#reserve .hotel_cont .el_txt{
+		font-size: 18px;
+	}
+	#reserve .reception{
+		margin-top: 0;
+		
+	}
 	#reserve .small_font{
-		font-size:20px;
+		font-size:16px;
+		margin-left: auto;
+    	margin-right: auto;
 	}
 }
 
