@@ -628,9 +628,15 @@ textarea {
 	#reserve .hotel_cont .el_txt{
 		font-size: 18px;
 	}
+	#reserve .el_btn{
+		margin-right: 0;
+		width: 326px;
+		height: 76px;
+		font-size: 25px; 
+	}
 	#reserve .reception{
 		margin-top: 0;
-		
+		width: 326px;
 	}
 	#reserve .small_font{
 		font-size:16px;
