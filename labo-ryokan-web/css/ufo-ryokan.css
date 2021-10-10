@@ -471,6 +471,9 @@ textarea {
 	margin: 47px auto 0;
 }
 @media screen and (max-width: 750px){
+	#history .ly_cont_inner{
+		background-size: 27% auto, auto auto;
+	}
 	#history .sec_mainTtl{
 		margin-left: 66px;
 	}
@@ -479,6 +482,7 @@ textarea {
 	}
 	#history .white_font_etc{
 		margin-left: 56px;
+		margin-right: 56px;
 	}
 }
 
@@ -499,7 +503,7 @@ textarea {
 	border: solid 2px rgb(3, 168, 3);
 	width: 885px;
 	margin: 40px auto 0;
-	padding: 52px 175px;
+	padding: 52px 150px;
 }
 #plan .plan_info{
 	display: flex;
@@ -568,6 +572,7 @@ textarea {
 	}
 	#exe .end-start{
 		font-size: 20px;
+		margin-right: 5%;
 	}
 	#exe .txt_box{
 		padding-left: 18%;
@@ -629,14 +634,13 @@ textarea {
 		font-size: 18px;
 	}
 	#reserve .el_btn{
-		margin-right: 0;
 		width: 326px;
 		height: 76px;
 		font-size: 25px; 
 	}
 	#reserve .reception{
 		margin-top: 0;
-		width: 326px;
+		width: 430px;
 	}
 	#reserve .small_font{
 		font-size:16px;
