@@ -370,16 +370,13 @@ textarea {
 		height: 685px;
 	}
 	.ly_head .el_mainTtl{
-		margin-right: 2%;
-	}
-	.ly_head .el_mainTtl{
-		top: -210px;
+		top: -230px;
 	}
 	.ly_head .el_mainTtl01{
 		font-size: 34px;
 		top: -440px;
 		left: 70px;
-		height: 140px;
+		height: 120px;
 		width: 370px;
 	}
 	.ly_head .el_btn{
