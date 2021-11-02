@@ -262,7 +262,7 @@ textarea {
     border-bottom-width: 4px;
     border-radius: 10px;
     font-size: 38px;
-    width: 496px;
+    width: 356px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 39px;
@@ -280,7 +280,8 @@ textarea {
 　header
 ==============================*/
 .ly_head .ly_head_inner{
-	background: url(../sanposeru/top.png) no-repeat center;
+	background: url(../sanposeru/top.png) no-repeat;
+	background-size: contain;
 	height: 760px;
 	display: flex;
 	flex-direction: column;
@@ -303,8 +304,30 @@ textarea {
 }
 
 @media screen and (max-width: 750px){
-	
+	.ly_head_inner .el_mainTtl{
+		bottom: 160px;
+	}
+	.ly_head_inner .btn_box{
+		align-items: flex-end;
+	}
 }
+/*=============================
+　preface
+==============================*/
+
+@media screen and (max-width: 750px){
+	#preface .sp_posi{
+		position: relative;
+		top: 80px;
+		font-size: 20px;
+		margin-left: 45px;
+	}
+	#preface .el_media_imgWrapper{
+		position: relative;
+		top: 120px;
+	}
+}
+
 /*=============================
 　technology
 ==============================*/
@@ -314,7 +337,13 @@ textarea {
 }
 
 @media screen and (max-width: 750px){
-	
+	.pow_imgWrapper{
+		right: 80px;
+		top: -30px;
+	}
+	.pow_imgWrapper img{
+		height: 120px;
+	}
 }
 
 /*=============================
@@ -385,6 +414,7 @@ textarea {
 	margin-right: 40px;
 }
 #weight .expl{
+	background-color: #fff;
 	display: flex;
 	align-items: center;
     margin-top: 35px;
@@ -401,10 +431,18 @@ textarea {
 }
 
 @media screen and (max-width: 750px){
+	#weight .el_media_imgWrapper_sub{
+		position: absolute;
+		right: 50px;
+	}
+	#weight .el_media_imgWrapper_sub img{
+		height: 100px;
+	}
 	#weight .expl{
 		height: 350px;
-		width: 700px;
+		width: 650px;
 		padding: 15px 10px 15px;
+		font-size: 18px;
 	}
 }
 /*=============================
@@ -412,6 +450,8 @@ textarea {
 ==============================*/
 #comfortable .ly_cont_inner{
 	margin-top: 64px;
+	padding: 0 10px 0;
+	background: url(../sanposeru/conf-bg.png) no-repeat center;
 }
 #comfortable .el_sec_mainTtl{
 	display: flex;
@@ -459,7 +499,14 @@ textarea {
 }
 
 @media screen and (max-width: 750px){
-	
+	#cart01 .ly_cont_inner{
+		width: 610px;
+		padding: 5px 10px 5px;
+		border: 2px solid;
+	}
+	.small_font{
+		font-size: 16px;
+	}
 }
 /*=============================
 　letter
