@@ -671,7 +671,9 @@ textarea {
 }
 
 @media screen and (max-width: 750px){
-	
+	#cart02 .ly_cont_inner{
+		width: 610px;
+	}
 }
 
 /*=============================
