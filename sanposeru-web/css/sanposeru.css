@@ -321,7 +321,7 @@ textarea {
 	}
 	.ly_head_inner .el_mainTtl{
 		left: 0;
-		bottom: 85px;
+		bottom: 135px;
     	margin-left: 90px;
 	}
 	.ly_head_inner .head_sub_img{
@@ -337,6 +337,9 @@ textarea {
 		position: relative;
 		top: 75px;
 		right: 40px;
+	}
+	.ly_head_inner .btn_txt_box .el_txt{
+		font-size: 20px;
 	}
 }
 /*=============================
@@ -435,14 +438,14 @@ textarea {
 		padding-top: 64px;
 	}
 	#technology .el_sec_mainTtl{
-		margin-left: 50px;
+		margin-left: 70px;
 	}
 	#technology .el_sec_mainTtl img{
 		height: 85px;
 	}
 	#technology .tech_sub_txt{
-		font-size: 20px;
-		right: 20px;
+		font-size: 17px;
+		right: 60px;
 		top: 110px;
 	}
 	#technology .rakuraku{
