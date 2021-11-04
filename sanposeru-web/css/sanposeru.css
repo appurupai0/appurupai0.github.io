@@ -776,6 +776,9 @@ textarea {
 	#cart02 .ly_cont_inner{
 		width: 610px;
 	}
+	#cart02 .cart_body .el_txt{
+		font-size: 18px;
+	}
 }
 
 /*=============================
