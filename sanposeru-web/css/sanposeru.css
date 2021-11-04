@@ -200,7 +200,7 @@ textarea {
   flex-wrap: wrap;
   overflow: hidden;
   position: relative;
-  width: 301px;
+  width: 265px;
   height: 62px;
   font-size: 24px;
   border-bottom: 4px solid #cfcfcd;
@@ -257,19 +257,19 @@ textarea {
   }
   /*el_btn*/
   .el_btn {
-    height: 96px;
-    padding: 4px 10px 0 0;
+	height: 69px;
+    padding: 0px 10px 4px 0;
     border-bottom-width: 4px;
-    border-radius: 10px;
-    font-size: 38px;
-    width: 356px;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 20px;
+    font-size: 26px;
+    width: 256px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
     margin-bottom: 39px;
   }
   .el_btn::after {
     border-width: 8.5px 0 8.5px 14px;
-    right: 29px;
+    right: 25px;
   }
   /* el_txt */
   .el_txt{
@@ -301,14 +301,33 @@ textarea {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+	position: relative;
+    bottom: 80px;
+	text-align: center;
+}
+.ly_head_inner .btn_box .btn_txt_box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 @media screen and (max-width: 750px){
+	.ly_head .ly_head_inner{
+		height: 600px;
+	}
 	.ly_head_inner .el_mainTtl{
-		bottom: 160px;
+		bottom: 50px;
+    	margin-left: 90px;
+	}
+	.ly_head_inner .head_sub_img{
+
+	}
+	.ly_head_inner .head_main{
+		height: 60px;
 	}
 	.ly_head_inner .btn_box{
 		align-items: flex-end;
+
 	}
 }
 /*=============================
@@ -318,13 +337,13 @@ textarea {
 @media screen and (max-width: 750px){
 	#preface .sp_posi{
 		position: relative;
-		top: 80px;
+		top: -100px;
 		font-size: 20px;
-		margin-left: 45px;
+		margin-left: 75px;
 	}
 	#preface .el_media_imgWrapper{
 		position: relative;
-		top: 120px;
+    	top: -167px;
 	}
 }
 
@@ -338,11 +357,11 @@ textarea {
 
 @media screen and (max-width: 750px){
 	.pow_imgWrapper{
-		right: 80px;
-		top: -30px;
+		right: 30px;
+    	top: -80px;
 	}
 	.pow_imgWrapper img{
-		height: 120px;
+		height: 300px;
 	}
 }
 
@@ -431,18 +450,35 @@ textarea {
 }
 
 @media screen and (max-width: 750px){
+	#weight .el_sec_mainTtl{
+		font-size: 24px;
+		padding-left: 75px;
+	}
 	#weight .el_media_imgWrapper_sub{
 		position: absolute;
-		right: 50px;
+		right: 25px;
+		top: 80px;
 	}
 	#weight .el_media_imgWrapper_sub img{
-		height: 100px;
+		height: 180px;
+	}
+	#weight .sec_hikaku{
+		margin-top: 280px;
+	}
+	#weight .el_media_imgWrapper .hikaku_logo {
+		height: 30px;
 	}
 	#weight .expl{
 		height: 350px;
 		width: 650px;
 		padding: 15px 10px 15px;
 		font-size: 18px;
+	}
+	#weight .expl .el_media_imgWrapper{
+		width: 180px;
+	}
+	#weight .el_txt{
+		font-size: 22px;
 	}
 }
 /*=============================
@@ -487,15 +523,33 @@ textarea {
 	background: url(../sanposeru/cart-bg.png) no-repeat;
 	background-size: cover;
 	width: 680px;
+	height: 175px;
 	padding: 15px 20px 15px;
 	border: 2px solid;
+	display: flex;
+    justify-content: space-around;
 }
 #cart01 .bl_cartUnit, #cart01 .price{
 	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: space-around;
 }
 #cart01 .el_sec_mainTtl img{
 	height: 45px;
+}
+#cart01 .price_yen{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 22px;
+	font-weight: bold;
+}
+#cart01 .bl_cartUnit .small_font,
+#cart01 .price .small_font{
+	font-weight: normal;
+	font-size: 18px;
+	margin-top: 10px;
 }
 
 @media screen and (max-width: 750px){
