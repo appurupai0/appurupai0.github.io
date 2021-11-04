@@ -316,18 +316,22 @@ textarea {
 		height: 600px;
 	}
 	.ly_head_inner .el_mainTtl{
-		bottom: 50px;
+		bottom: 85px;
     	margin-left: 90px;
 	}
 	.ly_head_inner .head_sub_img{
-
+		height: 22px;
 	}
 	.ly_head_inner .head_main{
 		height: 60px;
 	}
 	.ly_head_inner .btn_box{
 		align-items: flex-end;
-
+	}
+	.ly_head_inner .btn_box .btn_txt_box {
+		position: relative;
+		top: 125px;
+		right: 40px;
 	}
 }
 /*=============================
@@ -477,8 +481,9 @@ textarea {
 	#weight .expl .el_media_imgWrapper{
 		width: 180px;
 	}
-	#weight .el_txt{
-		font-size: 22px;
+	#weight .expl .el_txt{
+		font-size: 20px;
+    	width: auto;
 	}
 }
 /*=============================
@@ -560,6 +565,9 @@ textarea {
 	}
 	.small_font{
 		font-size: 16px;
+	}
+	#cart01 .btn_box .el_btn{
+		margin-bottom: 0;
 	}
 }
 /*=============================
