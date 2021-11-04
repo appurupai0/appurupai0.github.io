@@ -354,9 +354,12 @@ textarea {
 }
 
 @media screen and (max-width: 750px){
+	#preface .ly_cont_inner{
+		height: 780px;
+	}
 	#preface .sp_posi{
 		position: relative;
-		top: -100px;
+		top: -580px;
 		left: 0;
 		font-size: 20px;
 		margin-left: 75px;
@@ -430,34 +433,37 @@ textarea {
 		padding-top: 64px;
 	}
 	#technology .el_sec_mainTtl{
-		margin-left: 100px;
+		margin-left: 50px;
+	}
+	#technology .el_sec_mainTtl img{
+		height: 85px;
 	}
 	#technology .tech_sub_txt{
-		font-size: 22px;
-		right: 80px;
+		font-size: 20px;
+		right: 20px;
 		top: 110px;
 	}
 	#technology .rakuraku{
 		margin: 64px 0 120px;
 	}
 	#technology .rakuraku .el_media_imgWrapper{
-		margin-right: 100px;
-		margin-left: 60px;
+		margin-right: 25px;
+		margin-left: 20px;
 	}
 	#technology .rakuraku .el_media_imgWrapper img{
-		height: 400px;
+		height: 360px;
 	}
 	#technology .rakuraku_txt{
-		width: 300px;
+		width: 340px;
 	}
 	#technology .rakuraku_txt .raku_sec_mainTtl{
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 	#technology .rakuraku_txt .raku_sec_mainTtl img{
-		height: 70px;
+		height: 60px;
 	}
 	#technology .rakuraku_txt .el_txt{
-		font-size: 20px;
+		font-size: 18px;
 	}
 	.pow_imgWrapper{
 		right: 30px;
