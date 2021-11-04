@@ -265,7 +265,7 @@ textarea {
     width: 256px;
     /* margin-left: auto; */
     /* margin-right: auto; */
-    margin-bottom: 39px;
+    /* margin-bottom: 39px; */
   }
   .el_btn::after {
     border-width: 8.5px 0 8.5px 14px;
@@ -330,7 +330,7 @@ textarea {
 	}
 	.ly_head_inner .btn_box .btn_txt_box {
 		position: relative;
-		top: 125px;
+		top: 75px;
 		right: 40px;
 	}
 }
@@ -475,17 +475,17 @@ textarea {
 	#weight .expl{
 		height: 225px;
 		width: 650px;
-		padding: 15px 10px 15px;
+		padding: 20px 10px 15px;
 		font-size: 18px;
 		margin-top: 64px;
 	}
 	#weight .expl .el_media_imgWrapper{
 		width: 180px;
-		margin-right: 25px;
 	}
 	#weight .expl .el_txt{
 		font-size: 20px;
     	width: 420px;
+		margin-left: 20px;
 	}
 }
 /*=============================
