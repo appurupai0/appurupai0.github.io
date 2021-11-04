@@ -354,6 +354,7 @@ textarea {
 	#preface .sp_posi{
 		position: relative;
 		top: -100px;
+		left: 0;
 		font-size: 20px;
 		margin-left: 75px;
 	}
@@ -618,11 +619,20 @@ textarea {
 }
 
 @media screen and (max-width: 750px){
+	#letter .ly_cont_inner {
+		padding-top: 75px;
+	}
 	#letter .text_box{
 		width: 550px;
-		margin-top: 40px;
+		margin-top: 50px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+	#letter .el_sec_mainTtl{
+		font-size: 30px;
+	}
+	#letter .el_media_imgWrapper{
+		margin-top: 55px;
 	}
 }
 /*=============================
