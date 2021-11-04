@@ -188,7 +188,7 @@ textarea {
 /*el_btn*/
 .el_btn {
   padding: 3px 0 0 0;
-  background: #0f0664;
+  background: linear-gradient(#ffc600, #fa8817);
   border-radius: 15px;
   color: #fff;
   font-weight: bold;
@@ -293,6 +293,7 @@ textarea {
 	align-items: center;
 	position: relative;
 	bottom: 180px; 
+	left: 55px;
 }
 .ly_head_inner .el_mainTtl .margin-top{
 	margin-top: 20px;
@@ -319,6 +320,7 @@ textarea {
 		height: 600px;
 	}
 	.ly_head_inner .el_mainTtl{
+		left: 0;
 		bottom: 85px;
     	margin-left: 90px;
 	}
