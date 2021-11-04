@@ -473,17 +473,19 @@ textarea {
 		height: 30px;
 	}
 	#weight .expl{
-		height: 350px;
+		height: 225px;
 		width: 650px;
 		padding: 15px 10px 15px;
 		font-size: 18px;
+		margin-top: 64px;
 	}
 	#weight .expl .el_media_imgWrapper{
 		width: 180px;
+		margin-right: 25px;
 	}
 	#weight .expl .el_txt{
 		font-size: 20px;
-    	width: auto;
+    	width: 420px;
 	}
 }
 /*=============================
@@ -566,7 +568,7 @@ textarea {
 	.small_font{
 		font-size: 16px;
 	}
-	#cart01 .btn_box .el_btn{
+	#cart01 .btn-box .el_btn{
 		margin-bottom: 0;
 	}
 }
@@ -598,7 +600,7 @@ textarea {
 
 @media screen and (max-width: 750px){
 	#letter .text_box{
-		width: 700px;
+		width: 550px;
 		margin-top: 40px;
 		margin-left: auto;
 		margin-right: auto;
