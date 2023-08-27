@@ -212,20 +212,49 @@ textarea {
 	display: block;
 	margin: 0 auto;
 	/* 幅の指定 */
-	width: 100%;
-	max-width: 500px;
+	width: 70%;
+	/* max-width: 500px; */
 	box-sizing: border-box;
-	padding: 10px;
+	padding: 20px;
 	/* 色の指定 */
-	background: linear-gradient(135deg, #ff2c2c, #ff9300);
+	background: #fa8817;
 	color: #fff;
 	transition: 0.3s;
-	font-size: 28px;
-	padding: 15px 10px;
+	font-size: 24px;
+	padding: 25px 10px;
+	text-decoration: none;
+	border-radius: 10px;
   }
  
   .flat.inverted:active, .flat.inverted:focus {
 	top: 2px;
+  }
+
+  @media screen and (max-width: 750px) {
+	.flat.inverted {
+		position: relative;
+		text-align: center;
+		/* 中央揃え */
+		display: block;
+		margin: 0 auto;
+		/* 幅の指定 */
+		width: 70%;
+		/* max-width: 500px; */
+		box-sizing: border-box;
+		padding: 20px;
+		/* 色の指定 */
+		background: #fa8817;
+		color: #fff;
+		transition: 0.3s;
+		font-size: 28px;
+		padding: 25px 10px;
+		text-decoration: none;
+		border-radius: 10px;
+	  }
+	 
+	  .flat.inverted:active, .flat.inverted:focus {
+		top: 2px;
+	  }
   }
 
 
@@ -272,28 +301,34 @@ textarea {
 ==============================*/
 .ly_head_inner{
 	/* background-color: #f4f4f4; */
-	text-align: center;
+	background: url(../images/sanposeru-apply/back.jpg) no-repeat center;
+	padding-top: 70px;
 	padding-bottom: 50px;
 	
 	/* width: 100%; */
 }
-
-header .second{
-	background: url(../images/sanposeru-crowdfunding/back.jpg) no-repeat center;
-	padding-bottom: 50px;
-	margin-top: -5px;
-}
-
 header .el_mainTtl{
-	padding-top: 30px;
+    margin: 0 auto 55px;
+	padding-bottom: 17px;
 	font-size: 36px;
+	line-height: 40px;
+	text-align: center;
+	border-bottom: 2px solid;
+	width: 80%;
 }
-
-.head_img{
-	width: 100%;
+header .bl_media_imgWrapper{
+	text-align: center;
+}
+header .bl_media_imgWrapper img{
+	width: 70%;
 	margin:0 auto;
 }
-
+header .small_font{
+	margin-top: 20px;
+	font-size: 16px;
+	text-align: right;
+	margin-right: 7%;
+}
 .ly_head_inner .bold{
 	font-weight: bold;
 }
@@ -321,23 +356,15 @@ header .shippori{
 }
 
 @media screen and (max-width: 750px){
-	.ly_head .ly_head_inner{
-		
-	}
-	.ly_head_inner .el_mainTtl{
-		
-	}
-
-	.el_mainTtl img{
-		
-	}
 	header .el_mainTtl{
-		padding-top: 30px;
-		font-size: 40px;
+		font-size: 37px;
 		width: 80%;
-		margin: 0 auto;
+		margin: 0 auto 40px;
 	}
-	
+	header .bl_media_imgWrapper img{
+		width: 90%;
+		margin:0 auto;
+	}
 	
 	.ly_head_inner .btn_box{
 		align-items: flex-end;
@@ -351,7 +378,7 @@ header .shippori{
 		font-size: 20px;
 	}
 	header .small_font{
-		font-size: 26px;
+		font-size: 20px;
 	}
 
 	header .now{
@@ -361,194 +388,56 @@ header .shippori{
 	
 	}
 }
-/*=============================
-　preface
-==============================*/
-#preface .ly_cont_inner{
-	
-}
-
-#preface .now{
-	margin: 30px auto;
-}
-
-#preface h2{
-	padding-top: 30px;
-	padding-left: 40px;
-	padding-bottom: 30px;
-}
-
-#preface .copy{
-	margin-top: 50px;
-	padding-bottom: 50px;
-	line-height: 36px;
-	text-align: center;
-}
-
-
-#preface .use{
-	margin-bottom: 70px;
-}
-
-#preface .caption{
-	text-align: center;
-	font-size: 18px;
-	padding-top: 10px;
-}
-
-#preface .test{
-	width: 70%;
-	margin: 0 auto;
-	margin-bottom: 50px;
-}
-
-#preface blockquote {
-    position: relative;
-    padding: 10px 15px 10px 70px;
-    box-sizing: border-box;
-    font-style: italic;
-    background: #efefef;
-    color: #555;
-	width: 80%;
-	margin: 10px auto 30px auto;
-}
-
-blockquote:before{
-    display: inline-block;
-    position: absolute;
-    top: 10px;
-    left: -3px;
-    content: "“";
-    font-family: sans-serif;
-    color: #cfcfcf;
-    font-size: 90px;
-    line-height: 1;
-}
-
-blockquote p {
-    padding: 0;
-    margin: 10px 0;
-    line-height: 1.7;
-}
-
-blockquote cite {
-    display: block;
-    text-align: right;
-    color: #888888;
-    font-size: 0.9em;
-}
-
-#preface .paper{
-	width: 90%;
-	margin: 0 auto;
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
-}
-
-#preface .mb{
-	margin-bottom: 50px;
-}
-
-
-
-@media screen and (max-width: 750px){
-	#preface .ly_cont_inner{
-
-	}
-
-	#preface h2{
-		padding-top: 50px;
-		padding-left: 60px;
-		padding-bottom: 30px;
-	}
-
-	#preface .caption{
-		text-align: center;
-		font-size: 24px;
-		padding-top: 10px;
-	}
-}
 
 /*=============================
 　way
 =============================*/
-
-#way .ly_cont_inner{
-	
+#way{
+	margin-top: 67px;
 }
-
 #way h2{
-	padding-top: 30px;
-	padding-left: 60px;
-	padding-bottom: 10px;
-	font-size: 24px
+	margin: 0 auto 40px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    border-bottom: 1.5px solid;
+    width: 60%;
 }
-
 #way .about{
-	width: 90%;
-	margin: 0 auto;
-	padding-bottom: 50px;
-	line-height: 36px;
+    font-size: 21px;
+    padding-bottom: 40px;
+    line-height: 36px;
+    text-align: center;
 }
-
-#way .sp_posi{
-
+#way .strong{
+	font-size: 24px;
 }
-#way .el_media_imgWrapper{
-	
+#way .pink{
+	color: #bb24a4;
+	font-weight: bold;
 }
-
-#way .use{
-	margin-bottom: 70px;
-}
-
-#way .caption{
+#way .bl_media_imgWrapper{
 	text-align: center;
-	font-size: 18px;
-	padding-top: 10px;
-}
-
-#way .test{
-	width: 70%;
-	margin: 0 auto;
 	margin-bottom: 50px;
 }
-
-#way h2 .shippori{
-	padding-top: 100px;
-	font-weight: normal;
+#way .bl_media_imgWrapper img{
+	height: 250px;
+    width: 417px;
 }
-
-#way .lastdiv{
-	background: url(../images/sanposeru-crowdfunding/back2.jpg) repeat-y center;
-}
-
-#way .last{
-	text-align: center;
-	line-height: 64px;
-	font-size: 24px;
-	font-weight: normal;
-	margin: 0 auto;
-	padding-top: 100px;
-}
-
-#way .at_last{
-	padding-top: 100px; 
-	font-weight: normal;
-	font-size: 36px;
-}
-
-
 
 @media screen and (max-width: 750px){
-	#way .ly_cont_inner{
-
-	}
 
 	#way h2{
-		padding-top: 50px;
-		padding-left: 60px;
-		padding-bottom: 30px;
-		font-size: 36px;
+		font-size: 32px;
+    	width: 70%;
+	}
+	#way .about {
+		font-size: 28px;
+		padding-bottom: 40px;
+		line-height: 48px;
+	}
+	#way .strong {
+		font-size: 32px;
 	}
 
 	#way .caption{
@@ -571,8 +460,181 @@ blockquote cite {
 	}
 }
 
+
 /*=============================
-　carts
+ status
+=============================*/
+#status{
+	padding-bottom: 50px;
+}
+#status .status_cont{
+	background: url(../images/sanposeru-apply/flame2.png) no-repeat center;
+	background-size: contain;
+	width: 80%;
+    height: 500px;
+	margin: 0 auto;
+	padding: 5%;
+}
+#status .support{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#status .support h2{
+	font-size: 26px;
+	text-align: center;
+}
+#status .support_btn{
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+.el_btn {
+    font-size: 24px;
+}
+/* .el_btn {
+    padding: 3px 0 0 0;
+    background: #008000;
+	opacity: 0.5;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    width: 265px;
+    height: 62px;
+    font-size: 24px;
+    border-bottom: 4px solid #cfcfcd;
+} */
+
+.flex{
+	display: flex;
+	justify-content: center;
+}
+.left, .right{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+}
+.left h2, .right h2{
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	padding-bottom: 5px;
+	width: auto;
+    margin: 0 auto;
+	border-bottom: 1.5px solid red;
+}
+#status .bl_media_imgWrapper{
+	margin-top: 40px;
+	width: 40%;
+    margin: 20px 20% 35px;
+}
+#status .bl_media_imgWrapper .img01{
+	height: 50px;
+}
+#status .bl_media_imgWrapper .img02{
+	height: 20px;
+	margin-top: 30px;
+}
+.bg_font{
+	font-size: 24px;
+    text-align: center;
+    padding-bottom: 5px;
+    width: 50%;
+    border-bottom: 1.5px solid blue;
+    margin-left: 35%;
+    font-weight: bold;
+}
+.table-list{
+	margin: 20px auto 0;
+    width: 80%;
+    padding-left: 20px;
+	font-size: 20px;
+}
+.f_blue{
+	color: blue;
+}
+#status .sm_font{
+	font-size: 16px;
+	text-align: right;
+	margin-top: 30px;
+	margin-right: 7%;
+}
+
+@media screen and (max-width: 750px){
+	#status {
+		padding-bottom: 0;
+	}
+	#status .status_cont {
+		background: url(../images/sanposeru-apply/flame3.png) no-repeat center;
+		background-size: contain;
+		width: 90%;
+		height: 500px;
+		margin: 0 auto;
+		padding-top: 8%;
+	}
+	.left h2, .right h2 {
+		font-size: 24px;
+	}
+	.el_btn {
+		font-size: 26px;
+	}
+	/* #status .support {
+		margin-top: 20px;
+	} */
+	#status .support {
+		margin-bottom: 20px;
+	}
+	#status .support h2 {
+		font-size: 28px;
+	}
+	#status .support_btn {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.left, .right {
+		width: 50%;
+	}
+	#status .bl_media_imgWrapper {
+		margin: 20px 20px 30px 0;
+	}
+	.table-list {
+		padding-left: 0;
+		font-size: 24px;
+	}
+	.bg_font {
+		font-size: 29px;
+		width: auto;
+		margin-left: 30%;
+		margin-right: 10%;
+	}
+	#way .bl_media_imgWrapper img {
+		height: auto;
+		width: 62%;
+	}
+	#status .bl_media_imgWrapper .img01 {
+		height: 56px;
+	}
+	#status .bl_media_imgWrapper .img02 {
+		height: 24px;
+	}
+	#status .sm_font {
+		font-size: 14px;
+		text-align: right;
+		margin-top: 30px;
+		margin-right: 35px;
+	}
+}
+
+
+/*=============================
+ carts
 =============================*/
 
 .carts{
@@ -590,26 +652,80 @@ blockquote cite {
 }
 
 /*=============================
-　cart
+　carts
 =============================*/
-#cart{
-	width: 100%;
-	height: auto;
-	padding-top: 32px;
-	padding-bottom: 32px;
+
+.carts{
+	background-color: #f3f3f3;
+	padding-top: 70px;
+	padding-bottom: 100px ;
+}
+
+.carts h2{
+	text-align: center;
+	font-size: 40px;
+}
+
+ .white{
+	margin: 30px auto 0 auto;
+	padding: 20px;
+	font-size: 30px;
+	line-height: 42px;
+	background-color: #f3f3f3;
+}
+
+@media screen and (max-width: 750px){
+	
+	.carts{
+		background-color: #f3f3f3;
+		margin-top: 30px;
+		padding-top: 60px;
+		padding-bottom: 100px;
+	}
+	
+	.carts h2{
+		text-align: center;
+		font-size: 44px;
+	}
+	
+	 .white{
+		margin: 30px auto 0 auto;
+		padding: 20px;
+		font-size: 30px;
+		line-height: 42px;
+		background-color: #f3f3f3;
+	}
+
 }
 
 
+
+/*=============================
+　cart
+=============================*/
+#cart{
+	width: 80%;
+	margin: 0 auto;
+	height: auto;
+	padding-top: 32px;
+	padding-bottom: 20px;
+}
+
+#cart .sankaku{
+	font-size: small;
+}
+
 #cart .price_yen{
-	font-size: 35px;
+	font-size: 24px;
 	font-weight: normal;
-	border-bottom:solid rgb(174, 174, 174);
+	/* border-bottom:solid rgb(174, 174, 174); */
 	padding: 15px;
+	text-align: center;
 }
 #cart .bl_cartUnit .small_font,
 #cart .price .small_font{
 	font-weight: normal;
-	font-size: 35px;
+	font-size: 24px;
 	margin-top: 20px;
 }
 
@@ -625,12 +741,12 @@ blockquote cite {
 }
 
 #cart .product{
-	font-size: 30px;
+	font-size: 24px;
 	line-height: 25px;
 	font-weight: bold;
 	margin: 0 auto;
 	width: 80%;
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 
@@ -652,8 +768,9 @@ blockquote cite {
 	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .5);
 	width: 90%;
 	margin: 0 auto;
-	padding: 30px 30px 20px 30px;
+	padding: 20px 30px 0 30px;
 	background-color: #fff;
+	border-radius: 10px;
 }
 
 #cart .return{
@@ -674,7 +791,8 @@ blockquote cite {
 
 @media screen and (max-width: 750px){
 	#cart{
-		width: 100%;
+		width: 90%;
+		margin: 0 auto;
 	}
 	#cart .ly_cont_inner{
 		
@@ -683,7 +801,6 @@ blockquote cite {
 
 	#cart .price{
 		font-size: 30px;
-		line-height: 25px;
 		font-weight: bold;
 		margin: 0 auto;
 		width: 80%;
@@ -692,10 +809,12 @@ blockquote cite {
 		padding-left: 20px;
 	}
 	#cart .price_yen{
-		font-size: 30px;
+		font-size: 28px;
 		font-weight: normal;
-		border-bottom:solid rgb(174, 174, 174);
-		padding: 15px;
+		/* border-bottom:solid rgb(174, 174, 174); */
+		/* padding: 25px; */
+		text-align: center;
+		line-height: 40px;
 	}
 	#cart .small_font{
 		font-size: 25px;
