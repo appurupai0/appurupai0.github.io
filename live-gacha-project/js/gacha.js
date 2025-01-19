@@ -53,10 +53,12 @@ document.getElementById("gacha-button").addEventListener("click", () => {
 		N: 'assets/image/snowman_yukidaruma_toketa.png'
 	};
 	const resultImage = document.getElementById("result-image");
+	const gachaButton = document.getElementById("btn-container");
 
     // アニメーション表示
     animationArea.classList.remove("hidden");
     resultArea.classList.add("hidden");
+	gachaButton.classList.add("hidden");
 
 	// ガチャBGM表示
 	gachaBGM.currentTime = 1.2;
@@ -79,6 +81,7 @@ document.getElementById("gacha-button").addEventListener("click", () => {
         // 表示切り替え
         animationArea.classList.add("hidden");
         resultArea.classList.remove("hidden");
+		gachaButton.classList.remove("hidden");
     }, 2000);
 });
 

@@ -6,6 +6,7 @@
     text-align: center;
     font-size: 2em;
     animation: spin 2s linear infinite;
+	padding: 15px;
 }
 
 @keyframes spin {
@@ -18,7 +19,7 @@
 }
 
 .container {
-	margin-top: 15%;
+	margin-top: 10%;
 }
 
 h1 {
@@ -26,4 +27,36 @@ h1 {
 }
 #gacha-button {
 	margin-top: 64px;
+}
+
+@media (max-width: 1024px) {
+	.container {
+		margin-top: 15%;
+	}
+
+	.result-img-container {
+		width: 50%;
+		margin: auto;
+	}
+	#result-image {
+		width: 100%;
+		object-fit: contain;
+	}
+}
+
+@media (max-width: 767px) {
+	h1 {
+		margin-bottom: 32px;
+	}
+	#gacha-button {
+		margin-top: 32px;
+	}
+	.result-img-container {
+		width: 75%;
+		margin: auto;
+	}
+	#result-image {
+		width: 100%;
+		object-fit: contain;
+	}
 }
