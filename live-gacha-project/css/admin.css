@@ -1,0 +1,33 @@
+table {
+	width: 100%;
+	border-collapse: collapse; /* ボーダーを重ねずに表示 */
+}
+th, td {
+	border: 1px solid #ddd; /* 軽いボーダー */
+	padding: 8px;
+	text-align: center;
+}
+th {
+	background-color: #f4f4f4; /* ヘッダー行の背景色 */
+	font-weight: bold;
+}
+/* tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+tr:nth-child(odd) {
+	background-color: #fff;
+} 
+*/
+.d-flex-j-center {
+	display: flex;
+    justify-content: center;
+}
+.rank {
+	font-weight: bold;
+}
+.rank-border {
+	border-top: 3px solid #000; /* ランクごとの境目を太く */
+}
+.header-border {
+	border-bottom: 3px solid #000; /* ヘッダーとデータの境目を太く */
+}

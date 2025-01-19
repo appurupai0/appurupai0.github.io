@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ガチャ</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animation.css">
+</head>
+<body>
+	<!-- 非表示で画像を事前読み込み -->
+    <div style="display: none;">
+        <img src="assets/image/yumekawa_angel_tenshi.png" alt="Rank S">
+        <img src="assets/image/yumekawa_baby.png" alt="Rank A">
+        <img src="assets/image/character_manekineko.png" alt="Rank B">
+        <img src="assets/image/snowman_yukidaruma_toketa.png" alt="Rank C">
+    </div>
+	<div class="container">
+		<div>
+			<h1>ガチャ</h1>
+			<!-- アニメーションエリア -->
+			
+			<!-- <div id="animation-area" class="hidden">
+				<video id="gacha-video" width="100%">
+					<source id="video-source" src="" type="video/mp4">
+					お使いのブラウザは動画再生に対応していません。
+				</video>
+			</div> -->
+			
+			<audio id="gacha-bgm" src="assets/audio/ドラムロールの音.mp3"></audio>
+			<div id="animation-area" class="hidden">
+				<p>🎉 ガチャ中...</p>
+			</div>
+			<div class="result hidden">
+				<div class="result-img-container">
+					<img id="result-image" src="" alt="">
+				</div>
+				<h2>結果: <span id="result-text"></span></h2>
+				<p>ランク: <span id="result-rank"></span></p>
+			</div>
+			<button id="gacha-button">ガチャを引く</button>
+		</div>
+	</div>
+    <script src="js/gacha.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理画面</title>
+    <link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+    <h1>管理画面</h1>
+    <form id="prize-form">
+        <h2>景品の追加</h2>
+        <label>
+            景品名:
+            <input type="text" id="prize-name" required>
+        </label>
+        <label>
+            確率 (%):
+            <input type="number" id="prize-probability" min="0" max="100" step="any" required>
+        </label>
+        <label>
+            ランク:
+            <select id="prize-rank" required>
+                <option value="SS">SSレア</option>
+                <option value="S">Sレア</option>
+                <option value="R">レア</option>
+                <option value="N">ノーマル</option>
+            </select>
+        </label>
+        <button type="submit">追加</button>
+    </form>
+
+	<!-- 編集フォーム -->
+    <div id="edit-form" style="display: none;">
+        <h3>景品の編集</h3>
+        <label>
+            景品名:
+            <input type="text" id="edit-prize-name" required>
+        </label>
+        <label>
+            確率 (%):
+            <input type="number" id="edit-prize-probability" min="1" max="100" required>
+        </label>
+        <label>
+            ランク:
+            <select id="edit-prize-rank" required>
+                <option value="SS">SSレア</option>
+                <option value="S">Sレア</option>
+                <option value="R">レア</option>
+                <option value="N">ノーマル</option>
+            </select>
+        </label>
+        <button id="update-button">更新</button>
+        <button id="cancel-button">キャンセル</button>
+    </div>
+
+    <p id="remaining-probability">残りの確率: 100%</p>
+    <p id="error-message" style="color: red;"></p>
+
+    <h2>現在の景品</h2>
+	<div class="d-flex-j-center">
+		<ul id="prize-list"></ul>
+	</div>
+    
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
