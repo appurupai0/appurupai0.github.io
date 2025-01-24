@@ -8,29 +8,20 @@
     <link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
+	<!-- 全画面真っ白 -->
+	<!-- <div id="overlay"></div> -->
 	<!-- 非表示で画像を事前読み込み -->
     <div style="display: none;">
-        <img src="assets/image/yumekawa_angel_tenshi.png" alt="Rank S">
-        <img src="assets/image/yumekawa_baby.png" alt="Rank A">
-        <img src="assets/image/character_manekineko.png" alt="Rank B">
-        <img src="assets/image/snowman_yukidaruma_toketa.png" alt="Rank C">
+        <img src="assets/image/yumekawa_angel_tenshi.png" alt="Rank SS">
+        <img src="assets/image/yumekawa_baby.png" alt="Rank S">
+        <img src="assets/image/character_manekineko.png" alt="Rank R">
+        <img src="assets/image/snowman_yukidaruma_toketa.png" alt="Rank N">
     </div>
 	<div class="container">
 		<div>
 			<h1>ガチャ</h1>
-			<!-- アニメーションエリア -->
-			
-			<!-- <div id="animation-area" class="hidden">
-				<video id="gacha-video" width="100%">
-					<source id="video-source" src="" type="video/mp4">
-					お使いのブラウザは動画再生に対応していません。
-				</video>
-			</div> -->
-			
 			<audio id="gacha-bgm" src="assets/audio/ドラムロールの音.mp3"></audio>
-			<div id="animation-area" class="hidden">
-				<p>🎉 ガチャ中...</p>
-			</div>
+			<!-- アニメーションエリア -->
 			<div class="result hidden">
 				<div class="result-img-container">
 					<img id="result-image" src="" alt="">
@@ -39,7 +30,7 @@
 				<p>ランク: <span id="result-rank"></span></p>
 			</div>
 			<div id="btn-container">
-				<button id="gacha-button" class="">ガチャを引く</button>
+				<button id="playButton" class="play-button">ガチャを引く</button>
 			</div>
 		</div>
 	</div>

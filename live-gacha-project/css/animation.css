@@ -14,6 +14,39 @@
     100% { transform: rotate(360deg); }
 }
 
+/* ガチャボタンスタイル */
+#btn-container {
+	margin-top: 52px;
+}
+.play-button {
+	display: inline-block;
+    padding: 15px 25px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 28px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.play-button:hover {
+	background-color: #0056b3;
+}
+
+/* 動画再生スタイル */
+#player {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #FFF;
+	z-index: 9999;
+}
+
+
+/* 一般スタイル */
 .result-image {
 	margin: auto;
 }

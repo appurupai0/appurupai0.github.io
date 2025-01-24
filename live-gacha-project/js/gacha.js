@@ -38,51 +38,104 @@ function testGacha(prizes, trials) {
     });
 }
 
+
+// ガチャボタン押下時の要素を事前に取得
+const h1 = document.querySelector('h1');
+const resultArea = document.querySelector(".result");
+const resultText = document.getElementById("result-text");
+const resultRank = document.getElementById("result-rank");
+const gachaBGM = document.getElementById("gacha-bgm");
+const resultImage = document.getElementById("result-image");
+const gachaButton = document.getElementById("btn-container");
+
+
 // ガチャボタンのクリックイベント
-document.getElementById("gacha-button").addEventListener("click", () => {
-    const animationArea = document.getElementById("animation-area");
-    const resultArea = document.querySelector(".result");
-    const resultText = document.getElementById("result-text");
-    const resultRank = document.getElementById("result-rank");
-	const gachaBGM = document.getElementById("gacha-bgm");
+document.getElementById("playButton").addEventListener("click", () => {
+	// ガチャの抽選
+	const prizes = JSON.parse(localStorage.getItem("prizes") || "[]");
+	const result = performGacha(prizes);
+
+	// 結果がない場合は処理を終了し、アラートを表示
+	if (!result) {
+		alert("景品データがありません。景品を登録してください！");
+		gachaButton.classList.remove("hidden"); // ボタンを再表示
+		return;
+	}
+	
+	// 見出し・結果欄を非表示
+	h1.classList.add("hidden")
+	resultArea.classList.add("hidden");
+	gachaButton.classList.add("hidden");
+
 	// ガチャのランクと対応する画像パス
-	const gachaResults = {
+	const ResultsImg = {
 		SS: 'assets/image/yumekawa_angel_tenshi.png',
 		S: 'assets/image/yumekawa_baby.png',
 		R: 'assets/image/character_manekineko.png',
 		N: 'assets/image/snowman_yukidaruma_toketa.png'
 	};
-	const resultImage = document.getElementById("result-image");
-	const gachaButton = document.getElementById("btn-container");
+	const selectResultImg = ResultsImg[result.rank]
 
-    // アニメーション表示
-    animationArea.classList.remove("hidden");
-    resultArea.classList.add("hidden");
-	gachaButton.classList.add("hidden");
+    // ガチャのランクと対応するビデオパス
+	const videoPaths = {
+		SS: "assets/videos/3tr006ガチャレア虹.mp4",
+		S: "assets/videos/3tr005ガチャレア金.mp4",
+		R: "assets/videos/3tr004ガチャレア銀.mp4",
+		N: "assets/videos/normal.mp4",
+	};
+	const selectedVideo = videoPaths[result.rank];
 
-	// ガチャBGM表示
-	gachaBGM.currentTime = 1.2;
-	gachaBGM.play();
+	// すでにビデオタグが存在している場合は再生を開始
+	let player = document.getElementById("player");
+	if (player) {
+	  player.src = selectedVideo; // 動画のソースを更新
+	  player.play();
+	} else {
+	  // 動画タグを作成して挿入
+	  const videoHTML = document.createElement("video");
+	  videoHTML.id = "player";
+	  videoHTML.preload = "auto";
 
-    setTimeout(() => {
-        const prizes = JSON.parse(localStorage.getItem("prizes") || "[]");
-        const result = performGacha(prizes);
+	  const source = document.createElement("source");
+	  source.src = selectedVideo; // 選択された動画を設定
+	  source.type = "video/mp4";
 
-        // 結果表示
-        if (result) {
-			resultImage.src = gachaResults[result.rank];
-            resultText.textContent = result.name;
-            resultRank.textContent = result.rank;
-        } else {
-            resultText.textContent = "景品がありません";
-            resultRank.textContent = "";
-        }
+	  videoHTML.appendChild(source);
+	  document.body.appendChild(videoHTML);
 
-        // 表示切り替え
-        animationArea.classList.add("hidden");
-        resultArea.classList.remove("hidden");
+	  player = document.getElementById("player");
+
+	  // ビデオを全画面表示で再生
+	  player.play();
+	  if (player.requestFullscreen) {
+		player.requestFullscreen();
+	  } else if (player.webkitRequestFullscreen) {
+		player.webkitRequestFullscreen();
+	  } else if (player.mozRequestFullScreen) {
+		player.mozRequestFullScreen();
+	  } else if (player.msRequestFullscreen) {
+		player.msRequestFullscreen();
+	  }
+
+	  // 動画終了時の処理
+	  player.addEventListener("ended", function () {
+		player.remove(); // ビデオタグを削除
+		// 表示切り替え
+		h1.classList.remove("hidden");
+		resultArea.classList.remove("hidden");
 		gachaButton.classList.remove("hidden");
-    }, 2000);
+	  });
+	}
+
+	// 結果表示
+	if (result) {
+		resultImage.src = selectResultImg;
+		resultText.textContent = result.name;
+		resultRank.textContent = result.rank;
+	} else {
+		resultText.textContent = "景品がありません";
+		resultRank.textContent = "";
+	}
 });
 
 // 検証用のガチャ試行
