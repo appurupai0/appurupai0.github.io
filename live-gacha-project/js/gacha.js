@@ -96,9 +96,6 @@ document.getElementById("playButton").addEventListener("click", () => {
 	  videoHTML.id = "player";
 	  videoHTML.preload = "auto";
 
-	  videoHTML.setAttribute("playsinline", "true"); // PiP防止
-	  videoHTML.setAttribute("webkit-playsinline", "true"); // iOS対応
-
 	  const source = document.createElement("source");
 	  source.src = selectedVideo; // 選択された動画を設定
 	  source.type = "video/mp4";
@@ -113,13 +110,11 @@ document.getElementById("playButton").addEventListener("click", () => {
 	  if (player.requestFullscreen) {
 		player.requestFullscreen();
 	  } else if (player.webkitRequestFullscreen) {
-	    player.webkitRequestFullscreen();
+		player.webkitRequestFullscreen();
 	  } else if (player.mozRequestFullScreen) {
 		player.mozRequestFullScreen();
 	  } else if (player.msRequestFullscreen) {
 		player.msRequestFullscreen();
-	  } else if (player.webkitEnterFullscreen) { // iOS / iPadOS ではこちらを試す
-		player.webkitEnterFullscreen();
 	  }
 
 	  // 動画終了時の処理
