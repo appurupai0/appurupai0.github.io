@@ -17,7 +17,7 @@
 video {
     width: 100vw !important;
     height: 100vh !important;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* ガチャボタンスタイル */
@@ -47,7 +47,7 @@ video {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: #FFF;
+	/* background: #FFF; */
 	z-index: 9999;
 }
 
