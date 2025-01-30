@@ -96,6 +96,9 @@ document.getElementById("playButton").addEventListener("click", () => {
 	  videoHTML.id = "player";
 	  videoHTML.preload = "auto";
 
+	  videoHTML.setAttribute("playsinline", "true"); // PiP防止
+	  videoHTML.setAttribute("webkit-playsinline", "true"); // iOS対応
+
 	  const source = document.createElement("source");
 	  source.src = selectedVideo; // 選択された動画を設定
 	  source.type = "video/mp4";
