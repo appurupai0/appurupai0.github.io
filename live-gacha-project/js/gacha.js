@@ -107,15 +107,15 @@ document.getElementById("playButton").addEventListener("click", () => {
 
 	  // ビデオを全画面表示で再生
 	  player.play();
-	  if (player.requestFullscreen) {
-		player.requestFullscreen();
-	  } else if (player.webkitRequestFullscreen) {
-		player.webkitRequestFullscreen();
-	  } else if (player.mozRequestFullScreen) {
-		player.mozRequestFullScreen();
-	  } else if (player.msRequestFullscreen) {
-		player.msRequestFullscreen();
-	  }
+	//   if (player.requestFullscreen) {
+	// 	player.requestFullscreen();
+	//   } else if (player.webkitRequestFullscreen) {
+	// 	player.webkitRequestFullscreen();
+	//   } else if (player.mozRequestFullScreen) {
+	// 	player.mozRequestFullScreen();
+	//   } else if (player.msRequestFullscreen) {
+	// 	player.msRequestFullscreen();
+	//   }
 
 	  // 動画終了時の処理
 	  player.addEventListener("ended", function () {
