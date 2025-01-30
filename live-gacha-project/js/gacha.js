@@ -78,10 +78,10 @@ document.getElementById("playButton").addEventListener("click", () => {
 
     // ガチャのランクと対応するビデオパス
 	const videoPaths = {
-		SS: "assets/videos/3tr006ガチャレア虹.mp4",
-		S: "assets/videos/3tr005ガチャレア金.mp4",
-		R: "assets/videos/3tr004ガチャレア銀.mp4",
-		N: "assets/videos/normal.mp4",
+		SS: "assets/videos/result-ss.mp4",
+		S: "assets/videos/result-s.mp4",
+		R: "assets/videos/result-r.mp4",
+		N: "assets/videos/result-n.mp4",
 	};
 	const selectedVideo = videoPaths[result.rank];
 
