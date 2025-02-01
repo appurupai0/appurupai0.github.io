@@ -70,14 +70,23 @@ h1 {
 	margin-top: 32px;
 }
 
+.f-40 {
+	font-size: 40px;
+}
+.f-24 {
+	font-size: 24px;
+}
+
 @media (max-width: 1024px) {
 	.container {
 		margin-top: 7%;
 	}
 
 	.result-img-container {
-		width: 55%;
-		margin: auto;
+		width: 65%;
+        margin: auto;
+        padding-top: 25px;
+        padding-bottom: 25px;
 	}
 	#result-image {
 		width: 100%;
