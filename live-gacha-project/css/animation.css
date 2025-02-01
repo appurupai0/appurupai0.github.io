@@ -22,7 +22,7 @@
 
 /* ガチャボタンスタイル */
 #btn-container {
-	margin-top: 52px;
+	margin-top: 0px;
 }
 .play-button {
 	display: inline-block;
@@ -64,19 +64,19 @@
 }
 
 h1 {
-	margin-bottom: 64px;
+	margin-bottom: 32px;
 }
 #gacha-button {
-	margin-top: 64px;
+	margin-top: 32px;
 }
 
 @media (max-width: 1024px) {
 	.container {
-		margin-top: 15%;
+		margin-top: 7%;
 	}
 
 	.result-img-container {
-		width: 50%;
+		width: 55%;
 		margin: auto;
 	}
 	#result-image {
