@@ -20,6 +20,12 @@
     object-fit: cover;
 } */
 
+.result-img-container {
+	width: 30%;
+    padding-bottom: 0px;
+    margin: auto;
+}
+
 /* ガチャボタンスタイル */
 #btn-container {
 	margin-top: 0px;
@@ -77,7 +83,7 @@ h1 {
 	font-size: 24px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 950px) {
 	.container {
 		margin-top: 7%;
 	}
@@ -108,5 +114,11 @@ h1 {
 	#result-image {
 		width: 100%;
 		object-fit: contain;
+	}
+	.f-40 {
+		font-size: 24px;
+	}
+	.f-24 {
+		font-size: 20px;
 	}
 }

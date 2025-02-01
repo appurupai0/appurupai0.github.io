@@ -69,10 +69,10 @@ document.getElementById("playButton").addEventListener("click", () => {
 
 	// ガチャのランクと対応する画像パス
 	const ResultsImg = {
-		SS: 'assets/image/N-haruna.png',
-		S: 'assets/image/R-haruna.png',
-		R: 'assets/image/S-haruna.png',
-		N: 'assets/image/SS-haruna.png'
+		SS: 'assets/image/SS-inoue.png',
+		S: 'assets/image/S-inoue.png',
+		R: 'assets/image/R-inoue.png',
+		N: 'assets/image/N-inoue.png'
 	};
 	const selectResultImg = ResultsImg[result.rank]
 
