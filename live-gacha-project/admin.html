@@ -9,6 +9,22 @@
 </head>
 <body>
     <h1>管理画面</h1>
+	<form id="select-user-form">
+		<label for="select-user">
+			ユーザー選択：
+			<select id="user" required>
+				<option value="">-------</option>
+				<option value="1">井上</option>
+				<option value="2">鶴ハルナ</option>
+				<option value="100">デフォルト</option>
+			</select>
+		</label>
+		<button id="user-button" type="submit">ユーザー選択</button>
+	</form>
+	<!-- 選択されたユーザー名を表示するエリア -->
+    <div id="user-display">
+
+	</div>
     <form id="prize-form">
         <h2>景品の追加</h2>
         <label>
@@ -22,6 +38,7 @@
         <label>
             ランク:
             <select id="prize-rank" required>
+				<option value="">-------</option>
                 <option value="SS">SSレア</option>
                 <option value="S">Sレア</option>
                 <option value="R">レア</option>

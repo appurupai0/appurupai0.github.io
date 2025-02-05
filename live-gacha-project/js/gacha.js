@@ -48,12 +48,26 @@ const gachaBGM = document.getElementById("gacha-bgm");
 const resultImage = document.getElementById("result-image");
 const gachaButton = document.getElementById("btn-container");
 
+const user = JSON.parse(localStorage.getItem("user") || "[]");
+console.log(user);
+if (user == 2) {
+	console.log("userID:2  鶴ハルナさんです")
+}
+
 
 // ガチャボタンのクリックイベント
 document.getElementById("playButton").addEventListener("click", () => {
 	// ガチャの抽選
 	const prizes = JSON.parse(localStorage.getItem("prizes") || "[]");
+	const user = JSON.parse(localStorage.getItem("user") || "[]");
 	const result = performGacha(prizes);
+
+	// ユーザー選択無しの場合は処理を終了し、アラート表示
+	if (!user) {
+		alert("ユーザーを選択してください");
+		gachaButton.classList.remove("hidden"); // ボタンを再表示
+		return;
+	}
 
 	// 結果がない場合は処理を終了し、アラートを表示
 	if (!result) {
@@ -67,14 +81,36 @@ document.getElementById("playButton").addEventListener("click", () => {
 	resultArea.classList.add("hidden");
 	gachaButton.classList.add("hidden");
 
-	// ガチャのランクと対応する画像パス
-	const ResultsImg = {
-		SS: 'assets/image/SS-inoue.png',
-		S: 'assets/image/S-inoue.png',
-		R: 'assets/image/R-inoue.png',
-		N: 'assets/image/N-inoue.png'
-	};
-	const selectResultImg = ResultsImg[result.rank]
+	// ガチャのランクと対応する画像パスをユーザーごとに差し替え
+	let ResultImg = {};
+	if (user == 1) {
+		// user = 1 井上さん用ガチャ画像
+		ResultImg = {
+			SS: 'assets/image/SS-inoue.png',
+			S: 'assets/image/S-inoue.png',
+			R: 'assets/image/R-inoue.png',
+			N: 'assets/image/N-inoue.png'
+		};
+	} else if (user == 2) {
+		// user = 2 ハルナさん用ガチャ画像
+		ResultImg = {
+			SS: 'assets/image/SS-haruna.png',
+			S: 'assets/image/S-haruna.png',
+			R: 'assets/image/R-haruna.png',
+			N: 'assets/image/N-haruna.png'
+		};
+	} else {
+		// それ以外　デフォルトの画像
+		ResultImg = {
+			SS: 'assets/image/yumekawa_angel_tenshi.png',
+			S: 'assets/image/yumekawa_baby.png',
+			R: 'assets/image/character_manekineko.png',
+			N: 'assets/image/snowman_yukidaruma_toketa.png'
+		};
+	}
+	console.log(ResultImg);
+	
+	const selectResultImg = ResultImg[result.rank];
 
     // ガチャのランクと対応するビデオパス
 	const videoPaths = {

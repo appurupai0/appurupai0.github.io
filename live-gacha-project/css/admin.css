@@ -1,3 +1,14 @@
+/* #select-user-form {
+	display: flex;
+	justify-content: center;
+} */
+
+#user-display {
+	font-size: large;
+    font-weight: bold;
+    color: blue;
+}
+
 table {
 	width: 100%;
 	border-collapse: collapse; /* ボーダーを重ねずに表示 */
